@@ -6,7 +6,7 @@ from pathlib import Path
 from dataclasses import dataclass
 from datetime import datetime
 
-from utility import load_json, load_multiindex_df
+from .utility import load_json, load_multiindex_df
 
 
 @dataclass
@@ -22,7 +22,7 @@ class Session_info:
     setup_id: str
     framework_version: str
     micropython_version: str
-    subject_id: str
+    subject: str
     start_time: datetime
     end_time: datetime
     day: int

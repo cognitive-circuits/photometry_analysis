@@ -6,13 +6,9 @@ import pandas as pd
 from pathlib import Path
 from datetime import datetime
 
-import dir_paths as paths
-import photometry_data_import as pi
-from rsync import Rsync_aligner, RsyncError
-from utility import save_json, save_multiindex_df
-
-
-# %% Pre-processing functions.
+from . import photometry_data_import as pi
+from .rsync import Rsync_aligner, RsyncError
+from .utility import save_json, save_multiindex_df
 
 
 def preprocess_data(
@@ -75,8 +71,8 @@ def preprocess_data(
     photo_error_sessions = []
     photo_plots_dir = Path(plots_dir, "photometry_preprocessing")
     start_date = min(session_filepaths_df.datetime).date()
-    genotypes_df = pd.read_csv(paths.genotypes, sep="\t")
-    photo_plots_dir.mkdir(exist_ok=True)
+    subject_info_df = pd.read_csv(Path(raw_data_dir, "subject_info.tsv"), sep="\t", index_col="subject")
+    photo_plots_dir.mkdir(exist_ok=True, parents=True)
     for subject in sorted(set(session_filepaths_df["subject"])):
         subject_dir = Path(processed_data_dir, subject)
         subject_sessions = session_filepaths_df[session_filepaths_df.subject == subject]
@@ -94,10 +90,11 @@ def preprocess_data(
             info_dict, variables_dict, events_df, trials_df, sync_pulse_times = _pycontrol_to_components(
                 row.pycontrol_filepath, trial_events, trial_responses
             )
+            info_dict["subject"] = info_dict.pop("subject_id")
             info_dict["session_id"] = session_id
             info_dict["day"] = (row.datetime.date() - start_date).days + 1
             info_dict["number"] = i + 1
-            info_dict["genotype"] = genotypes_df.loc[genotypes_df.subject == subject, "genotype"].item()
+            info_dict["genotype"] = subject_info_df.loc[subject, "genotype"]
             save_json(info_dict, Path(session_dir, "session_info.json"))
             save_json(variables_dict, Path(session_dir, "variables.json"))
             events_df.to_csv(Path(session_dir, "events.htsv"), sep="\t", index=False)
@@ -122,7 +119,7 @@ def preprocess_data(
                 "mode": photo_data["mode"],
                 "sampling_rate": photo_data["sampling_rate"],
                 "LED_current": photo_data["LED_current"],
-                "hemisphere": subject.split("_")[-1],
+                "hemisphere": subject_info_df.loc[subject, "hemisphere"],
             }
             save_json(photo_info, Path(session_dir, "photometry_info.json"))
     # Print any error output.
@@ -141,10 +138,10 @@ def _get_file_info(data_dir, filetype):
     subject IDs and datetimes of the data files.
     Assumes file names are of format: 'subject_ID-datetime_string.filetype'"""
     filepaths = [filepath for filepath in data_dir.iterdir() if filepath.suffix == filetype]
-    subject_ids = [filepath.stem.split("-")[0] for filepath in filepaths]
+    subjects = [filepath.stem.split("-")[0] for filepath in filepaths]
     datetime_strings = [filepath.stem.split("-", 1)[1] for filepath in filepaths]
     datetimes = [datetime.strptime(datetime_string, "%Y-%m-%d-%H%M%S") for datetime_string in datetime_strings]
-    return pd.DataFrame({"filepath": filepaths, "subject": subject_ids, "datetime": datetimes})
+    return pd.DataFrame({"filepath": filepaths, "subject": subjects, "datetime": datetimes})
 
 
 def _pycontrol_to_components(pycontrol_filepath, trial_events=None, trial_responses=None):
@@ -244,21 +241,3 @@ def _add_trial_times(events_df, trials_df, trial_events, trial_responses=None):
     trials_df.columns = pd.MultiIndex.from_product([trials_df.columns, [""]])
     trials_df = pd.concat([trials_df, trial_times_df], axis=1)
     return trials_df
-
-
-# Main ----------------------------------------------------------------------------
-
-if __name__ == "__main__":
-    # Preprocess pavlovian data
-    trial_events_pv = {"stimulus": ("visual_stim", "audio_stim")}
-    trial_responses_pv = {"response": {"stimulus": "poke_9"}}
-    preprocess_data(
-        paths.pavlovian_raw_data, paths.pavlovian_processed_data, paths.plots, trial_events_pv, trial_responses_pv
-    )
-    # Process reversal learning data
-    trial_events_rl = {
-        "initiation": ("choice_state", "forced_choice_left", "forced_choice_right"),
-        "choice": ("chose_left", "chose_right"),
-        "outcome": ("reward_left", "reward_right", "no_reward"),
-    }
-    preprocess_data(paths.reversals_raw_data, paths.reversals_processed_data, paths.plots, trial_events_rl)

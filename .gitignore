@@ -1,0 +1,7 @@
+.ipynb_checkpoints
+__pycache__
+pyproject.toml
+data/analysis
+data/processed
+plots
+session_filepaths.tsv

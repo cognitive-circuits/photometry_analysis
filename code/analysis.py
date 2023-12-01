@@ -9,9 +9,9 @@ from scipy.stats import ttest_1samp, false_discovery_control
 from statsmodels.regression.mixed_linear_model import MixedLMParams
 from tqdm import tqdm
 
-import session as ss
-import align_activity as aa
-from utility import save_json
+from . import session as ss
+from . import align_activity as aa
+from .utility import save_json
 
 # Set default plotting parameters.
 plt.rcParams["pdf.fonttype"] = 42
@@ -34,53 +34,47 @@ def load_sessions(processed_data_dir):
     return sessions
 
 
-def save_median_trial_timings(processed_data_dir, analysis_data_dir, trial_events, last_n_days=False):
+def get_median_trial_times(sessions, trial_events, save_dir=None):
     """Load the sessions in processed_data_dir and compute the median intervals between the events
     specified in trial_events, then save out the median timing of the trial events relative to the
     first event as a json in the analysis_data_dir.  These median trial timings are used for time
-    warping trials to align activity across trials.  The last_n_days argument can be used to only
-    include days from the end of the dataset in the calculation of median timings.
+    warping trials to align activity across trials.
     """
-    sessions = load_sessions(processed_data_dir)
-    if last_n_days:
-        n_days = max([session.info.day for session in sessions])
-        sessions = [session for session in sessions if session.info.day > (n_days - last_n_days)]
     trials_df = pd.concat([session.trials_df.loc[:, "times"][trial_events] for session in sessions])
-    median_trial_event_times = trials_df.diff(axis=1).median().to_dict()
-    median_trial_event_times[trial_events[0]] = 0
-    analysis_data_dir.mkdir(exist_ok=True, parents=True)
-    save_json(median_trial_event_times, Path(analysis_data_dir, "median_trial_event_times.json"))
+    median_trial_times = trials_df.diff(axis=1).median().to_dict()
+    median_trial_times[trial_events[0]] = 0
+    if save_dir:
+        save_dir = Path(save_dir)
+        save_dir.mkdir(exist_ok=True, parents=True)
+    save_json(median_trial_times, Path(save_dir, "median_trial_times.json"))
+    return median_trial_times
 
 
 def save_aligned_signals(
-    processed_data_dir,
-    analysis_data_dir,
-    trial_events,
-    target_event_times=None,
-    window_dur=[-1, 2],
-    skip_processed=False,
+    sessions, analysis_data_dir, trial_events, target_event_times=None, window_dur=[-1, 2], skip_processed=False
 ):
     """For all sessions in processed_data_dir generate event aligned photometry signal dataframe
     for specified trial_events and  save to analysis_data_dir as parquet files.
     """
-    for subject_dir in Path(processed_data_dir).iterdir():
-        for session_processed_data_dir in subject_dir.iterdir():
-            session_analysis_data_dir = Path(analysis_data_dir, *session_processed_data_dir.parts[-2:])
-            if skip_processed and session_analysis_data_dir.exists():
-                continue  # Skip session as already processed.
-            session = ss.Session(session_processed_data_dir)
-            if session.photometry == None:
-                continue  # Skip as session does not have photometry data.
-            aligned_signal_dfs = []
-            # Extract event aligned signals.
-            for trial_event in trial_events:
-                aligned_signal_dfs.append(get_event_aligned_signal(session, trial_event))
-            # Extract time-warped trial aligned signals.
-            if target_event_times:
-                aligned_signal_dfs.append(get_trial_aligned_signal(session, target_event_times, window_dur))
-            session_analysis_data_dir.mkdir(exist_ok=True, parents=True)
-            aligned_signals_df = pd.concat(aligned_signal_dfs, axis=1)
-            aligned_signals_df.to_parquet(Path(session_analysis_data_dir, "trials.aligned_signal.parquet"))
+    for session in sessions:
+        print(f"Processing session: {session.info.session_id}")
+        session_analysis_data_dir = Path(
+            analysis_data_dir, session.info.subject, session.info.start_time.strftime("%Y-%m-%d-%H%M%S")
+        )
+        if skip_processed and session_analysis_data_dir.exists():
+            continue  # Skip session as already processed.
+        if session.photometry == None:
+            continue  # Skip as session does not have photometry data.
+        aligned_signal_dfs = []
+        # Extract event aligned signals.
+        for trial_event in trial_events:
+            aligned_signal_dfs.append(get_event_aligned_signal(session, trial_event))
+        # Extract time-warped trial aligned signals.
+        if target_event_times:
+            aligned_signal_dfs.append(get_trial_aligned_signal(session, target_event_times, window_dur))
+        session_analysis_data_dir.mkdir(exist_ok=True, parents=True)
+        aligned_signals_df = pd.concat(aligned_signal_dfs, axis=1)
+        aligned_signals_df.to_parquet(Path(session_analysis_data_dir, "trials.aligned_signal.parquet"))
 
 
 def get_event_aligned_signal(session, trial_event, window_dur=[-1, 2]):
@@ -162,7 +156,7 @@ def make_analysis_dataframe(sessions):
         # Add exponential moving average of outcomes.
         reward_rate = pd.concat([pd.Series(np.full(10, 0.5)), session_df.outcome]).ewm(alpha=0.2).mean()[10:]
         session_df.insert(0, "reward_rate", reward_rate.to_numpy() - 0.5)
-        for info_name in ["genotype", "day", "session_id", "subject_id"]:
+        for info_name in ["genotype", "day", "session_id", "subject"]:
             session_df.insert(0, info_name, getattr(session.info, info_name))
         session_dfs.append(session_df)
     return pd.concat(session_dfs, axis=0)
@@ -186,15 +180,13 @@ def plot_response(sessions_df, alignment, hue, style=None, errorbar="se", fig_no
     """
     grouping = [hue, style] if style else [hue]
     # Calculate subjects mean trace for each condition.
-    subject_means_df = sessions_df.groupby(["subject_id"] + grouping).mean(numeric_only=True)[
-        "aligned_signal", alignment
-    ]
+    subject_means_df = sessions_df.groupby(["subject"] + grouping).mean(numeric_only=True)["aligned_signal", alignment]
     # Convert Dataframe to long form
     subject_means_ldf = subject_means_df.reset_index().melt(
-        id_vars=["subject_id"] + grouping, var_name="time", value_name="signal"
+        id_vars=["subject"] + grouping, var_name="time", value_name="signal"
     )
     # Plotting
-    plt.figure(fig_no, clear=True)
+    plt.figure(fig_no, figsize=[12, 8], clear=True)
     sns.lineplot(subject_means_ldf, x="time", y="signal", hue=hue, style=style, errorbar=errorbar)
     plt.xlim(subject_means_ldf.time.min(), subject_means_ldf.time.max())
     plt.xlabel(f"Time relative to {alignment} (s)")
@@ -217,8 +209,8 @@ def regression_analysis(sessions_df, formula, alignment, style=None, sum_code=Tr
     """
     timepoints = sessions_df.aligned_signal[alignment].columns
     coefs_dfs = []
-    for subject_id in tqdm(sessions_df.subject_id.unique()):
-        subject_df = sessions_df.loc[sessions_df.subject_id == subject_id, :]
+    for subject in tqdm(sessions_df.subject.unique()):
+        subject_df = sessions_df.loc[sessions_df.subject == subject, :]
         regression_df = subject_df.loc[:, [col for col in subject_df.columns if col[0] in formula]]
         regression_df.columns = regression_df.columns.droplevel([1, 2])
         if sum_code:
@@ -230,35 +222,35 @@ def regression_analysis(sessions_df, formula, alignment, style=None, sum_code=Tr
             coefs.append(fit.params)
         subject_coefs_df = pd.DataFrame(coefs)
         subject_coefs_df["time"] = timepoints
-        subject_coefs_df["subject_id"] = subject_id
+        subject_coefs_df["subject"] = subject
         if style:  # Group subjects by specified variable and differentiate by linestyle.
             assert len(subject_df[style].unique()) == 1, "Style variable must take unique value per subject."
             subject_coefs_df[style] = subject_df[style].unique()[0]
         coefs_dfs.append(subject_coefs_df)
     coefs_df = pd.concat(coefs_dfs)
-    id_vars = ["subject_id", "time", style] if style else ["subject_id", "time"]
+    id_vars = ["subject", "time", style] if style else ["subject", "time"]
     coefs_ldf = coefs_df.melt(id_vars=id_vars, var_name="predictor", value_name="beta")
     # Compute predictor p values
-    predictors = [col for col in coefs_df if col not in ("time", "subject_id", style)]
+    predictors = [col for col in coefs_df if col not in ("time", "subject", style)]
     pvals_df = pd.DataFrame({predictor: _predictor_pvalues(coefs_df, predictor) for predictor in predictors})
     pvals_df.index = timepoints
     # Plotting
-    plt.figure(fig_no, clear=True)
+    plt.figure(fig_no, figsize=[12, 8], clear=True)
     plt.axhline(0, color="k", linewidth=0.5)
     sns.lineplot(coefs_ldf, x="time", y="beta", hue="predictor", style=style, errorbar=errorbar)
     _plot_P_values(pvals_df, y0=plt.gca().get_ylim()[1])
     plt.xlim(coefs_ldf.time.min(), coefs_ldf.time.max())
     plt.xlabel(f"Time relative to {alignment} (s)")
     plt.ylabel("Beta (dLight dF/F)")
-    plt.legend(loc="upper left")
+    plt.legend(loc="center left")
 
 
 def _predictor_pvalues(coefs_df, predictor, multi_correct=True):
     """Compute P value for specified predictor at each timepoint using a ttest of the cross-subject
     distribution against 0.  If multi_correct is True Benjamini-Hochberg multiple comparison
     correction is applied to control false discovery rate."""
-    predictor_df = coefs_df.loc[:, (predictor, "time", "subject_id")]
-    predictor_df = predictor_df.pivot(columns=["time"], index="subject_id")
+    predictor_df = coefs_df.loc[:, (predictor, "time", "subject")]
+    predictor_df = predictor_df.pivot(columns=["time"], index="subject")
     p_values = ttest_1samp(predictor_df, 0, axis=0).pvalue
     if multi_correct:
         p_values = false_discovery_control(p_values)
@@ -282,7 +274,7 @@ def _plot_P_values(pvals_df, y0):
 def mixed_effects_regression(
     sessions_df,
     formula="outcome*genotype",
-    group="subject_id",
+    group="subject",
     re_formula="outcome",
     alignment="trial",
     sum_code=True,
@@ -311,7 +303,7 @@ def mixed_effects_regression(
     coefSE_df = pd.DataFrame(coefSEs)
     coefSE_df["time"] = timepoints
     # Plotting
-    predictors = [col for col in coefs_df if col not in ("time", "subject_id")]
+    predictors = [col for col in coefs_df if col not in ("time", "subject")]
     plt.figure(fig_no, clear=True)
     plt.axhline(0, color="k", linewidth=0.5)
     palette = iter(sns.husl_palette(len(predictors)))
