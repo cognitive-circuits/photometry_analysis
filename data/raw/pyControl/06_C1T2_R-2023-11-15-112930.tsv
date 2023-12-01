@@ -1,0 +1,4360 @@
+time	type	subtype	content
+0.000	info	experiment_name	Thomas\LRRK2_photometry
+0.000	info	task_name	Thomas\reversal_learning
+0.000	info	task_file_hash	2655257290
+0.000	info	setup_id	Box 1
+0.000	info	framework_version	2.0rc1
+0.000	info	micropython_version	1.12
+0.000	info	subject_id	06_C1T2_R
+0.000	info	start_time	2023-11-15T11:29:30.838
+0.000	variable	run_start	{"n_blocks": 0, "click_volume": 10, "good_prob": 0.75, "forced_choice": false, "session_duration": 5400000, "correct": null, "ITI_duration": [1000, 3000], "n_trials": 0, "post_choice_delay": 500, "good_poke": "poke_4", "trials_post_threshold": [5, 15], "trials_till_reversal": 0, "consumption_duration": 1000, "threshold": 0.75, "tau": 8, "reward_vol_ul": 6, "hw_poke_6_calibration": {"slope": 8, "intercept": 25.9}, "n_rewards": 0, "threshold_crossed": false, "hw_poke_4_calibration": {"slope": 7.3, "intercept": 27.4}, "bad_prob": 0.25}
+0.000	state		initiation_state
+0.002	event	sync	rsync
+5.090	event	input	poke_6
+5.191	event	input	poke_6_out
+5.457	event	input	poke_5
+5.458	state		choice_state
+5.556	event	input	poke_5_out
+5.884	event	input	poke_6
+5.885	state		chose_right
+5.886	variable	print	{"n_trials": 1, "n_rewards": 0, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.4412485, "threshold_crossed": false}
+6.387	state		no_reward
+6.487	state		reward_consumption
+6.800	event	input	poke_6_out
+7.801	event	timer	consumption_timer
+7.801	state		inter_trial_interval
+8.542	event	sync	rsync
+10.586	event	sync	rsync
+10.615	state		initiation_state
+13.442	event	input	poke_6
+13.457	event	input	poke_6_out
+13.476	event	input	poke_6
+13.604	event	input	poke_6_out
+13.688	event	sync	rsync
+13.919	event	input	poke_5
+13.920	state		choice_state
+14.008	event	input	poke_5_out
+14.331	event	input	poke_4
+14.332	state		chose_left
+14.333	variable	print	{"n_trials": 2, "n_rewards": 1, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.5069036, "threshold_crossed": false}
+14.834	state		reward_left
+14.905	state		reward_consumption
+19.757	event	sync	rsync
+20.839	event	sync	rsync
+25.519	event	sync	rsync
+32.380	event	sync	rsync
+33.487	event	input	poke_4_out
+34.487	event	timer	consumption_timer
+34.487	state		inter_trial_interval
+34.841	event	input	poke_4
+35.069	event	input	poke_4_out
+37.359	state		initiation_state
+38.975	event	input	poke_5
+38.976	state		forced_choice_left
+39.027	event	input	poke_5_out
+39.329	event	input	poke_4
+39.330	state		chose_left
+39.331	variable	print	{"n_trials": 3, "n_rewards": 2, "n_blocks": 0, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.5069036, "threshold_crossed": false}
+39.831	state		reward_left
+39.902	state		reward_consumption
+40.961	event	sync	rsync
+41.725	event	input	poke_4_out
+42.726	event	timer	consumption_timer
+42.726	state		inter_trial_interval
+45.411	state		initiation_state
+46.698	event	sync	rsync
+53.206	event	input	poke_5
+53.207	state		choice_state
+53.302	event	input	poke_5_out
+53.608	event	input	poke_4
+53.609	state		chose_left
+53.610	variable	print	{"n_trials": 4, "n_rewards": 3, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.5648439, "threshold_crossed": false}
+53.818	event	sync	rsync
+54.111	state		reward_left
+54.182	state		reward_consumption
+56.537	event	sync	rsync
+58.305	event	sync	rsync
+59.600	event	sync	rsync
+63.255	event	input	poke_4_out
+63.542	event	sync	rsync
+64.256	event	timer	consumption_timer
+64.256	state		inter_trial_interval
+65.582	state		initiation_state
+72.222	event	sync	rsync
+76.527	event	input	poke_5
+76.529	state		choice_state
+76.559	event	input	poke_5_out
+76.832	event	input	poke_4
+76.833	state		chose_left
+76.834	variable	print	{"n_trials": 5, "n_rewards": 4, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.6159761, "threshold_crossed": false}
+77.335	state		reward_left
+77.406	state		reward_consumption
+78.292	event	sync	rsync
+80.105	event	sync	rsync
+81.630	event	input	poke_4_out
+82.630	event	timer	consumption_timer
+82.630	state		inter_trial_interval
+84.028	state		initiation_state
+84.342	event	input	poke_5
+84.343	state		forced_choice_left
+84.379	event	input	poke_5_out
+84.496	event	input	poke_5
+84.541	event	input	poke_5_out
+85.017	event	input	poke_4
+85.018	state		chose_left
+85.018	variable	print	{"n_trials": 6, "n_rewards": 5, "n_blocks": 0, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.6159761, "threshold_crossed": false}
+85.519	state		reward_left
+85.590	state		reward_consumption
+88.402	event	sync	rsync
+88.967	event	input	poke_4_out
+89.967	event	timer	consumption_timer
+89.967	state		inter_trial_interval
+92.956	state		initiation_state
+96.392	event	sync	rsync
+96.530	event	input	poke_5
+96.531	state		choice_state
+96.614	event	input	poke_5_out
+96.917	event	input	poke_4
+96.918	state		chose_left
+96.919	variable	print	{"n_trials": 7, "n_rewards": 5, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": false, "mov_ave": 0.6611001, "threshold_crossed": false}
+97.420	state		no_reward
+97.520	state		reward_consumption
+97.772	event	input	poke_4_out
+98.772	event	timer	consumption_timer
+98.772	state		inter_trial_interval
+100.397	event	sync	rsync
+100.718	state		initiation_state
+101.967	event	input	poke_6
+102.041	event	input	poke_6_out
+102.336	event	input	poke_5
+102.337	state		choice_state
+102.426	event	input	poke_5_out
+102.697	event	input	poke_6
+102.698	state		chose_right
+102.699	variable	print	{"n_trials": 8, "n_rewards": 6, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": true, "mov_ave": 0.5834188, "threshold_crossed": false}
+103.200	state		reward_right
+103.273	state		reward_consumption
+105.712	event	input	poke_6_out
+106.713	event	timer	consumption_timer
+106.713	state		inter_trial_interval
+108.545	state		initiation_state
+108.705	event	input	poke_6
+108.829	event	input	poke_6_out
+109.030	event	sync	rsync
+110.159	event	input	poke_4
+110.887	event	input	poke_4_out
+111.618	event	input	poke_4
+112.134	event	input	poke_4_out
+112.473	event	input	poke_5
+112.474	state		choice_state
+112.527	event	input	poke_5_out
+112.940	event	input	poke_4
+112.941	state		chose_left
+112.942	variable	print	{"n_trials": 9, "n_rewards": 6, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": false, "mov_ave": 0.6323684, "threshold_crossed": false}
+113.443	state		no_reward
+113.543	state		reward_consumption
+113.693	event	input	poke_4_out
+114.364	event	input	poke_5
+114.381	event	sync	rsync
+114.463	event	input	poke_5_out
+114.694	event	timer	consumption_timer
+114.694	state		inter_trial_interval
+116.469	event	input	poke_6
+116.491	state		initiation_state
+116.536	event	input	poke_6_out
+116.963	event	sync	rsync
+120.545	event	input	poke_4
+121.241	event	input	poke_4_out
+121.539	event	input	poke_5
+121.540	state		forced_choice_left
+121.591	event	input	poke_5_out
+122.158	event	input	poke_4
+122.159	state		chose_left
+122.160	variable	print	{"n_trials": 10, "n_rewards": 6, "n_blocks": 0, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": false, "mov_ave": 0.6323684, "threshold_crossed": false}
+122.660	state		no_reward
+122.760	state		reward_consumption
+122.872	event	input	poke_4_out
+123.736	event	sync	rsync
+123.872	event	timer	consumption_timer
+123.872	state		inter_trial_interval
+125.723	state		initiation_state
+126.210	event	input	poke_6
+126.420	event	input	poke_6_out
+126.713	event	input	poke_5
+126.714	state		choice_state
+126.802	event	input	poke_5_out
+127.128	event	input	poke_6
+127.129	state		chose_right
+127.130	variable	print	{"n_trials": 11, "n_rewards": 6, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.5580631, "threshold_crossed": false}
+127.631	state		no_reward
+127.731	state		reward_consumption
+127.993	event	input	poke_6_out
+128.994	event	timer	consumption_timer
+128.994	state		inter_trial_interval
+130.526	event	input	poke_6
+130.589	event	input	poke_6_out
+130.699	event	sync	rsync
+131.756	state		initiation_state
+134.280	event	input	poke_6
+135.386	event	input	poke_6_out
+135.704	event	input	poke_5
+135.705	state		choice_state
+135.776	event	input	poke_5_out
+136.157	event	input	poke_4
+136.158	state		chose_left
+136.159	variable	print	{"n_trials": 12, "n_rewards": 7, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.6099921, "threshold_crossed": false}
+136.660	state		reward_left
+136.731	state		reward_consumption
+137.380	event	sync	rsync
+143.516	event	input	poke_4_out
+144.516	event	timer	consumption_timer
+144.516	state		inter_trial_interval
+146.395	event	input	poke_4
+146.437	event	input	poke_4_out
+146.545	event	input	poke_4
+146.768	event	input	poke_4_out
+146.777	event	sync	rsync
+146.808	event	input	poke_4
+147.457	state		initiation_state
+147.667	event	input	poke_4_out
+149.531	event	sync	rsync
+149.939	event	input	poke_5
+149.940	state		choice_state
+150.003	event	input	poke_5_out
+150.378	event	input	poke_4
+150.380	state		chose_left
+150.381	variable	print	{"n_trials": 13, "n_rewards": 8, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.6558193, "threshold_crossed": false}
+150.881	state		reward_left
+150.952	state		reward_consumption
+153.930	event	sync	rsync
+156.116	event	input	poke_4_out
+157.117	event	timer	consumption_timer
+157.117	state		inter_trial_interval
+159.102	event	sync	rsync
+159.261	state		initiation_state
+160.662	event	input	poke_5
+160.663	state		choice_state
+160.717	event	input	poke_5_out
+160.987	event	input	poke_4
+160.988	state		chose_left
+160.989	variable	print	{"n_trials": 14, "n_rewards": 9, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.6962616, "threshold_crossed": false}
+161.490	state		reward_left
+161.561	state		reward_consumption
+166.505	event	sync	rsync
+167.716	event	input	poke_4_out
+168.717	event	timer	consumption_timer
+168.717	state		inter_trial_interval
+169.771	state		initiation_state
+171.637	event	input	poke_5
+171.638	state		forced_choice_right
+171.708	event	input	poke_5_out
+172.561	event	input	poke_6
+172.562	state		chose_right
+172.562	variable	print	{"n_trials": 15, "n_rewards": 9, "n_blocks": 0, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.6962616, "threshold_crossed": false}
+173.063	state		no_reward
+173.163	state		reward_consumption
+173.504	event	input	poke_6_out
+174.122	event	sync	rsync
+174.505	event	timer	consumption_timer
+174.505	state		inter_trial_interval
+176.419	state		initiation_state
+177.685	event	sync	rsync
+178.654	event	sync	rsync
+178.885	event	input	poke_5
+178.886	state		choice_state
+178.963	event	input	poke_5_out
+179.238	event	input	poke_6
+179.239	state		chose_right
+179.240	variable	print	{"n_trials": 16, "n_rewards": 9, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.6144486, "threshold_crossed": false}
+179.741	state		no_reward
+179.841	state		reward_consumption
+179.878	event	input	poke_6_out
+180.262	event	sync	rsync
+180.879	event	timer	consumption_timer
+180.879	state		inter_trial_interval
+180.960	event	input	poke_5
+181.007	event	input	poke_5_out
+183.152	state		initiation_state
+186.493	event	input	poke_6
+186.534	event	input	poke_6_out
+186.718	event	input	poke_6
+186.769	event	input	poke_6_out
+187.633	event	input	poke_5
+187.634	state		choice_state
+187.716	event	input	poke_5_out
+188.015	event	input	poke_6
+188.016	state		chose_right
+188.017	variable	print	{"n_trials": 17, "n_rewards": 9, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.542249, "threshold_crossed": false}
+188.518	state		no_reward
+188.618	state		reward_consumption
+189.096	event	input	poke_6_out
+189.634	event	input	poke_5
+189.745	event	input	poke_5_out
+189.750	event	sync	rsync
+190.096	event	timer	consumption_timer
+190.096	state		inter_trial_interval
+190.268	event	input	poke_4
+190.937	event	input	poke_4_out
+192.143	state		initiation_state
+192.725	event	sync	rsync
+195.362	event	sync	rsync
+197.091	event	sync	rsync
+204.763	event	sync	rsync
+209.546	event	input	poke_6
+209.742	event	input	poke_6_out
+210.994	event	input	poke_5
+210.996	state		choice_state
+211.078	event	input	poke_5_out
+211.640	event	input	poke_5
+211.686	event	input	poke_5_out
+212.003	event	input	poke_4
+212.005	state		chose_left
+212.005	variable	print	{"n_trials": 18, "n_rewards": 10, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.5960362, "threshold_crossed": false}
+212.398	event	sync	rsync
+212.506	state		reward_left
+212.577	state		reward_consumption
+219.415	event	input	poke_4_out
+219.808	event	sync	rsync
+220.416	event	timer	consumption_timer
+220.416	state		inter_trial_interval
+222.843	state		initiation_state
+227.174	event	sync	rsync
+228.344	event	sync	rsync
+231.558	event	input	poke_5
+231.559	state		choice_state
+231.639	event	input	poke_5_out
+231.911	event	input	poke_4
+231.912	state		chose_left
+231.913	variable	print	{"n_trials": 19, "n_rewards": 11, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.6435032, "threshold_crossed": false}
+232.414	state		reward_left
+232.485	state		reward_consumption
+236.986	event	sync	rsync
+237.617	event	input	poke_4_out
+238.617	event	timer	consumption_timer
+238.617	state		inter_trial_interval
+240.764	state		initiation_state
+241.363	event	input	poke_5
+241.364	state		forced_choice_left
+241.410	event	input	poke_5_out
+241.720	event	input	poke_4
+241.721	state		chose_left
+241.722	variable	print	{"n_trials": 20, "n_rewards": 12, "n_blocks": 0, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.6435032, "threshold_crossed": false}
+242.223	state		reward_left
+242.294	state		reward_consumption
+245.468	event	sync	rsync
+247.055	event	input	poke_4_out
+248.056	event	timer	consumption_timer
+248.056	state		inter_trial_interval
+250.236	state		initiation_state
+250.624	event	sync	rsync
+254.207	event	sync	rsync
+255.493	event	sync	rsync
+261.086	event	input	poke_6
+261.261	event	input	poke_6_out
+262.203	event	input	poke_4
+262.241	event	input	poke_4_out
+263.000	event	input	poke_4
+263.396	event	sync	rsync
+263.661	event	input	poke_4_out
+264.571	event	input	poke_4
+264.934	event	sync	rsync
+265.201	event	input	poke_4_out
+265.904	event	input	poke_4
+266.584	event	input	poke_4_out
+267.228	event	input	poke_4
+267.951	event	input	poke_4_out
+268.317	event	sync	rsync
+268.399	event	input	poke_5
+268.400	state		choice_state
+268.486	event	input	poke_5_out
+268.799	event	input	poke_4
+268.800	state		chose_left
+268.801	variable	print	{"n_trials": 21, "n_rewards": 13, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.6853927, "threshold_crossed": false}
+269.302	state		reward_left
+269.373	state		reward_consumption
+273.434	event	sync	rsync
+280.711	event	sync	rsync
+283.905	event	sync	rsync
+285.049	event	sync	rsync
+286.366	event	input	poke_4_out
+287.367	event	timer	consumption_timer
+287.367	state		inter_trial_interval
+288.431	state		initiation_state
+288.502	event	sync	rsync
+292.558	event	sync	rsync
+300.100	event	sync	rsync
+307.209	event	input	poke_6
+307.314	event	input	poke_6_out
+309.522	event	sync	rsync
+310.681	event	input	poke_4
+311.442	event	input	poke_4_out
+313.319	event	input	poke_5
+313.321	state		choice_state
+313.370	event	input	poke_5_out
+313.611	event	input	poke_4
+313.612	state		chose_left
+313.613	variable	print	{"n_trials": 22, "n_rewards": 14, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.72236, "threshold_crossed": false}
+314.114	state		reward_left
+314.185	state		reward_consumption
+316.308	event	sync	rsync
+318.118	event	input	poke_4_out
+318.352	event	sync	rsync
+319.118	event	timer	consumption_timer
+319.118	state		inter_trial_interval
+320.134	state		initiation_state
+322.171	event	input	poke_5
+322.172	state		forced_choice_left
+322.246	event	input	poke_5_out
+322.534	event	input	poke_4
+322.535	state		chose_left
+322.536	variable	print	{"n_trials": 23, "n_rewards": 15, "n_blocks": 0, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.72236, "threshold_crossed": false}
+323.036	state		reward_left
+323.107	state		reward_consumption
+323.680	event	sync	rsync
+324.606	event	sync	rsync
+327.097	event	input	poke_4_out
+327.666	event	sync	rsync
+328.098	event	timer	consumption_timer
+328.098	state		inter_trial_interval
+329.733	state		initiation_state
+331.080	event	input	poke_5
+331.082	state		choice_state
+331.109	event	input	poke_5_out
+331.413	event	input	poke_4
+331.414	state		chose_left
+331.415	variable	print	{"n_trials": 24, "n_rewards": 16, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.7549836, "threshold_crossed": true}
+331.916	state		reward_left
+331.987	state		reward_consumption
+333.876	event	sync	rsync
+334.967	event	input	poke_4_out
+335.968	event	timer	consumption_timer
+335.968	state		inter_trial_interval
+338.429	state		initiation_state
+338.976	event	input	poke_5
+338.977	state		choice_state
+339.127	event	input	poke_5_out
+339.498	event	input	poke_4
+339.499	state		chose_left
+339.500	variable	print	{"n_trials": 25, "n_rewards": 17, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.7837738, "threshold_crossed": true}
+339.698	event	sync	rsync
+340.001	state		reward_left
+340.072	state		reward_consumption
+342.978	event	sync	rsync
+343.874	event	input	poke_4_out
+344.874	event	timer	consumption_timer
+344.874	state		inter_trial_interval
+347.680	state		initiation_state
+347.807	event	input	poke_5
+347.808	state		choice_state
+347.873	event	input	poke_5_out
+348.199	event	input	poke_4
+348.200	state		chose_left
+348.201	variable	print	{"n_trials": 26, "n_rewards": 18, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.809181, "threshold_crossed": true}
+348.702	state		reward_left
+348.773	state		reward_consumption
+350.683	event	sync	rsync
+354.308	event	input	poke_4_out
+354.682	event	sync	rsync
+355.105	event	input	poke_4
+355.195	event	input	poke_4_out
+356.195	event	timer	consumption_timer
+356.195	state		inter_trial_interval
+358.021	state		initiation_state
+358.675	event	input	poke_4
+359.533	event	input	poke_4_out
+360.241	event	input	poke_4
+361.026	event	input	poke_4_out
+361.670	event	input	poke_4
+362.475	event	input	poke_4_out
+362.945	event	input	poke_5
+362.946	state		forced_choice_left
+363.030	event	input	poke_5_out
+363.277	event	input	poke_4
+363.278	state		chose_left
+363.279	variable	print	{"n_trials": 27, "n_rewards": 19, "n_blocks": 0, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.809181, "threshold_crossed": true}
+363.507	event	sync	rsync
+363.779	state		reward_left
+363.850	state		reward_consumption
+370.765	event	sync	rsync
+371.375	event	input	poke_4_out
+372.375	event	timer	consumption_timer
+372.375	state		inter_trial_interval
+375.034	state		initiation_state
+376.520	event	input	poke_5
+376.521	state		choice_state
+376.606	event	input	poke_5_out
+376.942	event	input	poke_4
+376.944	state		chose_left
+376.945	variable	print	{"n_trials": 28, "n_rewards": 20, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.8316029, "threshold_crossed": true}
+377.445	state		reward_left
+377.516	state		reward_consumption
+377.610	event	sync	rsync
+381.559	event	input	poke_4_out
+382.559	event	timer	consumption_timer
+382.559	state		inter_trial_interval
+384.532	event	sync	rsync
+385.127	state		initiation_state
+391.165	event	sync	rsync
+392.929	event	sync	rsync
+395.377	event	sync	rsync
+398.352	event	input	poke_5
+398.353	state		choice_state
+398.448	event	input	poke_5_out
+398.885	event	input	poke_4
+398.887	state		chose_left
+398.888	variable	print	{"n_trials": 29, "n_rewards": 21, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.8513901, "threshold_crossed": true}
+398.938	event	sync	rsync
+399.388	state		reward_left
+399.459	state		reward_consumption
+404.371	event	input	poke_4_out
+405.371	event	timer	consumption_timer
+405.371	state		inter_trial_interval
+405.473	event	sync	rsync
+407.771	state		initiation_state
+410.440	event	sync	rsync
+412.231	event	sync	rsync
+414.524	event	input	poke_5
+414.525	state		choice_state
+414.554	event	input	poke_5_out
+414.815	event	input	poke_4
+414.816	state		chose_left
+414.817	variable	print	{"n_trials": 30, "n_rewards": 22, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.8688522, "threshold_crossed": true}
+415.240	event	sync	rsync
+415.318	state		reward_left
+415.389	state		reward_consumption
+420.334	event	input	poke_4_out
+420.470	event	sync	rsync
+421.335	event	timer	consumption_timer
+421.335	state		inter_trial_interval
+423.658	state		initiation_state
+423.878	event	input	poke_4
+424.055	event	input	poke_4_out
+424.752	event	input	poke_4
+425.447	event	input	poke_4_out
+425.870	event	input	poke_5
+425.872	state		forced_choice_left
+425.925	event	input	poke_5_out
+426.200	event	input	poke_4
+426.202	state		chose_left
+426.202	variable	print	{"n_trials": 31, "n_rewards": 22, "n_blocks": 0, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": false, "mov_ave": 0.8688522, "threshold_crossed": true}
+426.703	state		no_reward
+426.803	state		reward_consumption
+427.031	event	input	poke_4_out
+427.922	event	sync	rsync
+428.032	event	timer	consumption_timer
+428.032	state		inter_trial_interval
+430.473	state		initiation_state
+431.028	event	input	poke_5
+431.029	state		choice_state
+431.055	event	input	poke_5_out
+431.358	event	input	poke_4
+431.360	state		chose_left
+431.361	variable	print	{"n_trials": 32, "n_rewards": 23, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.8842625, "threshold_crossed": true}
+431.861	state		reward_left
+431.932	state		reward_consumption
+433.345	event	sync	rsync
+440.475	event	sync	rsync
+441.333	event	input	poke_4_out
+442.333	event	timer	consumption_timer
+442.333	state		inter_trial_interval
+442.639	event	sync	rsync
+443.865	state		initiation_state
+447.034	event	sync	rsync
+450.492	event	sync	rsync
+451.078	event	sync	rsync
+455.133	event	input	poke_5
+455.135	state		choice_state
+455.175	event	input	poke_5_out
+456.668	event	sync	rsync
+460.015	event	input	poke_4
+460.017	state		chose_left
+460.018	variable	print	{"n_trials": 33, "n_rewards": 24, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.897862, "threshold_crossed": true}
+460.518	state		reward_left
+460.589	state		reward_consumption
+462.759	event	input	poke_4_out
+463.760	event	timer	consumption_timer
+463.760	state		inter_trial_interval
+464.526	event	sync	rsync
+466.225	state		initiation_state
+467.641	event	sync	rsync
+467.853	event	input	poke_5
+467.854	state		choice_state
+468.000	event	input	poke_5_out
+468.387	event	input	poke_4
+468.389	state		chose_left
+468.390	variable	print	{"n_trials": 34, "n_rewards": 25, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.9098635, "threshold_crossed": true}
+468.890	state		reward_left
+468.961	state		reward_consumption
+471.595	event	input	poke_4_out
+472.596	event	timer	consumption_timer
+472.596	state		inter_trial_interval
+474.895	event	sync	rsync
+474.917	state		initiation_state
+475.744	event	input	poke_5
+475.745	state		choice_state
+475.765	event	input	poke_5_out
+476.017	event	input	poke_4
+476.019	state		chose_left
+476.019	variable	print	{"n_trials": 35, "n_rewards": 26, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.9204548, "threshold_crossed": true}
+476.520	state		reward_left
+476.591	state		reward_consumption
+483.389	event	input	poke_4_out
+484.027	event	sync	rsync
+484.389	event	timer	consumption_timer
+484.389	state		inter_trial_interval
+486.860	state		initiation_state
+487.833	event	input	poke_5
+487.834	state		forced_choice_right
+487.871	event	input	poke_5_out
+488.183	event	input	poke_4
+489.024	event	input	poke_4_out
+489.447	event	input	poke_5
+489.512	event	input	poke_5_out
+489.981	event	input	poke_6
+489.982	state		chose_right
+489.983	variable	print	{"n_trials": 36, "n_rewards": 26, "n_blocks": 0, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.9204548, "threshold_crossed": true}
+490.483	state		no_reward
+490.583	state		reward_consumption
+490.674	event	input	poke_6_out
+491.451	event	sync	rsync
+491.675	event	timer	consumption_timer
+491.675	state		inter_trial_interval
+494.011	state		initiation_state
+496.057	event	input	poke_5
+496.058	state		choice_state
+496.126	event	input	poke_5_out
+496.478	event	input	poke_6
+496.480	state		chose_right
+496.481	variable	print	{"n_trials": 37, "n_rewards": 26, "n_blocks": 0, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.8122985, "threshold_crossed": true}
+496.718	event	sync	rsync
+496.981	state		no_reward
+497.081	state		reward_consumption
+497.339	event	input	poke_6_out
+498.340	event	timer	consumption_timer
+498.340	state		inter_trial_interval
+499.608	event	sync	rsync
+500.748	state		initiation_state
+503.681	event	input	poke_5
+503.682	state		forced_choice_left
+503.754	event	input	poke_5_out
+504.110	event	input	poke_4
+504.112	state		chose_left
+504.112	variable	print	{"n_trials": 38, "n_rewards": 27, "n_blocks": 1, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.1877015, "threshold_crossed": false}
+504.613	state		reward_left
+504.684	state		reward_consumption
+506.114	event	sync	rsync
+509.392	event	sync	rsync
+509.856	event	input	poke_4_out
+510.047	event	sync	rsync
+510.857	event	timer	consumption_timer
+510.857	state		inter_trial_interval
+511.404	event	sync	rsync
+513.704	state		initiation_state
+518.232	event	sync	rsync
+526.285	event	sync	rsync
+535.433	event	sync	rsync
+536.033	event	input	poke_5
+536.034	state		choice_state
+536.115	event	input	poke_5_out
+536.494	event	input	poke_4
+536.496	state		chose_left
+536.497	variable	print	{"n_trials": 39, "n_rewards": 28, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.165646, "threshold_crossed": false}
+536.997	state		reward_left
+537.068	state		reward_consumption
+541.319	event	sync	rsync
+546.716	event	input	poke_4_out
+547.717	event	timer	consumption_timer
+547.717	state		inter_trial_interval
+549.825	state		initiation_state
+550.416	event	sync	rsync
+551.302	event	input	poke_6
+551.617	event	input	poke_6_out
+554.648	event	input	poke_5
+554.649	state		choice_state
+554.708	event	input	poke_5_out
+555.061	event	input	poke_4
+555.062	state		chose_left
+555.063	variable	print	{"n_trials": 40, "n_rewards": 28, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.1461821, "threshold_crossed": false}
+555.564	state		no_reward
+555.664	state		reward_consumption
+555.871	event	input	poke_4_out
+556.872	event	timer	consumption_timer
+556.872	state		inter_trial_interval
+559.454	event	sync	rsync
+559.793	state		initiation_state
+560.188	event	input	poke_5
+560.189	state		forced_choice_right
+560.245	event	input	poke_5_out
+560.533	event	input	poke_4
+561.263	event	input	poke_4_out
+561.768	event	sync	rsync
+562.216	event	input	poke_6
+562.217	state		chose_right
+562.218	variable	print	{"n_trials": 41, "n_rewards": 29, "n_blocks": 1, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.1461821, "threshold_crossed": false}
+562.719	state		reward_right
+562.792	state		reward_consumption
+564.618	event	input	poke_6_out
+565.619	event	timer	consumption_timer
+565.619	state		inter_trial_interval
+566.603	event	input	poke_6
+566.680	event	input	poke_6_out
+566.774	event	input	poke_6
+566.802	event	input	poke_6_out
+567.870	state		initiation_state
+568.296	event	sync	rsync
+574.764	event	sync	rsync
+575.891	event	input	poke_5
+575.892	state		choice_state
+575.924	event	input	poke_5_out
+576.307	event	input	poke_4
+576.309	state		chose_left
+576.310	variable	print	{"n_trials": 42, "n_rewards": 29, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.1290052, "threshold_crossed": false}
+576.810	state		no_reward
+576.884	event	sync	rsync
+576.910	state		reward_consumption
+577.209	event	input	poke_4_out
+578.210	event	timer	consumption_timer
+578.210	state		inter_trial_interval
+578.537	event	input	poke_5
+578.577	event	input	poke_5_out
+578.908	event	sync	rsync
+579.916	state		initiation_state
+579.978	event	input	poke_5
+579.979	state		choice_state
+580.038	event	input	poke_5_out
+580.363	event	input	poke_4
+580.364	state		chose_left
+580.365	variable	print	{"n_trials": 43, "n_rewards": 30, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.1138467, "threshold_crossed": false}
+580.866	state		reward_left
+580.937	state		reward_consumption
+583.714	event	sync	rsync
+587.576	event	input	poke_4_out
+588.576	event	timer	consumption_timer
+588.576	state		inter_trial_interval
+589.585	state		initiation_state
+590.613	event	input	poke_4
+591.484	event	input	poke_4_out
+592.046	event	sync	rsync
+592.189	event	input	poke_4
+593.052	event	input	poke_4_out
+593.436	event	input	poke_5
+593.437	state		choice_state
+593.483	event	input	poke_5_out
+593.758	event	input	poke_4
+593.760	state		chose_left
+593.761	variable	print	{"n_trials": 44, "n_rewards": 30, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.1004694, "threshold_crossed": false}
+594.261	state		no_reward
+594.361	state		reward_consumption
+594.724	event	input	poke_4_out
+595.725	event	timer	consumption_timer
+595.725	state		inter_trial_interval
+596.969	state		initiation_state
+598.980	event	input	poke_5
+598.981	state		choice_state
+599.007	event	input	poke_5_out
+599.280	event	input	poke_4
+599.282	state		chose_left
+599.283	variable	print	{"n_trials": 45, "n_rewards": 30, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.08866391, "threshold_crossed": false}
+599.551	event	sync	rsync
+599.783	state		no_reward
+599.883	state		reward_consumption
+600.051	event	input	poke_4_out
+601.052	event	timer	consumption_timer
+601.052	state		inter_trial_interval
+602.265	state		initiation_state
+603.222	event	input	poke_5
+603.223	state		choice_state
+603.291	event	input	poke_5_out
+603.591	event	input	poke_4
+603.592	state		chose_left
+603.593	variable	print	{"n_trials": 46, "n_rewards": 30, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.07824563, "threshold_crossed": false}
+604.094	state		no_reward
+604.194	state		reward_consumption
+604.297	event	input	poke_4_out
+605.298	event	timer	consumption_timer
+605.298	state		inter_trial_interval
+607.024	event	sync	rsync
+607.106	state		initiation_state
+616.557	event	sync	rsync
+622.237	event	sync	rsync
+623.323	event	input	poke_6
+623.350	event	input	poke_6_out
+626.411	event	input	poke_5
+626.412	state		forced_choice_right
+626.471	event	input	poke_5_out
+626.749	event	input	poke_6
+626.750	state		chose_right
+626.751	variable	print	{"n_trials": 47, "n_rewards": 31, "n_blocks": 1, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.07824563, "threshold_crossed": false}
+627.252	state		reward_right
+627.325	state		reward_consumption
+628.488	event	sync	rsync
+629.059	event	sync	rsync
+630.744	event	input	poke_6_out
+631.745	event	timer	consumption_timer
+631.745	state		inter_trial_interval
+634.637	state		initiation_state
+634.904	event	sync	rsync
+637.814	event	sync	rsync
+638.131	event	input	poke_6
+638.828	event	input	poke_6_out
+640.138	event	input	poke_4
+640.221	event	input	poke_4_out
+640.500	event	input	poke_5
+640.501	state		choice_state
+640.533	event	input	poke_5_out
+640.845	event	input	poke_4
+640.847	state		chose_left
+640.848	variable	print	{"n_trials": 48, "n_rewards": 31, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.06905151, "threshold_crossed": false}
+641.348	state		no_reward
+641.448	state		reward_consumption
+641.532	event	input	poke_4_out
+642.533	event	timer	consumption_timer
+642.533	state		inter_trial_interval
+644.891	state		initiation_state
+646.415	event	sync	rsync
+648.324	event	input	poke_5
+648.325	state		forced_choice_right
+648.357	event	input	poke_5_out
+648.621	event	input	poke_4
+649.357	event	input	poke_4_out
+649.792	event	input	poke_5
+649.846	event	input	poke_5_out
+650.223	event	input	poke_6
+650.224	state		chose_right
+650.225	variable	print	{"n_trials": 49, "n_rewards": 32, "n_blocks": 1, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.06905151, "threshold_crossed": false}
+650.726	state		reward_right
+650.799	state		reward_consumption
+655.207	event	sync	rsync
+658.736	event	sync	rsync
+660.528	event	input	poke_6_out
+661.529	event	timer	consumption_timer
+661.529	state		inter_trial_interval
+664.104	state		initiation_state
+665.186	event	input	poke_5
+665.187	state		choice_state
+665.239	event	input	poke_5_out
+665.724	event	input	poke_4
+665.725	state		chose_left
+665.726	variable	print	{"n_trials": 50, "n_rewards": 32, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.06093775, "threshold_crossed": false}
+665.865	event	sync	rsync
+666.226	state		no_reward
+666.326	state		reward_consumption
+666.492	event	input	poke_4_out
+667.492	event	timer	consumption_timer
+667.492	state		inter_trial_interval
+667.509	event	input	poke_5
+667.629	event	input	poke_5_out
+667.636	event	sync	rsync
+670.100	state		initiation_state
+671.516	event	sync	rsync
+672.739	event	sync	rsync
+673.004	event	input	poke_5
+673.005	state		choice_state
+673.073	event	input	poke_5_out
+673.385	event	input	poke_4
+673.386	state		chose_left
+673.387	variable	print	{"n_trials": 51, "n_rewards": 33, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.05377737, "threshold_crossed": false}
+673.888	state		reward_left
+673.959	state		reward_consumption
+681.072	event	sync	rsync
+683.835	event	input	poke_4_out
+684.836	event	timer	consumption_timer
+684.836	state		inter_trial_interval
+686.806	event	sync	rsync
+687.530	state		initiation_state
+690.029	event	input	poke_5
+690.030	state		choice_state
+690.039	event	input	poke_5_out
+690.129	event	input	poke_5
+690.174	event	input	poke_5_out
+690.432	event	input	poke_4
+690.433	state		chose_left
+690.434	variable	print	{"n_trials": 52, "n_rewards": 33, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.04745837, "threshold_crossed": false}
+690.935	state		no_reward
+691.035	state		reward_consumption
+691.240	event	input	poke_4_out
+692.241	event	timer	consumption_timer
+692.241	state		inter_trial_interval
+694.296	event	sync	rsync
+694.329	state		initiation_state
+695.180	event	input	poke_5
+695.181	state		choice_state
+695.270	event	input	poke_5_out
+695.654	event	input	poke_4
+695.655	state		chose_left
+695.656	variable	print	{"n_trials": 53, "n_rewards": 33, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.04188186, "threshold_crossed": false}
+696.156	state		no_reward
+696.256	state		reward_consumption
+696.353	event	input	poke_4_out
+697.354	event	timer	consumption_timer
+697.354	state		inter_trial_interval
+697.890	event	input	poke_5
+697.941	event	input	poke_5_out
+700.287	state		initiation_state
+700.922	event	input	poke_5
+700.924	state		forced_choice_right
+700.981	event	input	poke_5_out
+701.094	event	input	poke_5
+701.139	event	input	poke_5_out
+701.453	event	input	poke_6
+701.454	state		chose_right
+701.455	variable	print	{"n_trials": 54, "n_rewards": 34, "n_blocks": 1, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.04188186, "threshold_crossed": false}
+701.956	state		reward_right
+702.029	state		reward_consumption
+703.404	event	sync	rsync
+704.016	event	input	poke_6_out
+705.017	event	timer	consumption_timer
+705.017	state		inter_trial_interval
+705.846	event	sync	rsync
+706.407	state		initiation_state
+709.196	event	input	poke_5
+709.197	state		choice_state
+709.234	event	input	poke_5_out
+709.866	event	input	poke_6
+709.867	state		chose_right
+709.868	variable	print	{"n_trials": 55, "n_rewards": 35, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.1544637, "threshold_crossed": false}
+710.369	state		reward_right
+710.442	state		reward_consumption
+711.708	event	sync	rsync
+712.036	event	input	poke_6_out
+712.477	event	sync	rsync
+713.036	event	timer	consumption_timer
+713.036	state		inter_trial_interval
+714.349	state		initiation_state
+717.813	event	input	poke_5
+717.814	state		choice_state
+717.881	event	input	poke_5_out
+718.111	event	input	poke_6
+718.113	state		chose_right
+718.114	variable	print	{"n_trials": 56, "n_rewards": 36, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.2538168, "threshold_crossed": false}
+718.614	state		reward_right
+718.687	state		reward_consumption
+721.081	event	sync	rsync
+721.915	event	input	poke_6_out
+722.915	event	timer	consumption_timer
+722.915	state		inter_trial_interval
+725.714	state		initiation_state
+727.724	event	sync	rsync
+736.527	event	sync	rsync
+739.796	event	sync	rsync
+746.768	event	sync	rsync
+748.389	event	input	poke_5
+748.390	state		forced_choice_left
+748.408	event	input	poke_5_out
+748.943	event	input	poke_5
+749.049	event	input	poke_5_out
+749.399	event	input	poke_6
+750.060	event	input	poke_6_out
+756.213	event	sync	rsync
+765.662	event	sync	rsync
+767.315	event	sync	rsync
+776.534	event	sync	rsync
+778.876	event	sync	rsync
+783.593	event	sync	rsync
+785.920	event	sync	rsync
+790.243	event	sync	rsync
+796.799	event	sync	rsync
+805.290	event	sync	rsync
+810.668	event	sync	rsync
+819.361	event	sync	rsync
+821.042	event	sync	rsync
+822.377	event	sync	rsync
+825.330	event	sync	rsync
+826.728	event	sync	rsync
+831.174	event	input	poke_4
+831.175	state		chose_left
+831.176	variable	print	{"n_trials": 57, "n_rewards": 37, "n_blocks": 1, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.2538168, "threshold_crossed": false}
+831.677	state		reward_left
+831.748	state		reward_consumption
+832.773	event	sync	rsync
+835.755	event	input	poke_4_out
+836.450	event	sync	rsync
+836.755	event	timer	consumption_timer
+836.755	state		inter_trial_interval
+839.337	state		initiation_state
+840.372	event	sync	rsync
+841.397	event	input	poke_6
+841.472	event	input	poke_6_out
+841.750	event	input	poke_5
+841.751	state		choice_state
+841.804	event	input	poke_5_out
+842.162	event	input	poke_4
+842.163	state		chose_left
+842.164	variable	print	{"n_trials": 58, "n_rewards": 37, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.2239926, "threshold_crossed": false}
+842.665	state		no_reward
+842.765	state		reward_consumption
+843.007	event	input	poke_4_out
+844.007	event	timer	consumption_timer
+844.007	state		inter_trial_interval
+844.953	event	sync	rsync
+845.170	state		initiation_state
+852.542	event	sync	rsync
+861.726	event	sync	rsync
+864.272	event	sync	rsync
+868.965	event	sync	rsync
+876.134	event	sync	rsync
+878.196	event	sync	rsync
+887.590	event	sync	rsync
+890.794	event	input	poke_5
+890.795	state		choice_state
+890.888	event	input	poke_5_out
+891.044	event	sync	rsync
+891.150	event	input	poke_4
+891.151	state		chose_left
+891.152	variable	print	{"n_trials": 59, "n_rewards": 37, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.1976727, "threshold_crossed": false}
+891.652	state		no_reward
+891.752	state		reward_consumption
+891.892	event	input	poke_4_out
+892.893	event	timer	consumption_timer
+892.893	state		inter_trial_interval
+894.160	event	sync	rsync
+894.383	event	input	poke_6
+895.172	event	input	poke_6_out
+895.649	state		initiation_state
+897.579	event	sync	rsync
+902.480	event	sync	rsync
+902.694	event	input	poke_6
+902.809	event	input	poke_6_out
+905.802	event	input	poke_6
+905.815	event	sync	rsync
+905.901	event	input	poke_6_out
+908.258	event	input	poke_6
+908.356	event	input	poke_6_out
+911.972	event	input	poke_5
+911.973	state		choice_state
+912.005	event	input	poke_5_out
+912.294	event	input	poke_6
+912.301	state		chose_right
+912.302	variable	print	{"n_trials": 60, "n_rewards": 38, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.2919487, "threshold_crossed": false}
+912.802	state		reward_right
+912.875	state		reward_consumption
+914.221	event	sync	rsync
+914.698	event	input	poke_6_out
+915.699	event	timer	consumption_timer
+915.699	state		inter_trial_interval
+915.941	event	sync	rsync
+916.763	event	input	poke_6
+916.814	event	input	poke_6_out
+916.857	state		initiation_state
+916.872	event	input	poke_6
+917.046	event	input	poke_6_out
+918.029	event	sync	rsync
+925.422	event	sync	rsync
+928.900	event	sync	rsync
+937.005	event	sync	rsync
+943.928	event	input	poke_6
+944.062	event	sync	rsync
+944.090	event	input	poke_6_out
+945.857	event	input	poke_5
+945.858	state		forced_choice_left
+945.905	event	input	poke_5_out
+946.248	event	input	poke_4
+946.249	state		chose_left
+946.250	variable	print	{"n_trials": 61, "n_rewards": 39, "n_blocks": 1, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.2919487, "threshold_crossed": false}
+946.750	state		reward_left
+946.821	state		reward_consumption
+949.929	event	sync	rsync
+951.577	event	sync	rsync
+956.382	event	input	poke_4_out
+957.382	event	timer	consumption_timer
+957.382	state		inter_trial_interval
+959.974	state		initiation_state
+960.015	event	sync	rsync
+963.905	event	sync	rsync
+965.300	event	sync	rsync
+966.721	event	input	poke_5
+966.722	state		choice_state
+966.731	event	input	poke_5_out
+967.029	event	input	poke_4
+967.030	state		chose_left
+967.031	variable	print	{"n_trials": 62, "n_rewards": 39, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.2576438, "threshold_crossed": false}
+967.532	state		no_reward
+967.632	state		reward_consumption
+967.795	event	input	poke_4_out
+968.796	event	timer	consumption_timer
+968.796	state		inter_trial_interval
+970.553	state		initiation_state
+971.724	event	sync	rsync
+973.506	event	sync	rsync
+975.127	event	sync	rsync
+979.356	event	sync	rsync
+982.498	event	input	poke_6
+982.574	event	input	poke_6_out
+985.724	event	sync	rsync
+986.951	event	sync	rsync
+996.471	event	sync	rsync
+999.474	event	input	poke_5
+999.475	state		choice_state
+999.508	event	input	poke_5_out
+999.766	event	input	poke_6
+999.768	state		chose_right
+999.768	variable	print	{"n_trials": 63, "n_rewards": 40, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.344873, "threshold_crossed": false}
+1000.269	state		reward_right
+1000.342	state		reward_consumption
+1002.789	event	input	poke_6_out
+1003.056	event	input	poke_6
+1003.282	event	sync	rsync
+1003.697	event	input	poke_6_out
+1004.566	event	sync	rsync
+1004.697	event	timer	consumption_timer
+1004.697	state		inter_trial_interval
+1007.605	state		initiation_state
+1009.269	event	input	poke_5
+1009.270	state		choice_state
+1009.351	event	input	poke_5_out
+1009.652	event	input	poke_6
+1009.654	state		chose_right
+1009.655	variable	print	{"n_trials": 64, "n_rewards": 41, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.4218524, "threshold_crossed": false}
+1010.155	state		reward_right
+1010.228	state		reward_consumption
+1012.305	event	input	poke_6_out
+1013.305	event	timer	consumption_timer
+1013.305	state		inter_trial_interval
+1013.463	event	sync	rsync
+1014.854	state		initiation_state
+1015.494	event	input	poke_6
+1016.121	event	input	poke_6_out
+1017.203	event	input	poke_5
+1017.205	state		choice_state
+1017.247	event	input	poke_5_out
+1017.523	event	input	poke_4
+1017.524	state		chose_left
+1017.525	variable	print	{"n_trials": 65, "n_rewards": 42, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.3722834, "threshold_crossed": false}
+1017.766	event	input	poke_4_out
+1018.026	state		reward_left
+1018.072	event	input	poke_5
+1018.097	state		reward_consumption
+1018.232	event	input	poke_5_out
+1018.522	event	input	poke_4
+1022.231	event	sync	rsync
+1023.099	event	input	poke_4_out
+1023.241	event	input	poke_4
+1023.505	event	input	poke_4_out
+1024.506	event	timer	consumption_timer
+1024.506	state		inter_trial_interval
+1024.560	event	sync	rsync
+1026.561	state		initiation_state
+1027.597	event	sync	rsync
+1033.666	event	sync	rsync
+1035.308	event	input	poke_5
+1035.309	state		choice_state
+1035.340	event	input	poke_5_out
+1035.411	event	input	poke_5
+1035.485	event	input	poke_5_out
+1035.915	event	input	poke_6
+1035.917	state		chose_right
+1035.918	variable	print	{"n_trials": 66, "n_rewards": 43, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.4460421, "threshold_crossed": false}
+1036.418	state		reward_right
+1036.491	state		reward_consumption
+1039.414	event	input	poke_6_out
+1039.487	event	sync	rsync
+1040.414	event	timer	consumption_timer
+1040.414	state		inter_trial_interval
+1042.776	state		initiation_state
+1044.793	event	sync	rsync
+1048.391	event	sync	rsync
+1050.010	event	input	poke_5
+1050.012	state		choice_state
+1050.172	event	input	poke_5_out
+1050.379	event	input	poke_6
+1050.380	state		chose_right
+1050.381	variable	print	{"n_trials": 67, "n_rewards": 44, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.5111339, "threshold_crossed": false}
+1050.882	state		reward_right
+1050.955	state		reward_consumption
+1051.318	event	input	poke_6_out
+1051.464	event	input	poke_6
+1053.475	event	input	poke_6_out
+1054.476	event	timer	consumption_timer
+1054.476	state		inter_trial_interval
+1056.870	event	sync	rsync
+1057.158	state		initiation_state
+1065.958	event	sync	rsync
+1072.682	event	sync	rsync
+1075.715	event	input	poke_6
+1075.867	event	input	poke_6_out
+1076.139	event	input	poke_5
+1076.140	state		forced_choice_left
+1076.227	event	input	poke_5_out
+1076.510	event	input	poke_6
+1077.210	event	input	poke_6_out
+1079.108	event	sync	rsync
+1079.737	event	input	poke_4
+1079.738	state		chose_left
+1079.739	variable	print	{"n_trials": 68, "n_rewards": 44, "n_blocks": 1, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.5111339, "threshold_crossed": false}
+1080.240	state		no_reward
+1080.340	state		reward_consumption
+1080.610	event	input	poke_4_out
+1081.611	event	timer	consumption_timer
+1081.611	state		inter_trial_interval
+1083.874	event	sync	rsync
+1084.245	state		initiation_state
+1084.625	event	input	poke_6
+1084.657	event	input	poke_6_out
+1088.305	event	input	poke_4
+1088.432	event	input	poke_4_out
+1088.872	event	input	poke_5
+1088.873	state		choice_state
+1088.904	event	input	poke_5_out
+1089.157	event	input	poke_4
+1089.163	state		chose_left
+1089.164	variable	print	{"n_trials": 69, "n_rewards": 44, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.4510741, "threshold_crossed": false}
+1089.665	state		no_reward
+1089.765	state		reward_consumption
+1089.872	event	input	poke_4_out
+1090.872	event	timer	consumption_timer
+1090.872	state		inter_trial_interval
+1092.868	state		initiation_state
+1093.270	event	sync	rsync
+1095.123	event	sync	rsync
+1099.836	event	input	poke_5
+1099.837	state		forced_choice_left
+1099.971	event	input	poke_5_out
+1100.254	event	input	poke_4
+1100.255	state		chose_left
+1100.256	variable	print	{"n_trials": 70, "n_rewards": 44, "n_blocks": 1, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.4510741, "threshold_crossed": false}
+1100.757	state		no_reward
+1100.857	state		reward_consumption
+1100.907	event	input	poke_4_out
+1101.908	event	timer	consumption_timer
+1101.908	state		inter_trial_interval
+1103.146	event	sync	rsync
+1103.439	state		initiation_state
+1103.905	event	input	poke_6
+1103.989	event	input	poke_6_out
+1105.685	event	input	poke_6
+1105.795	event	input	poke_6_out
+1107.162	event	input	poke_6
+1107.250	event	input	poke_6_out
+1107.295	event	input	poke_6
+1107.377	event	input	poke_6_out
+1107.702	event	input	poke_5
+1107.703	state		choice_state
+1107.841	event	input	poke_5_out
+1108.110	event	input	poke_4
+1108.111	state		chose_left
+1108.112	variable	print	{"n_trials": 71, "n_rewards": 44, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.3980715, "threshold_crossed": false}
+1108.613	state		no_reward
+1108.713	state		reward_consumption
+1108.877	event	input	poke_4_out
+1109.878	event	timer	consumption_timer
+1109.878	state		inter_trial_interval
+1111.213	event	sync	rsync
+1112.816	state		initiation_state
+1118.744	event	sync	rsync
+1123.162	event	input	poke_6
+1123.257	event	input	poke_6_out
+1123.592	event	input	poke_6
+1123.635	event	input	poke_6_out
+1125.133	event	sync	rsync
+1125.918	event	input	poke_5
+1125.919	state		choice_state
+1126.018	event	input	poke_5_out
+1126.409	event	input	poke_6
+1126.411	state		chose_right
+1126.412	variable	print	{"n_trials": 72, "n_rewards": 45, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.4688, "threshold_crossed": false}
+1126.912	state		reward_right
+1126.985	state		reward_consumption
+1129.481	event	sync	rsync
+1130.465	event	input	poke_6_out
+1131.466	event	timer	consumption_timer
+1131.466	state		inter_trial_interval
+1133.596	state		initiation_state
+1134.285	event	sync	rsync
+1138.051	event	sync	rsync
+1139.316	event	input	poke_5
+1139.318	state		choice_state
+1139.441	event	input	poke_5_out
+1139.667	event	input	poke_4
+1139.668	state		chose_left
+1139.669	variable	print	{"n_trials": 73, "n_rewards": 45, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.4137145, "threshold_crossed": false}
+1140.169	state		no_reward
+1140.269	state		reward_consumption
+1140.414	event	input	poke_4_out
+1141.414	event	timer	consumption_timer
+1141.414	state		inter_trial_interval
+1141.617	event	sync	rsync
+1142.912	state		initiation_state
+1150.774	event	sync	rsync
+1152.611	event	sync	rsync
+1158.653	event	sync	rsync
+1163.756	event	sync	rsync
+1171.644	event	sync	rsync
+1173.035	event	sync	rsync
+1176.461	event	sync	rsync
+1181.622	event	input	poke_6
+1181.757	event	input	poke_6_out
+1182.160	event	input	poke_5
+1182.161	state		choice_state
+1182.288	event	input	poke_5_out
+1182.827	event	input	poke_6
+1182.828	state		chose_right
+1182.829	variable	print	{"n_trials": 74, "n_rewards": 45, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.4826049, "threshold_crossed": false}
+1183.330	state		no_reward
+1183.430	state		reward_consumption
+1183.572	event	input	poke_6_out
+1184.462	event	sync	rsync
+1184.573	event	timer	consumption_timer
+1184.573	state		inter_trial_interval
+1187.060	state		initiation_state
+1187.106	event	input	poke_6
+1187.293	event	input	poke_6_out
+1189.817	event	sync	rsync
+1191.020	event	input	poke_5
+1191.021	state		forced_choice_right
+1191.106	event	input	poke_5_out
+1191.433	event	input	poke_6
+1191.434	state		chose_right
+1191.435	variable	print	{"n_trials": 75, "n_rewards": 46, "n_blocks": 1, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.4826049, "threshold_crossed": false}
+1191.936	state		reward_right
+1192.009	state		reward_consumption
+1193.887	event	input	poke_6_out
+1194.887	event	timer	consumption_timer
+1194.887	state		inter_trial_interval
+1196.562	state		initiation_state
+1199.205	event	sync	rsync
+1200.281	event	sync	rsync
+1201.594	event	sync	rsync
+1210.842	event	sync	rsync
+1211.937	event	sync	rsync
+1213.614	event	sync	rsync
+1215.922	event	sync	rsync
+1218.524	event	sync	rsync
+1226.879	event	sync	rsync
+1233.198	event	sync	rsync
+1241.338	event	sync	rsync
+1248.886	event	sync	rsync
+1251.520	event	sync	rsync
+1260.070	event	sync	rsync
+1262.930	event	sync	rsync
+1267.536	event	sync	rsync
+1276.649	event	sync	rsync
+1280.485	event	sync	rsync
+1286.728	event	sync	rsync
+1294.511	event	sync	rsync
+1296.376	event	sync	rsync
+1297.569	event	sync	rsync
+1304.983	event	sync	rsync
+1312.853	event	sync	rsync
+1320.142	event	sync	rsync
+1327.454	event	sync	rsync
+1335.995	event	sync	rsync
+1340.866	event	sync	rsync
+1345.067	event	sync	rsync
+1349.379	event	sync	rsync
+1351.452	event	sync	rsync
+1357.312	event	sync	rsync
+1360.837	event	sync	rsync
+1366.469	event	sync	rsync
+1375.570	event	sync	rsync
+1383.302	event	sync	rsync
+1386.767	event	sync	rsync
+1389.793	event	sync	rsync
+1391.194	event	sync	rsync
+1399.219	event	sync	rsync
+1403.600	event	input	poke_4
+1403.665	event	input	poke_4_out
+1403.751	event	input	poke_4
+1403.952	event	input	poke_4_out
+1405.544	event	sync	rsync
+1407.777	event	sync	rsync
+1408.749	event	sync	rsync
+1416.430	event	sync	rsync
+1423.026	event	sync	rsync
+1425.070	event	input	poke_6
+1425.130	event	input	poke_6_out
+1431.101	event	sync	rsync
+1433.373	event	input	poke_5
+1433.374	state		choice_state
+1433.397	event	input	poke_5_out
+1433.744	event	input	poke_6
+1433.746	state		chose_right
+1433.747	variable	print	{"n_trials": 76, "n_rewards": 47, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.5434004, "threshold_crossed": false}
+1434.247	state		reward_right
+1434.320	state		reward_consumption
+1436.696	event	sync	rsync
+1441.548	event	input	poke_6_out
+1442.554	event	timer	consumption_timer
+1442.554	state		inter_trial_interval
+1443.594	event	sync	rsync
+1443.848	state		initiation_state
+1445.684	event	input	poke_5
+1445.685	state		choice_state
+1445.751	event	input	poke_5_out
+1446.027	event	input	poke_6
+1446.028	state		chose_right
+1446.029	variable	print	{"n_trials": 77, "n_rewards": 48, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.5970523, "threshold_crossed": false}
+1446.390	event	sync	rsync
+1446.530	state		reward_right
+1446.603	state		reward_consumption
+1450.298	event	input	poke_6_out
+1451.299	event	timer	consumption_timer
+1451.299	state		inter_trial_interval
+1452.319	event	sync	rsync
+1452.634	state		initiation_state
+1454.511	event	input	poke_6
+1454.593	event	input	poke_6_out
+1454.944	event	input	poke_5
+1454.945	state		choice_state
+1454.995	event	input	poke_5_out
+1455.197	event	sync	rsync
+1455.253	event	input	poke_6
+1455.254	state		chose_right
+1455.255	variable	print	{"n_trials": 78, "n_rewards": 48, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.6443999, "threshold_crossed": false}
+1455.756	state		no_reward
+1455.856	state		reward_consumption
+1456.056	event	input	poke_6_out
+1456.244	event	sync	rsync
+1457.057	event	timer	consumption_timer
+1457.057	state		inter_trial_interval
+1458.280	state		initiation_state
+1458.477	event	sync	rsync
+1460.416	event	sync	rsync
+1461.633	event	input	poke_5
+1461.634	state		choice_state
+1461.674	event	input	poke_5_out
+1462.037	event	input	poke_6
+1462.039	state		chose_right
+1462.039	variable	print	{"n_trials": 79, "n_rewards": 49, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.686184, "threshold_crossed": false}
+1462.540	state		reward_right
+1462.613	state		reward_consumption
+1465.401	event	input	poke_6_out
+1466.401	event	timer	consumption_timer
+1466.401	state		inter_trial_interval
+1467.249	event	sync	rsync
+1467.986	state		initiation_state
+1468.670	event	input	poke_5
+1468.671	state		forced_choice_left
+1468.749	event	input	poke_5_out
+1469.628	event	input	poke_4
+1469.629	state		chose_left
+1469.630	variable	print	{"n_trials": 80, "n_rewards": 49, "n_blocks": 1, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.686184, "threshold_crossed": false}
+1470.131	state		no_reward
+1470.231	state		reward_consumption
+1470.446	event	input	poke_4_out
+1471.446	event	timer	consumption_timer
+1471.446	state		inter_trial_interval
+1472.482	event	sync	rsync
+1473.484	state		initiation_state
+1477.122	event	input	poke_6
+1477.804	event	input	poke_6_out
+1480.531	event	sync	rsync
+1480.942	event	input	poke_5
+1480.944	state		choice_state
+1480.988	event	input	poke_5_out
+1481.278	event	input	poke_6
+1481.279	state		chose_right
+1481.280	variable	print	{"n_trials": 81, "n_rewards": 49, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.7230583, "threshold_crossed": false}
+1481.781	state		no_reward
+1481.881	state		reward_consumption
+1482.022	event	input	poke_6_out
+1483.023	event	timer	consumption_timer
+1483.023	state		inter_trial_interval
+1484.888	state		initiation_state
+1489.245	event	sync	rsync
+1494.465	event	input	poke_5
+1494.466	state		choice_state
+1494.545	event	input	poke_5_out
+1494.642	event	sync	rsync
+1494.893	event	input	poke_6
+1494.895	state		chose_right
+1494.901	variable	print	{"n_trials": 82, "n_rewards": 49, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.7555999, "threshold_crossed": true}
+1495.401	state		no_reward
+1495.501	state		reward_consumption
+1495.659	event	input	poke_6_out
+1496.660	event	timer	consumption_timer
+1496.660	state		inter_trial_interval
+1497.359	event	sync	rsync
+1499.511	state		initiation_state
+1500.498	event	input	poke_6
+1500.541	event	input	poke_6_out
+1506.498	event	sync	rsync
+1507.116	event	sync	rsync
+1507.485	event	input	poke_6
+1507.570	event	input	poke_6_out
+1507.907	event	input	poke_5
+1507.908	state		forced_choice_left
+1507.939	event	input	poke_5_out
+1508.563	event	input	poke_5
+1508.671	event	input	poke_5_out
+1508.989	event	input	poke_4
+1508.990	state		chose_left
+1508.991	variable	print	{"n_trials": 83, "n_rewards": 49, "n_blocks": 1, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.7555999, "threshold_crossed": true}
+1509.492	state		no_reward
+1509.592	state		reward_consumption
+1509.736	event	input	poke_4_out
+1510.736	event	timer	consumption_timer
+1510.736	state		inter_trial_interval
+1511.838	state		initiation_state
+1514.294	event	sync	rsync
+1515.196	event	input	poke_5
+1515.197	state		choice_state
+1515.304	event	input	poke_5_out
+1515.788	event	input	poke_4
+1515.789	state		chose_left
+1515.790	variable	print	{"n_trials": 84, "n_rewards": 49, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.6668145, "threshold_crossed": true}
+1516.291	state		no_reward
+1516.391	state		reward_consumption
+1516.526	event	input	poke_4_out
+1517.527	event	timer	consumption_timer
+1517.527	state		inter_trial_interval
+1519.411	state		initiation_state
+1521.100	event	input	poke_6
+1521.157	event	sync	rsync
+1521.159	event	input	poke_6_out
+1521.894	event	input	poke_5
+1521.896	state		choice_state
+1521.951	event	input	poke_5_out
+1522.246	event	input	poke_6
+1522.247	state		chose_right
+1522.248	variable	print	{"n_trials": 85, "n_rewards": 50, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.7059649, "threshold_crossed": true}
+1522.749	state		reward_right
+1522.822	state		reward_consumption
+1523.300	event	sync	rsync
+1532.213	event	input	poke_6_out
+1532.554	event	sync	rsync
+1533.000	event	input	poke_6
+1534.457	event	input	poke_6_out
+1534.914	event	sync	rsync
+1535.458	event	timer	consumption_timer
+1535.458	state		inter_trial_interval
+1537.418	state		initiation_state
+1539.158	event	input	poke_5
+1539.159	state		choice_state
+1539.232	event	input	poke_5_out
+1539.646	event	input	poke_6
+1539.647	state		chose_right
+1539.648	variable	print	{"n_trials": 86, "n_rewards": 50, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.7405149, "threshold_crossed": true}
+1540.012	event	sync	rsync
+1540.149	state		no_reward
+1540.249	state		reward_consumption
+1540.368	event	input	poke_6_out
+1541.368	event	timer	consumption_timer
+1541.368	state		inter_trial_interval
+1542.947	state		initiation_state
+1546.627	event	sync	rsync
+1550.698	event	sync	rsync
+1555.193	event	sync	rsync
+1557.008	event	input	poke_6
+1557.471	event	input	poke_6_out
+1557.814	event	input	poke_5
+1557.815	state		choice_state
+1557.836	event	input	poke_5_out
+1558.103	event	input	poke_6
+1558.104	state		chose_right
+1558.110	variable	print	{"n_trials": 87, "n_rewards": 51, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.7710052, "threshold_crossed": true}
+1558.611	state		reward_right
+1558.684	state		reward_consumption
+1560.948	event	sync	rsync
+1560.968	event	input	poke_6_out
+1561.969	event	timer	consumption_timer
+1561.969	state		inter_trial_interval
+1562.659	event	sync	rsync
+1564.080	state		initiation_state
+1565.403	event	input	poke_5
+1565.404	state		forced_choice_left
+1565.429	event	input	poke_5_out
+1565.841	event	input	poke_6
+1566.431	event	input	poke_6_out
+1566.743	event	input	poke_5
+1566.775	event	input	poke_5_out
+1567.316	event	input	poke_4
+1567.317	state		chose_left
+1567.318	variable	print	{"n_trials": 88, "n_rewards": 51, "n_blocks": 1, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.7710052, "threshold_crossed": true}
+1567.819	state		no_reward
+1567.919	state		reward_consumption
+1567.990	event	input	poke_4_out
+1568.990	event	timer	consumption_timer
+1568.990	state		inter_trial_interval
+1570.816	state		initiation_state
+1571.267	event	input	poke_5
+1571.268	state		choice_state
+1571.290	event	input	poke_5_out
+1571.407	event	input	poke_5
+1571.454	event	input	poke_5_out
+1571.760	event	input	poke_4
+1571.761	state		chose_left
+1571.762	variable	print	{"n_trials": 89, "n_rewards": 51, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.6804097, "threshold_crossed": true}
+1571.862	event	sync	rsync
+1572.263	state		no_reward
+1572.363	state		reward_consumption
+1572.453	event	input	poke_4_out
+1573.453	event	timer	consumption_timer
+1573.453	state		inter_trial_interval
+1575.566	event	sync	rsync
+1575.841	state		initiation_state
+1576.964	event	sync	rsync
+1579.014	event	sync	rsync
+1580.599	event	sync	rsync
+1586.047	event	sync	rsync
+1595.228	event	sync	rsync
+1598.415	event	sync	rsync
+1601.490	event	sync	rsync
+1610.673	event	sync	rsync
+1612.508	event	sync	rsync
+1618.684	event	sync	rsync
+1625.209	event	sync	rsync
+1625.970	event	sync	rsync
+1633.154	event	input	poke_6
+1633.252	event	input	poke_6_out
+1633.951	event	input	poke_5
+1633.952	state		choice_state
+1633.999	event	input	poke_5_out
+1634.305	event	input	poke_6
+1634.306	state		chose_right
+1634.307	variable	print	{"n_trials": 90, "n_rewards": 51, "n_blocks": 1, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.7179626, "threshold_crossed": true}
+1634.808	state		no_reward
+1634.908	state		reward_consumption
+1635.137	event	input	poke_6_out
+1635.163	event	sync	rsync
+1636.138	event	timer	consumption_timer
+1636.138	state		inter_trial_interval
+1636.787	event	sync	rsync
+1638.687	state		initiation_state
+1645.592	event	input	poke_6
+1645.643	event	input	poke_6_out
+1646.269	event	sync	rsync
+1646.812	event	input	poke_5
+1646.813	state		choice_state
+1646.891	event	input	poke_5_out
+1647.160	event	input	poke_6
+1647.161	state		chose_right
+1647.162	variable	print	{"n_trials": 91, "n_rewards": 52, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.2488971, "threshold_crossed": false}
+1647.663	state		reward_right
+1647.736	state		reward_consumption
+1650.194	event	input	poke_6_out
+1651.154	event	sync	rsync
+1651.195	event	timer	consumption_timer
+1651.195	state		inter_trial_interval
+1652.843	state		initiation_state
+1653.064	event	sync	rsync
+1654.604	event	input	poke_5
+1654.605	state		forced_choice_right
+1654.640	event	input	poke_5_out
+1654.912	event	input	poke_6
+1654.913	state		chose_right
+1654.914	variable	print	{"n_trials": 92, "n_rewards": 52, "n_blocks": 2, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.2488971, "threshold_crossed": false}
+1655.414	state		no_reward
+1655.514	state		reward_consumption
+1655.566	event	sync	rsync
+1655.736	event	input	poke_6_out
+1656.737	event	timer	consumption_timer
+1656.737	state		inter_trial_interval
+1658.442	event	input	poke_5
+1658.526	event	input	poke_5_out
+1659.575	state		initiation_state
+1660.276	event	input	poke_5
+1660.278	state		choice_state
+1660.346	event	input	poke_5_out
+1660.604	event	input	poke_6
+1660.606	state		chose_right
+1660.607	variable	print	{"n_trials": 93, "n_rewards": 52, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.219651, "threshold_crossed": false}
+1660.620	event	sync	rsync
+1661.107	state		no_reward
+1661.207	state		reward_consumption
+1661.349	event	input	poke_6_out
+1662.349	event	timer	consumption_timer
+1662.349	state		inter_trial_interval
+1662.690	event	sync	rsync
+1664.928	state		initiation_state
+1664.998	event	input	poke_5
+1664.999	state		forced_choice_right
+1665.032	event	input	poke_5_out
+1665.276	event	input	poke_6
+1665.277	state		chose_right
+1665.278	variable	print	{"n_trials": 94, "n_rewards": 53, "n_blocks": 2, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": true, "mov_ave": 0.219651, "threshold_crossed": false}
+1665.779	state		reward_right
+1665.852	state		reward_consumption
+1669.962	event	input	poke_6_out
+1670.958	event	sync	rsync
+1670.962	event	timer	consumption_timer
+1670.962	state		inter_trial_interval
+1672.779	state		initiation_state
+1677.518	event	input	poke_6
+1677.549	event	input	poke_6_out
+1678.168	event	input	poke_6
+1678.224	event	input	poke_6_out
+1678.310	event	sync	rsync
+1680.105	event	input	poke_5
+1680.106	state		choice_state
+1680.173	event	input	poke_5_out
+1680.565	event	input	poke_6
+1680.566	state		chose_right
+1680.567	variable	print	{"n_trials": 95, "n_rewards": 53, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.1938413, "threshold_crossed": false}
+1681.068	state		no_reward
+1681.168	state		reward_consumption
+1681.388	event	input	poke_6_out
+1682.389	event	timer	consumption_timer
+1682.389	state		inter_trial_interval
+1684.409	event	sync	rsync
+1685.136	state		initiation_state
+1690.438	event	input	poke_5
+1690.439	state		choice_state
+1690.502	event	input	poke_5_out
+1690.764	event	input	poke_6
+1690.766	state		chose_right
+1690.767	variable	print	{"n_trials": 96, "n_rewards": 53, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.1710643, "threshold_crossed": false}
+1691.267	state		no_reward
+1691.367	state		reward_consumption
+1691.917	event	input	poke_6_out
+1692.917	event	timer	consumption_timer
+1692.917	state		inter_trial_interval
+1693.689	event	sync	rsync
+1694.573	state		initiation_state
+1696.628	event	input	poke_5
+1696.629	state		choice_state
+1696.680	event	input	poke_5_out
+1697.311	event	input	poke_6
+1697.312	state		chose_right
+1697.313	variable	print	{"n_trials": 97, "n_rewards": 54, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": true, "mov_ave": 0.1509637, "threshold_crossed": false}
+1697.384	event	input	poke_6_out
+1697.814	state		reward_right
+1697.887	state		reward_consumption
+1698.184	event	input	poke_5
+1698.222	event	input	poke_5_out
+1698.892	event	timer	consumption_timer
+1698.892	state		inter_trial_interval
+1700.360	state		initiation_state
+1701.364	event	input	poke_5
+1701.365	state		choice_state
+1701.402	event	input	poke_5_out
+1701.641	event	input	poke_6
+1701.642	state		chose_right
+1701.643	variable	print	{"n_trials": 98, "n_rewards": 55, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": true, "mov_ave": 0.133225, "threshold_crossed": false}
+1702.144	state		reward_right
+1702.217	state		reward_consumption
+1702.291	event	sync	rsync
+1703.279	event	sync	rsync
+1707.751	event	input	poke_6_out
+1708.752	event	timer	consumption_timer
+1708.752	state		inter_trial_interval
+1710.114	event	sync	rsync
+1710.224	state		initiation_state
+1710.445	event	input	poke_6
+1710.523	event	input	poke_6_out
+1710.864	event	input	poke_5
+1710.865	state		choice_state
+1710.904	event	input	poke_5_out
+1711.140	event	input	poke_6
+1711.142	state		chose_right
+1711.143	variable	print	{"n_trials": 99, "n_rewards": 55, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.1175707, "threshold_crossed": false}
+1711.643	state		no_reward
+1711.743	state		reward_consumption
+1711.888	event	input	poke_6_out
+1712.888	event	timer	consumption_timer
+1712.888	state		inter_trial_interval
+1713.817	event	sync	rsync
+1714.922	state		initiation_state
+1715.662	event	input	poke_5
+1715.663	state		forced_choice_left
+1715.741	event	input	poke_5_out
+1715.984	event	input	poke_6
+1716.539	event	input	poke_6_out
+1719.244	event	input	poke_4
+1719.245	state		chose_left
+1719.246	variable	print	{"n_trials": 100, "n_rewards": 56, "n_blocks": 2, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.1175707, "threshold_crossed": false}
+1719.747	state		reward_left
+1719.818	state		reward_consumption
+1722.754	event	input	poke_4_out
+1722.822	event	sync	rsync
+1723.754	event	timer	consumption_timer
+1723.754	state		inter_trial_interval
+1725.818	state		initiation_state
+1726.136	event	input	poke_5
+1726.137	state		forced_choice_left
+1726.257	event	input	poke_5_out
+1726.579	event	input	poke_4
+1726.580	state		chose_left
+1726.581	variable	print	{"n_trials": 101, "n_rewards": 56, "n_blocks": 2, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": false, "mov_ave": 0.1175707, "threshold_crossed": false}
+1727.081	state		no_reward
+1727.181	state		reward_consumption
+1727.224	event	sync	rsync
+1727.334	event	input	poke_4_out
+1728.335	event	timer	consumption_timer
+1728.335	state		inter_trial_interval
+1728.602	event	sync	rsync
+1730.096	state		initiation_state
+1732.939	event	sync	rsync
+1734.722	event	input	poke_5
+1734.723	state		choice_state
+1734.806	event	input	poke_5_out
+1734.923	event	input	poke_5
+1735.015	event	input	poke_5_out
+1735.292	event	sync	rsync
+1735.376	event	input	poke_6
+1735.377	state		chose_right
+1735.378	variable	print	{"n_trials": 102, "n_rewards": 56, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.1037557, "threshold_crossed": false}
+1735.879	state		no_reward
+1735.979	state		reward_consumption
+1736.128	event	input	poke_6_out
+1737.129	event	timer	consumption_timer
+1737.129	state		inter_trial_interval
+1739.827	state		initiation_state
+1741.369	event	sync	rsync
+1741.834	event	input	poke_6
+1741.897	event	input	poke_6_out
+1742.670	event	input	poke_5
+1742.671	state		choice_state
+1742.750	event	input	poke_5_out
+1743.053	event	input	poke_6
+1743.054	state		chose_right
+1743.055	variable	print	{"n_trials": 103, "n_rewards": 56, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.09156412, "threshold_crossed": false}
+1743.556	state		no_reward
+1743.656	state		reward_consumption
+1743.770	event	input	poke_6_out
+1744.771	event	timer	consumption_timer
+1744.771	state		inter_trial_interval
+1746.435	event	sync	rsync
+1746.657	state		initiation_state
+1747.060	event	sync	rsync
+1747.768	event	input	poke_5
+1747.770	state		choice_state
+1747.812	event	input	poke_5_out
+1748.401	event	input	poke_5
+1748.448	event	input	poke_5_out
+1748.782	event	input	poke_6
+1748.783	state		chose_right
+1748.784	variable	print	{"n_trials": 104, "n_rewards": 56, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.08080505, "threshold_crossed": false}
+1749.284	state		no_reward
+1749.384	state		reward_consumption
+1749.529	event	input	poke_6_out
+1750.529	event	timer	consumption_timer
+1750.529	state		inter_trial_interval
+1751.493	event	input	poke_5
+1751.530	event	input	poke_5_out
+1751.559	event	input	poke_5
+1751.622	event	input	poke_5_out
+1751.980	event	input	poke_5
+1752.114	event	input	poke_5_out
+1753.260	state		initiation_state
+1754.775	event	input	poke_6
+1755.249	event	sync	rsync
+1755.478	event	input	poke_6_out
+1755.788	event	input	poke_5
+1755.790	state		choice_state
+1755.872	event	input	poke_5_out
+1756.132	event	input	poke_6
+1756.133	state		chose_right
+1756.134	variable	print	{"n_trials": 105, "n_rewards": 56, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.07131021, "threshold_crossed": false}
+1756.635	state		no_reward
+1756.735	state		reward_consumption
+1757.012	event	input	poke_6_out
+1758.012	event	timer	consumption_timer
+1758.012	state		inter_trial_interval
+1759.059	state		initiation_state
+1760.759	event	input	poke_5
+1760.760	state		choice_state
+1760.835	event	input	poke_5_out
+1761.156	event	input	poke_6
+1761.157	state		chose_right
+1761.158	variable	print	{"n_trials": 106, "n_rewards": 56, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.06293104, "threshold_crossed": false}
+1761.659	state		no_reward
+1761.704	event	sync	rsync
+1761.759	state		reward_consumption
+1761.852	event	input	poke_6_out
+1762.852	event	timer	consumption_timer
+1762.852	state		inter_trial_interval
+1765.342	state		initiation_state
+1770.249	event	sync	rsync
+1778.883	event	sync	rsync
+1779.825	event	sync	rsync
+1785.097	event	sync	rsync
+1788.247	event	input	poke_6
+1788.370	event	input	poke_6_out
+1788.717	event	input	poke_5
+1788.718	state		choice_state
+1788.842	event	input	poke_5_out
+1789.354	event	input	poke_4
+1789.355	state		chose_left
+1789.356	variable	print	{"n_trials": 107, "n_rewards": 57, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.1730396, "threshold_crossed": false}
+1789.856	state		reward_left
+1789.921	event	sync	rsync
+1789.927	state		reward_consumption
+1793.777	event	sync	rsync
+1796.791	event	input	poke_4_out
+1797.784	event	input	poke_4
+1797.922	event	input	poke_4_out
+1798.923	event	timer	consumption_timer
+1798.923	state		inter_trial_interval
+1799.544	event	sync	rsync
+1801.389	state		initiation_state
+1802.193	event	sync	rsync
+1804.948	event	input	poke_4
+1805.007	event	input	poke_4_out
+1805.593	event	input	poke_4
+1806.358	event	input	poke_4_out
+1806.704	event	input	poke_5
+1806.705	state		forced_choice_right
+1806.749	event	input	poke_5_out
+1807.004	event	input	poke_4
+1807.883	event	input	poke_4_out
+1808.207	event	sync	rsync
+1808.244	event	input	poke_5
+1808.298	event	input	poke_5_out
+1808.818	event	input	poke_6
+1808.819	state		chose_right
+1808.820	variable	print	{"n_trials": 108, "n_rewards": 57, "n_blocks": 2, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.1730396, "threshold_crossed": false}
+1809.321	state		no_reward
+1809.421	state		reward_consumption
+1809.489	event	input	poke_6_out
+1810.490	event	timer	consumption_timer
+1810.490	state		inter_trial_interval
+1812.607	state		initiation_state
+1813.391	event	sync	rsync
+1817.561	event	input	poke_6
+1817.587	event	input	poke_6_out
+1818.235	event	input	poke_5
+1818.237	state		choice_state
+1818.250	event	input	poke_5_out
+1818.533	event	input	poke_6
+1818.535	state		chose_right
+1818.536	variable	print	{"n_trials": 109, "n_rewards": 57, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.1527069, "threshold_crossed": false}
+1819.036	state		no_reward
+1819.136	state		reward_consumption
+1819.141	event	input	poke_6_out
+1820.142	event	timer	consumption_timer
+1820.142	state		inter_trial_interval
+1821.228	state		initiation_state
+1821.630	event	sync	rsync
+1825.010	event	sync	rsync
+1827.912	event	sync	rsync
+1832.484	event	sync	rsync
+1839.174	event	sync	rsync
+1841.871	event	input	poke_6
+1841.949	event	input	poke_6_out
+1842.271	event	input	poke_5
+1842.272	state		choice_state
+1842.353	event	input	poke_5_out
+1843.059	event	input	poke_6
+1843.060	state		chose_right
+1843.061	variable	print	{"n_trials": 110, "n_rewards": 57, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.1347633, "threshold_crossed": false}
+1843.561	state		no_reward
+1843.661	state		reward_consumption
+1843.826	event	input	poke_6_out
+1844.826	event	timer	consumption_timer
+1844.826	state		inter_trial_interval
+1847.288	state		initiation_state
+1848.490	event	sync	rsync
+1848.699	event	input	poke_5
+1848.700	state		forced_choice_left
+1848.735	event	input	poke_5_out
+1849.402	event	input	poke_4
+1849.403	state		chose_left
+1849.404	variable	print	{"n_trials": 111, "n_rewards": 58, "n_blocks": 2, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.1347633, "threshold_crossed": false}
+1849.904	state		reward_left
+1849.975	state		reward_consumption
+1852.346	event	sync	rsync
+1856.123	event	input	poke_4_out
+1857.123	event	timer	consumption_timer
+1857.123	state		inter_trial_interval
+1859.346	state		initiation_state
+1860.454	event	sync	rsync
+1868.501	event	sync	rsync
+1869.677	event	sync	rsync
+1873.690	event	sync	rsync
+1876.871	event	input	poke_6
+1876.899	event	input	poke_6_out
+1881.753	event	input	poke_5
+1881.754	state		choice_state
+1881.796	event	input	poke_5_out
+1882.200	event	input	poke_6
+1882.201	state		chose_right
+1882.202	variable	print	{"n_trials": 112, "n_rewards": 59, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": true, "mov_ave": 0.1189282, "threshold_crossed": false}
+1882.543	event	sync	rsync
+1882.702	state		reward_right
+1882.775	state		reward_consumption
+1885.008	event	input	poke_6_out
+1886.008	event	timer	consumption_timer
+1886.008	state		inter_trial_interval
+1887.077	state		initiation_state
+1887.169	event	sync	rsync
+1887.386	event	input	poke_5
+1887.387	state		choice_state
+1887.425	event	input	poke_5_out
+1887.584	event	input	poke_5
+1887.648	event	input	poke_5_out
+1888.326	event	input	poke_4
+1888.327	state		chose_left
+1888.328	variable	print	{"n_trials": 113, "n_rewards": 60, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.2224569, "threshold_crossed": false}
+1888.647	event	sync	rsync
+1888.829	state		reward_left
+1888.900	state		reward_consumption
+1891.115	event	input	poke_4_out
+1892.116	event	timer	consumption_timer
+1892.116	state		inter_trial_interval
+1894.337	state		initiation_state
+1895.589	event	input	poke_5
+1895.590	state		choice_state
+1895.699	event	input	poke_5_out
+1896.008	event	sync	rsync
+1896.023	event	input	poke_4
+1896.024	state		chose_left
+1896.025	variable	print	{"n_trials": 114, "n_rewards": 61, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.3138206, "threshold_crossed": false}
+1896.526	state		reward_left
+1896.597	state		reward_consumption
+1902.846	event	sync	rsync
+1904.041	event	sync	rsync
+1911.930	event	sync	rsync
+1912.792	event	sync	rsync
+1919.100	event	sync	rsync
+1920.317	event	input	poke_4_out
+1921.318	event	timer	consumption_timer
+1921.318	state		inter_trial_interval
+1923.098	state		initiation_state
+1924.674	event	sync	rsync
+1926.336	event	input	poke_5
+1926.337	state		forced_choice_left
+1926.350	event	input	poke_5_out
+1926.595	event	input	poke_4
+1926.596	state		chose_left
+1926.597	variable	print	{"n_trials": 115, "n_rewards": 62, "n_blocks": 2, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.3138206, "threshold_crossed": false}
+1927.098	state		reward_left
+1927.169	state		reward_consumption
+1930.418	event	sync	rsync
+1930.981	event	input	poke_4_out
+1931.982	event	timer	consumption_timer
+1931.982	state		inter_trial_interval
+1933.839	state		initiation_state
+1935.247	event	input	poke_5
+1935.248	state		choice_state
+1935.306	event	input	poke_5_out
+1935.607	event	input	poke_4
+1935.608	state		chose_left
+1935.609	variable	print	{"n_trials": 116, "n_rewards": 63, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.3944489, "threshold_crossed": false}
+1936.110	state		reward_left
+1936.181	state		reward_consumption
+1938.115	event	sync	rsync
+1938.501	event	input	poke_4_out
+1939.502	event	timer	consumption_timer
+1939.502	state		inter_trial_interval
+1940.939	state		initiation_state
+1946.623	event	sync	rsync
+1947.767	event	sync	rsync
+1948.841	event	sync	rsync
+1955.712	event	sync	rsync
+1956.735	event	input	poke_6
+1956.787	event	input	poke_6_out
+1957.966	event	sync	rsync
+1961.575	event	sync	rsync
+1962.856	event	input	poke_6
+1962.958	event	input	poke_6_out
+1963.140	event	sync	rsync
+1963.772	event	input	poke_4
+1964.483	event	input	poke_4_out
+1965.681	event	input	poke_4
+1966.381	event	input	poke_4_out
+1967.011	event	input	poke_4
+1967.674	event	input	poke_4_out
+1968.037	event	input	poke_5
+1968.038	state		choice_state
+1968.082	event	input	poke_5_out
+1968.454	event	input	poke_4
+1968.455	state		chose_left
+1968.456	variable	print	{"n_trials": 117, "n_rewards": 64, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.465603, "threshold_crossed": false}
+1968.956	state		reward_left
+1969.027	state		reward_consumption
+1971.477	event	sync	rsync
+1971.885	event	input	poke_4_out
+1972.886	event	timer	consumption_timer
+1972.886	state		inter_trial_interval
+1975.371	state		initiation_state
+1979.828	event	sync	rsync
+1980.083	event	input	poke_5
+1980.084	state		choice_state
+1980.205	event	input	poke_5_out
+1980.564	event	input	poke_4
+1980.565	state		chose_left
+1980.566	variable	print	{"n_trials": 118, "n_rewards": 64, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": false, "mov_ave": 0.5283963, "threshold_crossed": false}
+1981.067	state		no_reward
+1981.167	state		reward_consumption
+1981.302	event	input	poke_4_out
+1982.303	event	timer	consumption_timer
+1982.303	state		inter_trial_interval
+1985.190	state		initiation_state
+1986.119	event	sync	rsync
+1988.336	event	input	poke_5
+1988.337	state		forced_choice_left
+1988.434	event	input	poke_5_out
+1988.825	event	input	poke_4
+1988.826	state		chose_left
+1988.827	variable	print	{"n_trials": 119, "n_rewards": 64, "n_blocks": 2, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": false, "mov_ave": 0.5283963, "threshold_crossed": false}
+1989.328	state		no_reward
+1989.428	state		reward_consumption
+1989.547	event	input	poke_4_out
+1990.547	event	timer	consumption_timer
+1990.547	state		inter_trial_interval
+1993.209	event	input	poke_6
+1993.276	event	input	poke_6_out
+1993.530	state		initiation_state
+1993.720	event	sync	rsync
+1995.176	event	sync	rsync
+1995.216	event	input	poke_6
+1995.426	event	input	poke_6_out
+1996.386	event	input	poke_5
+1996.387	state		choice_state
+1996.458	event	input	poke_5_out
+1996.773	event	input	poke_4
+1996.774	state		chose_left
+1996.775	variable	print	{"n_trials": 120, "n_rewards": 65, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.5838112, "threshold_crossed": false}
+1996.831	event	sync	rsync
+1997.276	state		reward_left
+1997.347	state		reward_consumption
+1999.808	event	sync	rsync
+2002.645	event	input	poke_4_out
+2003.068	event	sync	rsync
+2003.646	event	timer	consumption_timer
+2003.646	state		inter_trial_interval
+2006.520	state		initiation_state
+2009.660	event	sync	rsync
+2010.626	event	sync	rsync
+2016.001	event	sync	rsync
+2016.646	event	sync	rsync
+2018.043	event	sync	rsync
+2027.526	event	sync	rsync
+2028.689	event	sync	rsync
+2030.437	event	sync	rsync
+2033.686	event	sync	rsync
+2041.828	event	sync	rsync
+2042.851	event	sync	rsync
+2045.959	event	sync	rsync
+2050.984	event	sync	rsync
+2053.932	event	sync	rsync
+2058.326	event	sync	rsync
+2060.560	event	input	poke_6
+2060.599	event	input	poke_6_out
+2060.940	event	input	poke_5
+2060.941	state		choice_state
+2061.050	event	input	poke_5_out
+2061.534	event	input	poke_6
+2061.535	state		chose_right
+2061.536	variable	print	{"n_trials": 121, "n_rewards": 65, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.5152115, "threshold_crossed": false}
+2062.037	state		no_reward
+2062.137	state		reward_consumption
+2062.202	event	input	poke_6_out
+2063.203	event	timer	consumption_timer
+2063.203	state		inter_trial_interval
+2065.502	state		initiation_state
+2065.917	event	sync	rsync
+2070.485	event	sync	rsync
+2071.992	event	input	poke_6
+2072.106	event	input	poke_6_out
+2072.420	event	sync	rsync
+2072.443	event	input	poke_5
+2072.444	state		choice_state
+2072.463	event	input	poke_5_out
+2072.850	event	input	poke_6
+2072.851	state		chose_right
+2072.852	variable	print	{"n_trials": 122, "n_rewards": 65, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.4546726, "threshold_crossed": false}
+2073.353	state		no_reward
+2073.453	state		reward_consumption
+2073.583	event	input	poke_6_out
+2074.583	event	timer	consumption_timer
+2074.583	state		inter_trial_interval
+2076.894	state		initiation_state
+2077.052	event	input	poke_4
+2077.183	event	input	poke_4_out
+2078.701	event	input	poke_5
+2078.702	state		choice_state
+2078.733	event	input	poke_5_out
+2079.066	event	input	poke_4
+2079.067	state		chose_left
+2079.068	variable	print	{"n_trials": 123, "n_rewards": 66, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.5187502, "threshold_crossed": false}
+2079.275	event	sync	rsync
+2079.569	state		reward_left
+2079.640	state		reward_consumption
+2082.207	event	input	poke_4_out
+2083.207	event	timer	consumption_timer
+2083.207	state		inter_trial_interval
+2084.635	state		initiation_state
+2086.666	event	sync	rsync
+2087.305	event	input	poke_5
+2087.306	state		forced_choice_right
+2087.356	event	input	poke_5_out
+2087.635	event	input	poke_4
+2088.349	event	input	poke_4_out
+2089.411	event	input	poke_6
+2089.412	state		chose_right
+2089.413	variable	print	{"n_trials": 124, "n_rewards": 66, "n_blocks": 2, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.5187502, "threshold_crossed": false}
+2089.913	state		no_reward
+2090.013	state		reward_consumption
+2090.031	event	input	poke_6_out
+2090.385	event	sync	rsync
+2091.031	event	timer	consumption_timer
+2091.031	state		inter_trial_interval
+2093.375	state		initiation_state
+2094.132	event	sync	rsync
+2098.023	event	input	poke_4
+2098.144	event	input	poke_4_out
+2099.583	event	sync	rsync
+2101.700	event	input	poke_5
+2101.702	state		choice_state
+2101.798	event	input	poke_5_out
+2102.101	event	input	poke_4
+2102.102	state		chose_left
+2102.103	variable	print	{"n_trials": 125, "n_rewards": 66, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": false, "mov_ave": 0.5752985, "threshold_crossed": false}
+2102.604	state		no_reward
+2102.704	state		reward_consumption
+2102.808	event	input	poke_4_out
+2103.809	event	timer	consumption_timer
+2103.809	state		inter_trial_interval
+2104.904	state		initiation_state
+2106.281	event	input	poke_5
+2106.282	state		choice_state
+2106.354	event	input	poke_5_out
+2106.686	event	input	poke_4
+2106.687	state		chose_left
+2106.688	variable	print	{"n_trials": 126, "n_rewards": 66, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": false, "mov_ave": 0.6252023, "threshold_crossed": false}
+2107.189	state		no_reward
+2107.289	state		reward_consumption
+2107.332	event	input	poke_4_out
+2108.332	event	timer	consumption_timer
+2108.332	state		inter_trial_interval
+2108.541	event	sync	rsync
+2110.164	state		initiation_state
+2112.715	event	sync	rsync
+2119.006	event	input	poke_5
+2119.007	state		forced_choice_right
+2119.031	event	input	poke_5_out
+2120.393	event	input	poke_6
+2120.394	state		chose_right
+2120.395	variable	print	{"n_trials": 127, "n_rewards": 66, "n_blocks": 2, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.6252023, "threshold_crossed": false}
+2120.896	state		no_reward
+2120.996	state		reward_consumption
+2121.099	event	input	poke_6_out
+2121.929	event	sync	rsync
+2122.100	event	timer	consumption_timer
+2122.100	state		inter_trial_interval
+2122.616	event	sync	rsync
+2124.043	state		initiation_state
+2127.357	event	sync	rsync
+2129.797	event	sync	rsync
+2134.121	event	sync	rsync
+2138.394	event	sync	rsync
+2143.598	event	sync	rsync
+2152.759	event	sync	rsync
+2160.156	event	sync	rsync
+2168.296	event	sync	rsync
+2174.027	event	sync	rsync
+2176.305	event	input	poke_5
+2176.306	state		choice_state
+2176.385	event	input	poke_5_out
+2176.859	event	input	poke_6
+2176.861	state		chose_right
+2176.861	variable	print	{"n_trials": 128, "n_rewards": 66, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.5517391, "threshold_crossed": false}
+2177.362	state		no_reward
+2177.462	state		reward_consumption
+2177.603	event	input	poke_6_out
+2178.604	event	timer	consumption_timer
+2178.604	state		inter_trial_interval
+2179.741	state		initiation_state
+2181.249	event	input	poke_5
+2181.250	state		choice_state
+2181.301	event	input	poke_5_out
+2181.686	event	input	poke_4
+2181.687	state		chose_left
+2181.688	variable	print	{"n_trials": 129, "n_rewards": 67, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.6044111, "threshold_crossed": false}
+2182.188	state		reward_left
+2182.259	state		reward_consumption
+2182.743	event	sync	rsync
+2188.084	event	input	poke_4_out
+2188.432	event	sync	rsync
+2189.084	event	timer	consumption_timer
+2189.084	state		inter_trial_interval
+2190.277	state		initiation_state
+2190.794	event	sync	rsync
+2197.817	event	sync	rsync
+2200.432	event	sync	rsync
+2202.876	event	sync	rsync
+2210.325	event	sync	rsync
+2215.242	event	sync	rsync
+2218.580	event	sync	rsync
+2219.269	event	input	poke_6
+2219.350	event	input	poke_6_out
+2220.746	event	input	poke_4
+2220.900	event	input	poke_4_out
+2221.538	event	input	poke_5
+2221.539	state		choice_state
+2221.576	event	input	poke_5_out
+2221.903	event	input	poke_4
+2221.904	state		chose_left
+2221.905	variable	print	{"n_trials": 130, "n_rewards": 67, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": false, "mov_ave": 0.6508941, "threshold_crossed": false}
+2222.406	state		no_reward
+2222.506	state		reward_consumption
+2222.850	event	input	poke_4_out
+2223.851	event	timer	consumption_timer
+2223.851	state		inter_trial_interval
+2225.499	state		initiation_state
+2226.277	event	sync	rsync
+2226.603	event	input	poke_6
+2226.679	event	input	poke_6_out
+2235.329	event	sync	rsync
+2236.227	event	sync	rsync
+2238.009	event	sync	rsync
+2244.726	event	sync	rsync
+2253.136	event	sync	rsync
+2256.368	event	sync	rsync
+2259.618	event	sync	rsync
+2263.951	event	sync	rsync
+2266.216	event	sync	rsync
+2271.164	event	sync	rsync
+2275.241	event	sync	rsync
+2277.871	event	sync	rsync
+2278.950	event	sync	rsync
+2286.507	event	sync	rsync
+2288.033	event	input	poke_6
+2288.094	event	input	poke_6_out
+2288.113	event	input	poke_6
+2288.149	event	input	poke_6_out
+2291.709	event	input	poke_5
+2291.710	state		choice_state
+2291.803	event	input	poke_5_out
+2292.076	event	input	poke_4
+2292.077	state		chose_left
+2292.078	variable	print	{"n_trials": 131, "n_rewards": 68, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.6919151, "threshold_crossed": false}
+2292.186	event	input	poke_4_out
+2292.579	state		reward_left
+2292.650	state		reward_consumption
+2293.645	event	sync	rsync
+2293.650	event	timer	consumption_timer
+2293.650	state		inter_trial_interval
+2294.131	event	input	poke_6
+2294.155	event	input	poke_6_out
+2296.614	state		initiation_state
+2297.635	event	input	poke_5
+2297.636	state		forced_choice_right
+2297.686	event	input	poke_5_out
+2298.010	event	input	poke_4
+2300.561	event	sync	rsync
+2301.229	event	sync	rsync
+2308.820	event	input	poke_4_out
+2309.239	event	sync	rsync
+2313.339	event	sync	rsync
+2316.327	event	sync	rsync
+2316.358	event	input	poke_5
+2316.429	event	input	poke_5_out
+2316.795	event	input	poke_4
+2317.462	event	input	poke_4_out
+2318.354	event	input	poke_6
+2318.355	state		chose_right
+2318.356	variable	print	{"n_trials": 132, "n_rewards": 68, "n_blocks": 2, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.6919151, "threshold_crossed": false}
+2318.857	state		no_reward
+2318.957	state		reward_consumption
+2319.169	event	input	poke_6_out
+2320.170	event	timer	consumption_timer
+2320.170	state		inter_trial_interval
+2321.249	state		initiation_state
+2323.118	event	sync	rsync
+2326.631	event	sync	rsync
+2329.007	event	sync	rsync
+2335.853	event	sync	rsync
+2339.769	event	sync	rsync
+2341.190	event	input	poke_6
+2341.356	event	input	poke_6_out
+2342.138	event	input	poke_5
+2342.140	state		choice_state
+2342.233	event	input	poke_5_out
+2342.559	event	input	poke_4
+2342.560	state		chose_left
+2342.561	variable	print	{"n_trials": 133, "n_rewards": 69, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.728116, "threshold_crossed": false}
+2343.062	state		reward_left
+2343.133	state		reward_consumption
+2343.944	event	sync	rsync
+2346.467	event	input	poke_4_out
+2347.467	event	timer	consumption_timer
+2347.467	state		inter_trial_interval
+2347.758	event	sync	rsync
+2347.926	event	input	poke_4
+2348.095	event	input	poke_4_out
+2350.174	state		initiation_state
+2353.449	event	input	poke_5
+2353.451	state		choice_state
+2353.495	event	input	poke_5_out
+2353.886	event	input	poke_4
+2353.888	state		chose_left
+2353.889	variable	print	{"n_trials": 134, "n_rewards": 70, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.7600632, "threshold_crossed": true}
+2354.389	state		reward_left
+2354.460	state		reward_consumption
+2355.513	event	sync	rsync
+2356.929	event	input	poke_4_out
+2357.929	event	timer	consumption_timer
+2357.929	state		inter_trial_interval
+2360.047	state		initiation_state
+2363.249	event	sync	rsync
+2365.060	event	input	poke_5
+2365.061	state		forced_choice_right
+2365.118	event	input	poke_5_out
+2365.475	event	sync	rsync
+2365.916	event	input	poke_6
+2365.917	state		chose_right
+2365.918	variable	print	{"n_trials": 135, "n_rewards": 70, "n_blocks": 2, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.7600632, "threshold_crossed": true}
+2366.270	event	input	poke_6_out
+2366.419	state		no_reward
+2366.519	state		reward_consumption
+2367.519	event	timer	consumption_timer
+2367.519	state		inter_trial_interval
+2368.467	event	sync	rsync
+2369.412	event	sync	rsync
+2369.990	state		initiation_state
+2373.395	event	sync	rsync
+2375.265	event	sync	rsync
+2383.843	event	sync	rsync
+2386.551	event	input	poke_4
+2386.603	event	input	poke_4_out
+2387.114	event	sync	rsync
+2388.586	event	input	poke_5
+2388.587	state		choice_state
+2388.687	event	input	poke_5_out
+2388.980	event	input	poke_4
+2388.982	state		chose_left
+2388.983	variable	print	{"n_trials": 136, "n_rewards": 70, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": false, "mov_ave": 0.7882565, "threshold_crossed": true}
+2389.483	state		no_reward
+2389.583	state		reward_consumption
+2389.728	event	input	poke_4_out
+2390.729	event	timer	consumption_timer
+2390.729	state		inter_trial_interval
+2393.380	event	input	poke_4
+2393.430	event	input	poke_4_out
+2393.668	state		initiation_state
+2395.272	event	sync	rsync
+2403.237	event	sync	rsync
+2408.940	event	sync	rsync
+2414.724	event	input	poke_4
+2414.848	event	input	poke_4_out
+2417.098	event	sync	rsync
+2419.356	event	input	poke_5
+2419.358	state		forced_choice_right
+2419.409	event	input	poke_5_out
+2419.477	event	input	poke_5
+2419.489	event	sync	rsync
+2419.523	event	input	poke_5_out
+2419.831	event	input	poke_4
+2420.562	event	input	poke_4_out
+2420.961	event	sync	rsync
+2421.439	event	input	poke_6
+2421.440	state		chose_right
+2421.441	variable	print	{"n_trials": 137, "n_rewards": 70, "n_blocks": 2, "forced_choice": true, "good_poke": "poke_4", "choice": "poke_6", "correct": false, "outcome": false, "mov_ave": 0.7882565, "threshold_crossed": true}
+2421.941	state		no_reward
+2422.041	state		reward_consumption
+2422.179	event	input	poke_6_out
+2423.179	event	timer	consumption_timer
+2423.179	state		inter_trial_interval
+2424.840	state		initiation_state
+2429.212	event	sync	rsync
+2431.298	event	sync	rsync
+2440.027	event	sync	rsync
+2442.949	event	input	poke_6
+2443.073	event	input	poke_6_out
+2445.121	event	sync	rsync
+2446.338	event	input	poke_5
+2446.339	state		choice_state
+2446.380	event	input	poke_5_out
+2446.684	event	input	poke_4
+2446.686	state		chose_left
+2446.687	variable	print	{"n_trials": 138, "n_rewards": 71, "n_blocks": 2, "forced_choice": false, "good_poke": "poke_4", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.8131371, "threshold_crossed": true}
+2447.187	state		reward_left
+2447.258	state		reward_consumption
+2451.544	event	input	poke_4_out
+2451.611	event	sync	rsync
+2452.545	event	timer	consumption_timer
+2452.545	state		inter_trial_interval
+2453.874	state		initiation_state
+2454.931	event	sync	rsync
+2456.550	event	sync	rsync
+2464.615	event	sync	rsync
+2466.385	event	input	poke_6
+2466.437	event	input	poke_6_out
+2466.766	event	input	poke_5
+2466.767	state		choice_state
+2466.843	event	input	poke_5_out
+2467.143	event	input	poke_4
+2467.144	state		chose_left
+2467.145	variable	print	{"n_trials": 139, "n_rewards": 72, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": true, "outcome": true, "mov_ave": 0.164906, "threshold_crossed": false}
+2467.646	state		reward_left
+2467.717	state		reward_consumption
+2470.301	event	sync	rsync
+2478.481	event	input	poke_4_out
+2478.875	event	sync	rsync
+2479.481	event	timer	consumption_timer
+2479.481	state		inter_trial_interval
+2481.094	state		initiation_state
+2483.424	event	sync	rsync
+2483.808	event	input	poke_6
+2483.912	event	input	poke_6_out
+2485.269	event	input	poke_4
+2485.419	event	input	poke_4_out
+2485.771	event	input	poke_5
+2485.772	state		choice_state
+2485.840	event	input	poke_5_out
+2486.165	event	input	poke_6
+2486.167	state		chose_right
+2486.168	variable	print	{"n_trials": 140, "n_rewards": 73, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.2630321, "threshold_crossed": false}
+2486.575	event	input	poke_6_out
+2486.669	state		reward_right
+2486.673	event	input	poke_6
+2486.742	state		reward_consumption
+2489.260	event	input	poke_6_out
+2489.500	event	sync	rsync
+2490.261	event	timer	consumption_timer
+2490.261	state		inter_trial_interval
+2491.668	state		initiation_state
+2493.206	event	sync	rsync
+2495.459	event	input	poke_5
+2495.460	state		forced_choice_left
+2495.526	event	input	poke_5_out
+2495.797	event	input	poke_6
+2496.423	event	input	poke_6_out
+2499.150	event	input	poke_4
+2499.151	state		chose_left
+2499.152	variable	print	{"n_trials": 141, "n_rewards": 73, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.2630321, "threshold_crossed": false}
+2499.492	event	input	poke_4_out
+2499.653	state		no_reward
+2499.753	state		reward_consumption
+2499.785	event	sync	rsync
+2500.753	event	timer	consumption_timer
+2500.753	state		inter_trial_interval
+2502.389	state		initiation_state
+2509.022	event	sync	rsync
+2509.213	event	input	poke_5
+2509.215	state		choice_state
+2509.312	event	input	poke_5_out
+2509.640	event	input	poke_4
+2509.642	state		chose_left
+2509.643	variable	print	{"n_trials": 142, "n_rewards": 74, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.232125, "threshold_crossed": false}
+2510.143	state		reward_left
+2510.214	state		reward_consumption
+2514.717	event	input	poke_4_out
+2515.718	event	timer	consumption_timer
+2515.718	state		inter_trial_interval
+2517.784	state		initiation_state
+2518.320	event	sync	rsync
+2527.652	event	sync	rsync
+2534.454	event	sync	rsync
+2538.132	event	sync	rsync
+2543.379	event	sync	rsync
+2545.491	event	input	poke_5
+2545.492	state		choice_state
+2545.586	event	input	poke_5_out
+2545.913	event	input	poke_4
+2545.914	state		chose_left
+2545.915	variable	print	{"n_trials": 143, "n_rewards": 74, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.2048496, "threshold_crossed": false}
+2546.416	state		no_reward
+2546.516	state		reward_consumption
+2546.745	event	input	poke_4_out
+2547.746	event	timer	consumption_timer
+2547.746	state		inter_trial_interval
+2549.851	event	sync	rsync
+2549.921	state		initiation_state
+2550.528	event	input	poke_5
+2550.529	state		choice_state
+2550.589	event	input	poke_5_out
+2550.930	event	input	poke_4
+2550.932	state		chose_left
+2550.932	variable	print	{"n_trials": 144, "n_rewards": 75, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.1807791, "threshold_crossed": false}
+2551.433	state		reward_left
+2551.504	state		reward_consumption
+2555.758	event	sync	rsync
+2556.180	event	input	poke_4_out
+2557.181	event	timer	consumption_timer
+2557.181	state		inter_trial_interval
+2559.448	state		initiation_state
+2559.459	event	sync	rsync
+2564.738	event	sync	rsync
+2568.287	event	sync	rsync
+2573.250	event	sync	rsync
+2577.261	event	sync	rsync
+2581.752	event	sync	rsync
+2582.544	event	sync	rsync
+2588.227	event	sync	rsync
+2589.521	event	input	poke_5
+2589.522	state		choice_state
+2589.580	event	input	poke_5_out
+2589.905	event	input	poke_6
+2589.906	state		chose_right
+2589.912	variable	print	{"n_trials": 145, "n_rewards": 76, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.2770401, "threshold_crossed": false}
+2590.413	state		reward_right
+2590.486	state		reward_consumption
+2594.802	event	sync	rsync
+2595.273	event	input	poke_6_out
+2596.274	event	timer	consumption_timer
+2596.274	state		inter_trial_interval
+2598.856	state		initiation_state
+2600.271	event	input	poke_5
+2600.272	state		choice_state
+2600.350	event	input	poke_5_out
+2600.697	event	input	poke_6
+2600.698	state		chose_right
+2600.699	variable	print	{"n_trials": 146, "n_rewards": 77, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.3619902, "threshold_crossed": false}
+2601.200	state		reward_right
+2601.273	state		reward_consumption
+2602.571	event	sync	rsync
+2611.130	event	input	poke_6_out
+2611.458	event	sync	rsync
+2612.130	event	timer	consumption_timer
+2612.130	state		inter_trial_interval
+2613.911	state		initiation_state
+2617.198	event	input	poke_5
+2617.199	state		choice_state
+2617.247	event	input	poke_5_out
+2617.514	event	input	poke_6
+2617.516	state		chose_right
+2617.517	variable	print	{"n_trials": 147, "n_rewards": 78, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.4369583, "threshold_crossed": false}
+2618.017	state		reward_right
+2618.090	state		reward_consumption
+2618.426	event	sync	rsync
+2625.235	event	input	poke_6_out
+2626.202	event	sync	rsync
+2626.236	event	timer	consumption_timer
+2626.236	state		inter_trial_interval
+2627.991	event	sync	rsync
+2628.991	state		initiation_state
+2631.377	event	sync	rsync
+2634.782	event	input	poke_5
+2634.783	state		forced_choice_left
+2634.813	event	input	poke_5_out
+2635.101	event	input	poke_6
+2635.867	event	input	poke_6_out
+2638.187	event	sync	rsync
+2639.118	event	input	poke_5
+2639.165	event	input	poke_5_out
+2639.543	event	input	poke_4
+2639.544	state		chose_left
+2639.544	variable	print	{"n_trials": 148, "n_rewards": 78, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.4369583, "threshold_crossed": false}
+2640.045	state		no_reward
+2640.145	state		reward_consumption
+2640.252	event	input	poke_4_out
+2641.253	event	timer	consumption_timer
+2641.253	state		inter_trial_interval
+2642.976	state		initiation_state
+2644.079	event	sync	rsync
+2644.376	event	input	poke_5
+2644.378	state		choice_state
+2644.523	event	input	poke_5_out
+2644.911	event	input	poke_6
+2644.912	state		chose_right
+2644.913	variable	print	{"n_trials": 149, "n_rewards": 79, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.5031175, "threshold_crossed": false}
+2645.414	state		reward_right
+2645.487	state		reward_consumption
+2648.640	event	sync	rsync
+2650.761	event	input	poke_6_out
+2651.452	event	sync	rsync
+2651.762	event	timer	consumption_timer
+2651.762	state		inter_trial_interval
+2653.759	state		initiation_state
+2656.254	event	sync	rsync
+2659.434	event	sync	rsync
+2668.804	event	sync	rsync
+2672.527	event	input	poke_6
+2672.586	event	input	poke_6_out
+2674.312	event	input	poke_5
+2674.313	state		choice_state
+2674.398	event	input	poke_5_out
+2674.702	event	input	poke_6
+2674.703	state		chose_right
+2674.704	variable	print	{"n_trials": 150, "n_rewards": 80, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.5615027, "threshold_crossed": false}
+2675.205	state		reward_right
+2675.256	event	sync	rsync
+2675.278	state		reward_consumption
+2677.380	event	sync	rsync
+2677.498	event	input	poke_6_out
+2678.498	event	timer	consumption_timer
+2678.498	state		inter_trial_interval
+2679.297	event	sync	rsync
+2679.624	state		initiation_state
+2680.701	event	input	poke_5
+2680.702	state		choice_state
+2680.782	event	input	poke_5_out
+2681.009	event	input	poke_6
+2681.010	state		chose_right
+2681.011	variable	print	{"n_trials": 151, "n_rewards": 81, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.6130275, "threshold_crossed": false}
+2681.512	state		reward_right
+2681.585	state		reward_consumption
+2684.424	event	input	poke_6_out
+2684.833	event	sync	rsync
+2685.425	event	timer	consumption_timer
+2685.425	state		inter_trial_interval
+2687.647	event	sync	rsync
+2687.693	state		initiation_state
+2689.565	event	input	poke_5
+2689.566	state		forced_choice_right
+2689.616	event	input	poke_5_out
+2689.843	event	input	poke_6
+2689.844	state		chose_right
+2689.845	variable	print	{"n_trials": 152, "n_rewards": 82, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.6130275, "threshold_crossed": false}
+2690.346	state		reward_right
+2690.419	state		reward_consumption
+2693.446	event	sync	rsync
+2694.945	event	input	poke_6_out
+2695.946	event	timer	consumption_timer
+2695.946	state		inter_trial_interval
+2698.810	state		initiation_state
+2701.154	event	input	poke_6
+2701.178	event	sync	rsync
+2701.947	event	input	poke_6_out
+2703.409	event	input	poke_5
+2703.411	state		choice_state
+2703.480	event	input	poke_5_out
+2703.797	event	input	poke_6
+2703.798	state		chose_right
+2703.799	variable	print	{"n_trials": 153, "n_rewards": 83, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.6584979, "threshold_crossed": false}
+2704.300	state		reward_right
+2704.350	event	sync	rsync
+2704.373	state		reward_consumption
+2708.154	event	input	poke_6_out
+2709.155	event	timer	consumption_timer
+2709.155	state		inter_trial_interval
+2709.325	event	sync	rsync
+2710.844	state		initiation_state
+2715.325	event	input	poke_6
+2715.942	event	input	poke_6_out
+2716.793	event	input	poke_5
+2716.794	state		choice_state
+2716.816	event	input	poke_5_out
+2717.082	event	input	poke_6
+2717.083	state		chose_right
+2717.084	variable	print	{"n_trials": 154, "n_rewards": 83, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.6986255, "threshold_crossed": false}
+2717.585	state		no_reward
+2717.685	state		reward_consumption
+2717.753	event	input	poke_6_out
+2718.104	event	sync	rsync
+2718.753	event	timer	consumption_timer
+2718.753	state		inter_trial_interval
+2721.150	state		initiation_state
+2725.275	event	sync	rsync
+2727.717	event	sync	rsync
+2729.815	event	sync	rsync
+2731.602	event	input	poke_5
+2731.603	state		forced_choice_left
+2731.697	event	input	poke_5_out
+2732.090	event	input	poke_5
+2732.139	event	input	poke_5_out
+2732.394	event	input	poke_6
+2733.018	event	input	poke_6_out
+2733.402	event	sync	rsync
+2734.029	event	input	poke_4
+2734.030	state		chose_left
+2734.031	variable	print	{"n_trials": 155, "n_rewards": 84, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.6986255, "threshold_crossed": false}
+2734.532	state		reward_left
+2734.603	state		reward_consumption
+2741.807	event	input	poke_4_out
+2742.404	event	sync	rsync
+2742.808	event	timer	consumption_timer
+2742.808	state		inter_trial_interval
+2745.164	state		initiation_state
+2751.043	event	sync	rsync
+2751.874	event	input	poke_5
+2751.875	state		choice_state
+2751.926	event	input	poke_5_out
+2752.235	event	input	poke_4
+2752.236	state		chose_left
+2752.237	variable	print	{"n_trials": 156, "n_rewards": 85, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.6165348, "threshold_crossed": false}
+2752.738	state		reward_left
+2752.809	state		reward_consumption
+2756.746	event	input	poke_4_out
+2757.746	event	timer	consumption_timer
+2757.746	state		inter_trial_interval
+2759.852	state		initiation_state
+2760.483	event	sync	rsync
+2761.294	event	input	poke_4
+2761.990	event	input	poke_4_out
+2762.305	event	input	poke_5
+2762.306	state		choice_state
+2762.440	event	input	poke_5_out
+2762.710	event	input	poke_4
+2762.712	state		chose_left
+2762.713	variable	print	{"n_trials": 157, "n_rewards": 85, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.5440901, "threshold_crossed": false}
+2763.213	state		no_reward
+2763.313	state		reward_consumption
+2763.477	event	input	poke_4_out
+2764.477	event	timer	consumption_timer
+2764.477	state		inter_trial_interval
+2766.356	state		initiation_state
+2766.441	event	sync	rsync
+2766.746	event	input	poke_5
+2766.747	state		choice_state
+2766.814	event	input	poke_5_out
+2767.151	event	input	poke_6
+2767.153	state		chose_right
+2767.154	variable	print	{"n_trials": 158, "n_rewards": 86, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.5976609, "threshold_crossed": false}
+2767.654	state		reward_right
+2767.727	state		reward_consumption
+2771.259	event	input	poke_6_out
+2772.260	event	timer	consumption_timer
+2772.260	state		inter_trial_interval
+2773.954	state		initiation_state
+2774.342	event	sync	rsync
+2782.364	event	sync	rsync
+2786.772	event	input	poke_6
+2787.389	event	input	poke_6_out
+2788.562	event	sync	rsync
+2789.519	event	sync	rsync
+2793.338	event	input	poke_6
+2793.446	event	sync	rsync
+2794.072	event	input	poke_6_out
+2794.375	event	input	poke_5
+2794.376	state		choice_state
+2794.465	event	input	poke_5_out
+2794.751	event	input	poke_6
+2794.753	state		chose_right
+2794.754	variable	print	{"n_trials": 159, "n_rewards": 87, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.644937, "threshold_crossed": false}
+2795.254	state		reward_right
+2795.327	state		reward_consumption
+2797.588	event	input	poke_6_out
+2798.588	event	timer	consumption_timer
+2798.588	state		inter_trial_interval
+2799.010	event	sync	rsync
+2799.752	state		initiation_state
+2800.694	event	input	poke_6
+2801.166	event	sync	rsync
+2801.321	event	input	poke_6_out
+2806.290	event	input	poke_5
+2806.291	state		forced_choice_right
+2806.368	event	input	poke_5_out
+2806.830	event	input	poke_6
+2806.831	state		chose_right
+2806.831	variable	print	{"n_trials": 160, "n_rewards": 87, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.644937, "threshold_crossed": false}
+2807.332	state		no_reward
+2807.432	state		reward_consumption
+2807.570	event	input	poke_6_out
+2808.538	event	sync	rsync
+2808.571	event	timer	consumption_timer
+2808.571	state		inter_trial_interval
+2811.473	state		initiation_state
+2816.719	event	sync	rsync
+2825.735	event	sync	rsync
+2832.713	event	sync	rsync
+2833.855	event	sync	rsync
+2837.724	event	sync	rsync
+2842.491	event	sync	rsync
+2846.995	event	sync	rsync
+2853.184	event	sync	rsync
+2859.245	event	sync	rsync
+2861.435	event	sync	rsync
+2864.105	event	sync	rsync
+2865.634	event	sync	rsync
+2872.479	event	sync	rsync
+2874.933	event	sync	rsync
+2881.592	event	sync	rsync
+2890.978	event	sync	rsync
+2894.409	event	sync	rsync
+2897.553	event	sync	rsync
+2899.856	event	sync	rsync
+2906.265	event	sync	rsync
+2909.811	event	sync	rsync
+2912.435	event	sync	rsync
+2914.178	event	sync	rsync
+2916.096	event	sync	rsync
+2921.471	event	sync	rsync
+2925.543	event	sync	rsync
+2930.411	event	input	poke_5
+2930.413	state		forced_choice_left
+2930.462	event	input	poke_5_out
+2930.788	event	sync	rsync
+2930.800	event	input	poke_4
+2930.802	state		chose_left
+2930.802	variable	print	{"n_trials": 161, "n_rewards": 87, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.644937, "threshold_crossed": false}
+2931.303	state		no_reward
+2931.403	state		reward_consumption
+2931.634	event	input	poke_4_out
+2932.634	event	timer	consumption_timer
+2932.634	state		inter_trial_interval
+2934.983	event	sync	rsync
+2935.365	state		initiation_state
+2943.455	event	sync	rsync
+2944.445	event	sync	rsync
+2948.835	event	sync	rsync
+2951.410	event	sync	rsync
+2955.027	event	sync	rsync
+2961.890	event	sync	rsync
+2963.070	event	sync	rsync
+2972.152	event	sync	rsync
+2973.375	event	sync	rsync
+2976.900	event	sync	rsync
+2984.182	event	sync	rsync
+2988.891	event	sync	rsync
+2993.597	event	input	poke_5
+2993.598	state		choice_state
+2993.649	event	input	poke_5_out
+2993.976	event	input	poke_4
+2993.977	state		chose_left
+2993.978	variable	print	{"n_trials": 162, "n_rewards": 87, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.5691548, "threshold_crossed": false}
+2994.327	event	sync	rsync
+2994.479	state		no_reward
+2994.579	state		reward_consumption
+2994.709	event	input	poke_4_out
+2995.710	event	timer	consumption_timer
+2995.710	state		inter_trial_interval
+2997.504	state		initiation_state
+2997.611	event	sync	rsync
+2999.899	event	sync	rsync
+3005.956	event	sync	rsync
+3012.813	event	sync	rsync
+3019.706	event	sync	rsync
+3027.046	event	sync	rsync
+3031.105	event	sync	rsync
+3040.579	event	sync	rsync
+3044.970	event	sync	rsync
+3047.608	event	sync	rsync
+3055.696	event	sync	rsync
+3060.876	event	sync	rsync
+3066.663	event	sync	rsync
+3068.673	event	input	poke_5
+3068.674	state		choice_state
+3068.752	event	input	poke_5_out
+3069.029	event	input	poke_4
+3069.031	state		chose_left
+3069.032	variable	print	{"n_trials": 163, "n_rewards": 87, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.5022774, "threshold_crossed": false}
+3069.532	state		no_reward
+3069.632	state		reward_consumption
+3069.712	event	input	poke_4_out
+3070.712	event	timer	consumption_timer
+3070.712	state		inter_trial_interval
+3073.340	state		initiation_state
+3075.300	event	sync	rsync
+3081.780	event	sync	rsync
+3085.469	event	sync	rsync
+3090.116	event	sync	rsync
+3091.782	event	sync	rsync
+3095.771	event	sync	rsync
+3102.169	event	sync	rsync
+3106.572	event	sync	rsync
+3110.248	event	input	poke_5
+3110.249	state		choice_state
+3110.325	event	input	poke_5_out
+3110.603	event	input	poke_6
+3110.604	state		chose_right
+3110.605	variable	print	{"n_trials": 164, "n_rewards": 88, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.5607614, "threshold_crossed": false}
+3110.789	event	input	poke_6_out
+3111.106	state		reward_right
+3111.179	state		reward_consumption
+3112.179	event	timer	consumption_timer
+3112.179	state		inter_trial_interval
+3112.201	event	sync	rsync
+3113.398	state		initiation_state
+3116.867	event	sync	rsync
+3118.114	event	sync	rsync
+3126.089	event	sync	rsync
+3128.705	event	input	poke_5
+3128.706	state		choice_state
+3128.745	event	input	poke_5_out
+3129.006	event	input	poke_4
+3129.007	state		chose_left
+3129.008	variable	print	{"n_trials": 165, "n_rewards": 88, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.4948701, "threshold_crossed": false}
+3129.156	event	input	poke_4_out
+3129.509	state		no_reward
+3129.609	state		reward_consumption
+3130.609	event	timer	consumption_timer
+3130.609	state		inter_trial_interval
+3132.092	state		initiation_state
+3135.051	event	sync	rsync
+3144.213	event	sync	rsync
+3146.362	event	sync	rsync
+3147.589	event	sync	rsync
+3148.867	event	sync	rsync
+3154.193	event	sync	rsync
+3161.468	event	sync	rsync
+3164.693	event	sync	rsync
+3168.568	event	sync	rsync
+3176.112	event	sync	rsync
+3178.706	event	input	poke_5
+3178.707	state		choice_state
+3178.781	event	input	poke_5_out
+3179.104	event	input	poke_4
+3179.105	state		chose_left
+3179.106	variable	print	{"n_trials": 166, "n_rewards": 88, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.4367214, "threshold_crossed": false}
+3179.607	state		no_reward
+3179.707	state		reward_consumption
+3180.006	event	input	poke_4_out
+3181.007	event	timer	consumption_timer
+3181.007	state		inter_trial_interval
+3183.990	state		initiation_state
+3184.887	event	sync	rsync
+3191.765	event	sync	rsync
+3198.784	event	sync	rsync
+3199.151	event	input	poke_4
+3199.270	event	input	poke_4_out
+3202.336	event	input	poke_6
+3202.833	event	sync	rsync
+3205.456	event	sync	rsync
+3209.345	event	input	poke_6_out
+3213.259	event	input	poke_6
+3213.344	event	input	poke_6_out
+3213.772	event	sync	rsync
+3221.077	event	input	poke_6
+3221.423	event	input	poke_6_out
+3222.778	event	sync	rsync
+3228.791	event	sync	rsync
+3235.056	event	sync	rsync
+3238.651	event	sync	rsync
+3243.004	event	sync	rsync
+3251.921	event	sync	rsync
+3259.391	event	sync	rsync
+3263.011	event	input	poke_6
+3263.465	event	input	poke_6_out
+3264.712	event	sync	rsync
+3267.918	event	input	poke_4
+3268.076	event	input	poke_4_out
+3272.120	event	sync	rsync
+3279.031	event	input	poke_6
+3279.084	event	input	poke_6_out
+3279.243	event	input	poke_6
+3279.346	event	input	poke_6_out
+3279.505	event	sync	rsync
+3282.208	event	input	poke_6
+3282.276	event	input	poke_6_out
+3282.343	event	input	poke_6
+3282.493	event	input	poke_6_out
+3284.289	event	sync	rsync
+3284.848	event	input	poke_4
+3285.220	event	input	poke_4_out
+3285.561	event	input	poke_4
+3286.248	event	input	poke_4_out
+3287.832	event	sync	rsync
+3288.129	event	input	poke_5
+3288.131	state		forced_choice_left
+3288.322	event	input	poke_5_out
+3288.621	event	input	poke_4
+3288.622	state		chose_left
+3288.623	variable	print	{"n_trials": 167, "n_rewards": 88, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.4367214, "threshold_crossed": false}
+3288.890	event	sync	rsync
+3289.124	state		no_reward
+3289.224	state		reward_consumption
+3289.417	event	input	poke_4_out
+3290.418	event	timer	consumption_timer
+3290.418	state		inter_trial_interval
+3293.322	state		initiation_state
+3295.175	event	sync	rsync
+3304.020	event	sync	rsync
+3312.953	event	sync	rsync
+3318.436	event	input	poke_4
+3318.473	event	input	poke_4_out
+3320.836	event	sync	rsync
+3321.475	event	input	poke_6
+3321.693	event	input	poke_6_out
+3322.180	event	sync	rsync
+3325.575	event	sync	rsync
+3330.706	event	input	poke_5
+3330.707	state		choice_state
+3330.809	event	input	poke_5_out
+3334.046	event	input	poke_6
+3334.047	state		chose_right
+3334.048	variable	print	{"n_trials": 168, "n_rewards": 89, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.5029083, "threshold_crossed": false}
+3334.477	event	sync	rsync
+3334.549	state		reward_right
+3334.622	state		reward_consumption
+3335.568	event	input	poke_6_out
+3336.508	event	input	poke_6
+3336.764	event	sync	rsync
+3336.841	event	input	poke_6_out
+3337.842	event	timer	consumption_timer
+3337.842	state		inter_trial_interval
+3340.663	state		initiation_state
+3341.786	event	sync	rsync
+3342.743	event	sync	rsync
+3351.149	event	sync	rsync
+3352.725	event	sync	rsync
+3361.369	event	sync	rsync
+3364.965	event	input	poke_5
+3364.967	state		forced_choice_left
+3365.055	event	input	poke_5_out
+3365.378	event	input	poke_4
+3365.379	state		chose_left
+3365.380	variable	print	{"n_trials": 169, "n_rewards": 89, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.5029083, "threshold_crossed": false}
+3365.585	event	input	poke_4_out
+3365.880	state		no_reward
+3365.980	state		reward_consumption
+3366.980	event	timer	consumption_timer
+3366.980	state		inter_trial_interval
+3368.369	state		initiation_state
+3369.177	event	sync	rsync
+3375.288	event	sync	rsync
+3377.533	event	sync	rsync
+3380.109	event	sync	rsync
+3385.993	event	sync	rsync
+3387.406	event	sync	rsync
+3392.817	event	sync	rsync
+3393.612	event	sync	rsync
+3397.972	event	input	poke_5
+3397.973	state		choice_state
+3398.092	event	input	poke_5_out
+3398.384	event	input	poke_4
+3398.385	state		chose_left
+3398.386	variable	print	{"n_trials": 170, "n_rewards": 89, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.443815, "threshold_crossed": false}
+3398.887	state		no_reward
+3398.987	state		reward_consumption
+3399.078	event	input	poke_4_out
+3400.079	event	timer	consumption_timer
+3400.079	state		inter_trial_interval
+3401.483	event	sync	rsync
+3402.182	state		initiation_state
+3403.984	event	input	poke_6
+3404.039	event	input	poke_6_out
+3407.675	event	sync	rsync
+3416.793	event	sync	rsync
+3422.755	event	sync	rsync
+3431.240	event	sync	rsync
+3438.732	event	sync	rsync
+3446.724	event	sync	rsync
+3455.706	event	sync	rsync
+3456.272	event	sync	rsync
+3465.602	event	sync	rsync
+3469.150	event	sync	rsync
+3471.217	event	input	poke_5
+3471.218	state		choice_state
+3471.273	event	input	poke_5_out
+3471.606	event	input	poke_4
+3471.608	state		chose_left
+3471.609	variable	print	{"n_trials": 171, "n_rewards": 89, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.3916654, "threshold_crossed": false}
+3471.688	event	sync	rsync
+3472.109	state		no_reward
+3472.209	state		reward_consumption
+3472.376	event	input	poke_4_out
+3473.377	event	timer	consumption_timer
+3473.377	state		inter_trial_interval
+3474.856	state		initiation_state
+3480.716	event	sync	rsync
+3490.160	event	sync	rsync
+3499.613	event	sync	rsync
+3502.757	event	sync	rsync
+3506.890	event	sync	rsync
+3508.320	event	sync	rsync
+3512.220	event	sync	rsync
+3515.844	event	sync	rsync
+3521.384	event	sync	rsync
+3524.367	event	sync	rsync
+3533.072	event	sync	rsync
+3534.871	event	input	poke_5
+3534.872	state		choice_state
+3534.953	event	input	poke_5_out
+3535.319	event	input	poke_6
+3535.320	state		chose_right
+3535.321	variable	print	{"n_trials": 172, "n_rewards": 90, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.4631466, "threshold_crossed": false}
+3535.822	state		reward_right
+3535.895	state		reward_consumption
+3537.791	event	input	poke_6_out
+3538.792	event	timer	consumption_timer
+3538.792	state		inter_trial_interval
+3540.933	state		initiation_state
+3542.135	event	sync	rsync
+3546.960	event	sync	rsync
+3553.760	event	sync	rsync
+3562.923	event	sync	rsync
+3568.210	event	input	poke_5
+3568.211	state		choice_state
+3568.237	event	input	poke_5_out
+3568.513	event	input	poke_6
+3568.514	state		chose_right
+3568.515	variable	print	{"n_trials": 173, "n_rewards": 90, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.5262285, "threshold_crossed": false}
+3569.016	state		no_reward
+3569.116	state		reward_consumption
+3569.178	event	input	poke_6_out
+3570.178	event	timer	consumption_timer
+3570.178	state		inter_trial_interval
+3570.491	event	sync	rsync
+3572.437	state		initiation_state
+3575.389	event	sync	rsync
+3579.744	event	sync	rsync
+3586.729	event	sync	rsync
+3587.959	event	input	poke_5
+3587.960	state		choice_state
+3588.006	event	input	poke_5_out
+3588.279	event	input	poke_6
+3588.281	state		chose_right
+3588.282	variable	print	{"n_trials": 174, "n_rewards": 90, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.5818982, "threshold_crossed": false}
+3588.782	state		no_reward
+3588.882	state		reward_consumption
+3589.073	event	input	poke_6_out
+3590.074	event	timer	consumption_timer
+3590.074	state		inter_trial_interval
+3592.621	state		initiation_state
+3595.030	event	sync	rsync
+3597.338	event	sync	rsync
+3604.108	event	sync	rsync
+3605.156	event	sync	rsync
+3614.688	event	sync	rsync
+3622.697	event	sync	rsync
+3627.789	event	sync	rsync
+3636.602	event	sync	rsync
+3640.116	event	sync	rsync
+3646.260	event	sync	rsync
+3647.773	event	sync	rsync
+3650.129	event	input	poke_6
+3650.227	event	input	poke_6_out
+3656.486	event	sync	rsync
+3662.375	event	sync	rsync
+3670.998	event	sync	rsync
+3679.543	event	sync	rsync
+3685.188	event	sync	rsync
+3686.740	event	sync	rsync
+3695.280	event	sync	rsync
+3699.849	event	sync	rsync
+3702.473	event	sync	rsync
+3706.914	event	sync	rsync
+3713.341	event	sync	rsync
+3716.205	event	sync	rsync
+3721.587	event	input	poke_4
+3721.677	event	input	poke_4_out
+3722.239	event	sync	rsync
+3727.655	event	sync	rsync
+3729.720	event	input	poke_5
+3729.721	state		forced_choice_left
+3729.793	event	input	poke_5_out
+3730.197	event	input	poke_4
+3730.198	state		chose_left
+3730.199	variable	print	{"n_trials": 175, "n_rewards": 90, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.5818982, "threshold_crossed": false}
+3730.700	state		no_reward
+3730.800	state		reward_consumption
+3730.947	event	input	poke_4_out
+3731.948	event	timer	consumption_timer
+3731.948	state		inter_trial_interval
+3734.927	state		initiation_state
+3736.784	event	input	poke_6
+3736.874	event	sync	rsync
+3736.968	event	input	poke_6_out
+3739.213	event	sync	rsync
+3739.540	event	input	poke_6
+3739.725	event	input	poke_6_out
+3740.106	event	input	poke_5
+3740.107	state		choice_state
+3740.162	event	input	poke_5_out
+3740.532	event	input	poke_6
+3740.533	state		chose_right
+3740.534	variable	print	{"n_trials": 176, "n_rewards": 90, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.6310265, "threshold_crossed": false}
+3741.035	state		no_reward
+3741.135	state		reward_consumption
+3741.227	event	input	poke_6_out
+3742.227	event	timer	consumption_timer
+3742.227	state		inter_trial_interval
+3743.456	state		initiation_state
+3744.478	event	sync	rsync
+3748.336	event	sync	rsync
+3749.194	event	input	poke_6
+3749.328	event	input	poke_6_out
+3749.811	event	input	poke_5
+3749.812	state		choice_state
+3749.904	event	input	poke_5_out
+3750.209	event	input	poke_6
+3750.210	state		chose_right
+3750.211	variable	print	{"n_trials": 177, "n_rewards": 91, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.674382, "threshold_crossed": false}
+3750.712	state		reward_right
+3750.785	state		reward_consumption
+3755.063	event	sync	rsync
+3756.355	event	input	poke_6_out
+3757.355	event	timer	consumption_timer
+3757.355	state		inter_trial_interval
+3758.428	event	sync	rsync
+3758.470	state		initiation_state
+3758.724	event	input	poke_5
+3758.725	state		forced_choice_right
+3758.763	event	input	poke_5_out
+3759.167	event	input	poke_6
+3759.168	state		chose_right
+3759.169	variable	print	{"n_trials": 178, "n_rewards": 92, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.674382, "threshold_crossed": false}
+3759.389	event	input	poke_6_out
+3759.669	state		reward_right
+3759.742	state		reward_consumption
+3760.742	event	timer	consumption_timer
+3760.742	state		inter_trial_interval
+3761.229	event	sync	rsync
+3763.183	state		initiation_state
+3765.247	event	sync	rsync
+3770.540	event	sync	rsync
+3776.668	event	sync	rsync
+3781.902	event	sync	rsync
+3787.086	event	sync	rsync
+3793.165	event	sync	rsync
+3799.563	event	sync	rsync
+3808.499	event	sync	rsync
+3809.257	event	sync	rsync
+3815.738	event	sync	rsync
+3816.955	event	sync	rsync
+3818.750	event	sync	rsync
+3823.058	event	sync	rsync
+3829.267	event	sync	rsync
+3833.413	event	sync	rsync
+3837.839	event	sync	rsync
+3843.166	event	sync	rsync
+3849.954	event	sync	rsync
+3852.910	event	sync	rsync
+3855.024	event	sync	rsync
+3858.804	event	sync	rsync
+3867.179	event	sync	rsync
+3875.394	event	sync	rsync
+3880.783	event	sync	rsync
+3888.062	event	sync	rsync
+3893.867	event	sync	rsync
+3900.653	event	sync	rsync
+3907.447	event	sync	rsync
+3910.266	event	sync	rsync
+3914.844	event	sync	rsync
+3915.480	event	sync	rsync
+3921.827	event	sync	rsync
+3928.757	event	input	poke_5
+3928.758	state		choice_state
+3928.856	event	input	poke_5_out
+3929.021	event	sync	rsync
+3929.237	event	input	poke_4
+3929.238	state		chose_left
+3929.239	variable	print	{"n_trials": 179, "n_rewards": 93, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.59514, "threshold_crossed": false}
+3929.740	state		reward_left
+3929.811	state		reward_consumption
+3931.880	event	input	poke_4_out
+3932.881	event	timer	consumption_timer
+3932.881	state		inter_trial_interval
+3934.231	state		initiation_state
+3935.727	event	sync	rsync
+3936.815	event	sync	rsync
+3941.149	event	sync	rsync
+3950.247	event	sync	rsync
+3954.820	event	sync	rsync
+3956.798	event	sync	rsync
+3959.976	event	sync	rsync
+3961.017	event	sync	rsync
+3961.722	event	sync	rsync
+3969.213	event	sync	rsync
+3973.483	event	sync	rsync
+3973.929	event	input	poke_5
+3973.930	state		choice_state
+3973.980	event	input	poke_5_out
+3975.358	event	input	poke_6
+3975.359	state		chose_right
+3975.360	variable	print	{"n_trials": 180, "n_rewards": 94, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.6427123, "threshold_crossed": false}
+3975.457	event	sync	rsync
+3975.861	state		reward_right
+3975.934	state		reward_consumption
+3977.218	event	sync	rsync
+3980.360	event	input	poke_6_out
+3981.361	event	timer	consumption_timer
+3981.361	state		inter_trial_interval
+3982.116	event	sync	rsync
+3984.008	state		initiation_state
+3990.135	event	input	poke_5
+3990.136	state		choice_state
+3990.203	event	input	poke_5_out
+3990.475	event	input	poke_6
+3990.476	state		chose_right
+3990.477	variable	print	{"n_trials": 181, "n_rewards": 94, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.6846947, "threshold_crossed": false}
+3990.978	state		no_reward
+3991.078	state		reward_consumption
+3991.135	event	input	poke_6_out
+3991.333	event	sync	rsync
+3992.136	event	timer	consumption_timer
+3992.136	state		inter_trial_interval
+3994.941	state		initiation_state
+3996.550	event	sync	rsync
+4002.890	event	input	poke_4
+4003.621	event	input	poke_4_out
+4004.094	event	input	poke_4
+4004.099	event	input	poke_4_out
+4004.616	event	sync	rsync
+4008.924	event	sync	rsync
+4011.238	event	input	poke_5
+4011.239	state		choice_state
+4011.267	event	input	poke_5_out
+4011.702	event	input	poke_6
+4011.703	state		chose_right
+4011.704	variable	print	{"n_trials": 182, "n_rewards": 94, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.7217441, "threshold_crossed": false}
+4012.205	state		no_reward
+4012.305	state		reward_consumption
+4012.437	event	input	poke_6_out
+4013.443	event	timer	consumption_timer
+4013.443	state		inter_trial_interval
+4015.235	state		initiation_state
+4016.880	event	sync	rsync
+4020.245	event	sync	rsync
+4022.029	event	sync	rsync
+4027.024	event	sync	rsync
+4030.691	event	sync	rsync
+4035.336	event	sync	rsync
+4039.077	event	sync	rsync
+4041.149	event	input	poke_6
+4041.468	event	sync	rsync
+4041.677	event	input	poke_6_out
+4048.452	event	input	poke_5
+4048.454	state		choice_state
+4048.551	event	input	poke_5_out
+4049.066	event	input	poke_5
+4049.100	event	input	poke_5_out
+4049.411	event	input	poke_4
+4049.413	state		chose_left
+4049.414	variable	print	{"n_trials": 183, "n_rewards": 94, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.6369369, "threshold_crossed": false}
+4049.914	state		no_reward
+4050.014	state		reward_consumption
+4050.118	event	input	poke_4_out
+4050.296	event	sync	rsync
+4051.119	event	timer	consumption_timer
+4051.119	state		inter_trial_interval
+4052.827	state		initiation_state
+4053.842	event	input	poke_6
+4053.978	event	input	poke_6_out
+4054.308	event	input	poke_5
+4054.309	state		forced_choice_left
+4054.422	event	input	poke_5_out
+4054.710	event	input	poke_4
+4054.711	state		chose_left
+4054.712	variable	print	{"n_trials": 184, "n_rewards": 94, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.6369369, "threshold_crossed": false}
+4055.213	state		no_reward
+4055.313	state		reward_consumption
+4055.353	event	input	poke_4_out
+4056.072	event	sync	rsync
+4056.354	event	timer	consumption_timer
+4056.354	state		inter_trial_interval
+4058.325	state		initiation_state
+4058.988	event	sync	rsync
+4059.196	event	input	poke_5
+4059.197	state		choice_state
+4059.275	event	input	poke_5_out
+4059.685	event	input	poke_6
+4059.686	state		chose_right
+4059.687	variable	print	{"n_trials": 185, "n_rewards": 95, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.6795979, "threshold_crossed": false}
+4060.188	state		reward_right
+4060.261	state		reward_consumption
+4065.025	event	input	poke_6_out
+4066.025	event	timer	consumption_timer
+4066.025	state		inter_trial_interval
+4066.705	event	sync	rsync
+4067.525	state		initiation_state
+4072.264	event	sync	rsync
+4080.571	event	sync	rsync
+4082.464	event	sync	rsync
+4085.634	event	input	poke_6
+4085.887	event	input	poke_6_out
+4088.208	event	sync	rsync
+4094.029	event	input	poke_5
+4094.030	state		forced_choice_left
+4094.100	event	input	poke_5_out
+4094.375	event	input	poke_4
+4094.376	state		chose_left
+4094.377	variable	print	{"n_trials": 186, "n_rewards": 96, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.6795979, "threshold_crossed": false}
+4094.878	state		reward_left
+4094.949	state		reward_consumption
+4095.494	event	sync	rsync
+4099.678	event	input	poke_4_out
+4099.786	event	sync	rsync
+4100.679	event	timer	consumption_timer
+4100.679	state		inter_trial_interval
+4102.328	state		initiation_state
+4102.693	event	input	poke_5
+4102.694	state		choice_state
+4102.727	event	input	poke_5_out
+4102.867	event	input	poke_5
+4102.893	event	input	poke_5_out
+4103.238	event	input	poke_6
+4103.239	state		chose_right
+4103.240	variable	print	{"n_trials": 187, "n_rewards": 97, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.7172462, "threshold_crossed": false}
+4103.741	state		reward_right
+4103.814	state		reward_consumption
+4105.448	event	sync	rsync
+4107.905	event	input	poke_6_out
+4108.906	event	timer	consumption_timer
+4108.906	state		inter_trial_interval
+4110.873	state		initiation_state
+4114.671	event	sync	rsync
+4117.196	event	sync	rsync
+4120.459	event	sync	rsync
+4123.150	event	sync	rsync
+4127.353	event	sync	rsync
+4132.745	event	sync	rsync
+4139.012	event	sync	rsync
+4141.537	event	sync	rsync
+4143.820	event	sync	rsync
+4153.025	event	sync	rsync
+4159.135	event	sync	rsync
+4166.398	event	sync	rsync
+4170.751	event	sync	rsync
+4175.404	event	input	poke_6
+4175.609	event	input	poke_6_out
+4175.616	event	sync	rsync
+4175.801	event	input	poke_6
+4175.904	event	input	poke_6_out
+4176.242	event	input	poke_5
+4176.243	state		choice_state
+4176.322	event	input	poke_5_out
+4176.629	event	input	poke_4
+4176.630	state		chose_left
+4176.631	variable	print	{"n_trials": 188, "n_rewards": 98, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.6329676, "threshold_crossed": false}
+4177.132	state		reward_left
+4177.203	state		reward_consumption
+4178.851	event	sync	rsync
+4180.495	event	input	poke_4_out
+4181.496	event	timer	consumption_timer
+4181.496	state		inter_trial_interval
+4183.507	state		initiation_state
+4185.765	event	input	poke_5
+4185.767	state		choice_state
+4185.839	event	input	poke_5_out
+4186.100	event	input	poke_4
+4186.101	state		chose_left
+4186.102	variable	print	{"n_trials": 189, "n_rewards": 98, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.5585919, "threshold_crossed": false}
+4186.603	state		no_reward
+4186.703	state		reward_consumption
+4186.810	event	input	poke_4_out
+4187.388	event	sync	rsync
+4187.811	event	timer	consumption_timer
+4187.811	state		inter_trial_interval
+4188.909	state		initiation_state
+4192.119	event	input	poke_5
+4192.120	state		choice_state
+4192.179	event	input	poke_5_out
+4192.431	event	input	poke_4
+4192.433	state		chose_left
+4192.434	variable	print	{"n_trials": 190, "n_rewards": 98, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.4929557, "threshold_crossed": false}
+4192.934	state		no_reward
+4193.034	state		reward_consumption
+4193.113	event	input	poke_4_out
+4193.903	event	sync	rsync
+4194.114	event	timer	consumption_timer
+4194.114	state		inter_trial_interval
+4194.604	event	input	poke_6
+4194.660	event	input	poke_6_out
+4196.971	state		initiation_state
+4199.675	event	sync	rsync
+4201.205	event	sync	rsync
+4201.384	event	input	poke_4
+4201.540	event	input	poke_4_out
+4207.544	event	sync	rsync
+4207.894	event	input	poke_5
+4207.895	state		forced_choice_left
+4207.983	event	input	poke_5_out
+4208.235	event	input	poke_4
+4208.236	state		chose_left
+4208.236	variable	print	{"n_trials": 191, "n_rewards": 99, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.4929557, "threshold_crossed": false}
+4208.737	state		reward_left
+4208.808	state		reward_consumption
+4214.310	event	input	poke_4_out
+4215.310	event	timer	consumption_timer
+4215.310	state		inter_trial_interval
+4215.425	event	sync	rsync
+4217.058	state		initiation_state
+4217.548	event	sync	rsync
+4218.319	event	sync	rsync
+4218.788	event	input	poke_5
+4218.789	state		choice_state
+4218.814	event	input	poke_5_out
+4219.068	event	input	poke_4
+4219.069	state		chose_left
+4219.070	variable	print	{"n_trials": 192, "n_rewards": 99, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.4350318, "threshold_crossed": false}
+4219.571	state		no_reward
+4219.671	state		reward_consumption
+4219.745	event	input	poke_4_out
+4220.746	event	timer	consumption_timer
+4220.746	state		inter_trial_interval
+4221.688	event	input	poke_6
+4221.800	state		initiation_state
+4221.845	event	input	poke_6_out
+4222.315	event	input	poke_5
+4222.317	state		choice_state
+4222.408	event	input	poke_5_out
+4222.728	event	input	poke_4
+4222.730	state		chose_left
+4222.731	variable	print	{"n_trials": 193, "n_rewards": 99, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.3839143, "threshold_crossed": false}
+4223.231	state		no_reward
+4223.331	state		reward_consumption
+4223.681	event	input	poke_4_out
+4223.713	event	sync	rsync
+4224.682	event	timer	consumption_timer
+4224.682	state		inter_trial_interval
+4225.946	state		initiation_state
+4233.244	event	sync	rsync
+4237.995	event	sync	rsync
+4239.999	event	sync	rsync
+4242.106	event	input	poke_6
+4242.190	event	input	poke_6_out
+4245.776	event	sync	rsync
+4253.539	event	input	poke_5
+4253.541	state		choice_state
+4253.676	event	input	poke_5_out
+4254.031	event	input	poke_6
+4254.032	state		chose_right
+4254.033	variable	print	{"n_trials": 194, "n_rewards": 99, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.4563063, "threshold_crossed": false}
+4254.534	state		no_reward
+4254.536	event	sync	rsync
+4254.634	state		reward_consumption
+4254.773	event	input	poke_6_out
+4255.774	event	timer	consumption_timer
+4255.774	state		inter_trial_interval
+4257.560	state		initiation_state
+4263.871	event	sync	rsync
+4267.986	event	sync	rsync
+4269.466	event	input	poke_5
+4269.467	state		choice_state
+4269.522	event	input	poke_5_out
+4269.793	event	input	poke_6
+4269.794	state		chose_right
+4269.795	variable	print	{"n_trials": 195, "n_rewards": 100, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.520192, "threshold_crossed": false}
+4270.296	state		reward_right
+4270.369	state		reward_consumption
+4272.560	event	input	poke_6_out
+4273.561	event	timer	consumption_timer
+4273.561	state		inter_trial_interval
+4275.621	state		initiation_state
+4276.159	event	input	poke_4
+4276.240	event	input	poke_4_out
+4277.472	event	sync	rsync
+4279.233	event	input	poke_6
+4279.257	event	input	poke_6_out
+4282.235	event	sync	rsync
+4284.726	event	sync	rsync
+4288.077	event	sync	rsync
+4288.860	event	input	poke_5
+4288.861	state		forced_choice_left
+4288.915	event	input	poke_5_out
+4289.074	event	input	poke_5
+4289.113	event	input	poke_5_out
+4289.415	event	input	poke_4
+4289.416	state		chose_left
+4289.417	variable	print	{"n_trials": 196, "n_rewards": 101, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.520192, "threshold_crossed": false}
+4289.917	state		reward_left
+4289.988	state		reward_consumption
+4294.494	event	input	poke_4_out
+4295.494	event	timer	consumption_timer
+4295.494	state		inter_trial_interval
+4297.106	event	sync	rsync
+4298.194	state		initiation_state
+4301.231	event	input	poke_5
+4301.233	state		choice_state
+4301.307	event	input	poke_5_out
+4301.607	event	input	poke_4
+4301.608	state		chose_left
+4301.609	variable	print	{"n_trials": 197, "n_rewards": 102, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.4590678, "threshold_crossed": false}
+4302.110	state		reward_left
+4302.181	state		reward_consumption
+4305.295	event	sync	rsync
+4309.394	event	input	poke_4_out
+4310.394	event	timer	consumption_timer
+4310.394	state		inter_trial_interval
+4312.095	state		initiation_state
+4314.382	event	sync	rsync
+4320.279	event	sync	rsync
+4324.273	event	input	poke_5
+4324.274	state		choice_state
+4324.323	event	input	poke_5_out
+4324.783	event	input	poke_6
+4324.785	state		chose_right
+4324.786	variable	print	{"n_trials": 198, "n_rewards": 103, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.522629, "threshold_crossed": false}
+4325.286	state		reward_right
+4325.359	state		reward_consumption
+4325.947	event	sync	rsync
+4326.077	event	input	poke_6_out
+4326.985	event	input	poke_6
+4327.859	event	input	poke_6_out
+4328.860	event	timer	consumption_timer
+4328.860	state		inter_trial_interval
+4331.504	state		initiation_state
+4335.004	event	sync	rsync
+4338.098	event	sync	rsync
+4340.755	event	sync	rsync
+4344.861	event	sync	rsync
+4347.822	event	sync	rsync
+4350.470	event	sync	rsync
+4358.609	event	sync	rsync
+4365.764	event	sync	rsync
+4374.509	event	sync	rsync
+4380.303	event	sync	rsync
+4381.431	event	sync	rsync
+4386.897	event	sync	rsync
+4388.846	event	sync	rsync
+4391.994	event	sync	rsync
+4392.375	event	input	poke_6
+4392.468	event	input	poke_6_out
+4392.830	event	input	poke_5
+4392.831	state		choice_state
+4392.882	event	input	poke_5_out
+4393.215	event	input	poke_4
+4393.216	state		chose_left
+4393.217	variable	print	{"n_trials": 199, "n_rewards": 103, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.4612185, "threshold_crossed": false}
+4393.718	state		no_reward
+4393.818	state		reward_consumption
+4393.926	event	input	poke_4_out
+4394.927	event	timer	consumption_timer
+4394.927	state		inter_trial_interval
+4395.045	event	sync	rsync
+4397.652	state		initiation_state
+4404.055	event	input	poke_6
+4404.115	event	input	poke_6_out
+4404.218	event	sync	rsync
+4404.571	event	input	poke_6
+4404.804	event	input	poke_6_out
+4407.757	event	sync	rsync
+4408.064	event	input	poke_6
+4408.138	event	input	poke_6_out
+4408.173	event	input	poke_6
+4408.293	event	input	poke_6_out
+4408.626	event	input	poke_5
+4408.627	state		forced_choice_left
+4408.710	event	input	poke_5_out
+4409.014	event	input	poke_4
+4409.015	state		chose_left
+4409.016	variable	print	{"n_trials": 200, "n_rewards": 104, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.4612185, "threshold_crossed": false}
+4409.517	state		reward_left
+4409.588	state		reward_consumption
+4409.662	event	sync	rsync
+4411.458	event	sync	rsync
+4412.099	event	sync	rsync
+4412.292	event	input	poke_4_out
+4413.292	event	timer	consumption_timer
+4413.292	state		inter_trial_interval
+4415.482	state		initiation_state
+4417.226	event	sync	rsync
+4418.311	event	sync	rsync
+4419.567	event	input	poke_5
+4419.569	state		choice_state
+4419.676	event	input	poke_5_out
+4419.974	event	input	poke_4
+4419.975	state		chose_left
+4419.981	variable	print	{"n_trials": 201, "n_rewards": 105, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.4070239, "threshold_crossed": false}
+4420.482	state		reward_left
+4420.553	state		reward_consumption
+4424.324	event	sync	rsync
+4429.847	event	input	poke_4_out
+4430.847	event	timer	consumption_timer
+4430.847	state		inter_trial_interval
+4432.996	event	sync	rsync
+4433.789	state		initiation_state
+4439.565	event	input	poke_5
+4439.566	state		choice_state
+4439.602	event	input	poke_5_out
+4439.881	event	input	poke_4
+4439.882	state		chose_left
+4439.883	variable	print	{"n_trials": 202, "n_rewards": 105, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.3591973, "threshold_crossed": false}
+4440.384	state		no_reward
+4440.484	state		reward_consumption
+4440.612	event	input	poke_4_out
+4440.874	event	sync	rsync
+4441.612	event	timer	consumption_timer
+4441.612	state		inter_trial_interval
+4443.476	state		initiation_state
+4447.559	event	sync	rsync
+4456.735	event	sync	rsync
+4458.129	event	input	poke_5
+4458.130	state		choice_state
+4458.208	event	input	poke_5_out
+4458.494	event	input	poke_4
+4458.495	state		chose_left
+4458.496	variable	print	{"n_trials": 203, "n_rewards": 105, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.3169905, "threshold_crossed": false}
+4458.997	state		no_reward
+4459.097	state		reward_consumption
+4459.146	event	input	poke_4_out
+4460.147	event	timer	consumption_timer
+4460.147	state		inter_trial_interval
+4462.620	event	sync	rsync
+4463.030	state		initiation_state
+4466.794	event	sync	rsync
+4468.075	event	sync	rsync
+4469.558	event	sync	rsync
+4477.997	event	sync	rsync
+4485.319	event	sync	rsync
+4490.533	event	sync	rsync
+4493.020	event	sync	rsync
+4501.399	event	sync	rsync
+4510.848	event	sync	rsync
+4511.570	event	sync	rsync
+4518.515	event	sync	rsync
+4520.209	event	sync	rsync
+4529.019	event	sync	rsync
+4536.754	event	sync	rsync
+4541.174	event	sync	rsync
+4543.384	event	sync	rsync
+4549.212	event	sync	rsync
+4557.090	event	sync	rsync
+4561.749	event	sync	rsync
+4565.983	event	sync	rsync
+4567.562	event	sync	rsync
+4572.123	event	sync	rsync
+4581.279	event	sync	rsync
+4585.709	event	sync	rsync
+4591.708	event	sync	rsync
+4596.446	event	sync	rsync
+4597.298	event	sync	rsync
+4599.853	event	sync	rsync
+4603.505	event	sync	rsync
+4608.120	event	sync	rsync
+4613.009	event	sync	rsync
+4620.207	event	sync	rsync
+4627.568	event	sync	rsync
+4632.541	event	sync	rsync
+4633.360	event	sync	rsync
+4641.991	event	sync	rsync
+4646.019	event	sync	rsync
+4654.726	event	sync	rsync
+4661.676	event	sync	rsync
+4667.057	event	sync	rsync
+4676.265	event	sync	rsync
+4676.649	event	input	poke_5
+4676.650	state		forced_choice_right
+4676.700	event	input	poke_5_out
+4677.228	event	input	poke_4
+4677.407	event	input	poke_4_out
+4677.856	event	sync	rsync
+4679.050	event	input	poke_6
+4679.051	state		chose_right
+4679.052	variable	print	{"n_trials": 204, "n_rewards": 106, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.3169905, "threshold_crossed": false}
+4679.552	state		reward_right
+4679.625	state		reward_consumption
+4680.258	event	sync	rsync
+4681.879	event	input	poke_6_out
+4682.879	event	timer	consumption_timer
+4682.879	state		inter_trial_interval
+4685.111	state		initiation_state
+4686.942	event	sync	rsync
+4689.770	event	sync	rsync
+4691.736	event	sync	rsync
+4699.476	event	sync	rsync
+4701.082	event	input	poke_6
+4701.155	event	input	poke_6_out
+4701.519	event	input	poke_5
+4701.521	state		choice_state
+4701.578	event	input	poke_5_out
+4701.813	event	input	poke_6
+4701.814	state		chose_right
+4701.815	variable	print	{"n_trials": 205, "n_rewards": 107, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.3972463, "threshold_crossed": false}
+4702.316	state		reward_right
+4702.389	state		reward_consumption
+4708.221	event	sync	rsync
+4708.954	event	input	poke_6_out
+4709.954	event	timer	consumption_timer
+4709.954	state		inter_trial_interval
+4711.231	state		initiation_state
+4715.002	event	sync	rsync
+4716.363	event	sync	rsync
+4718.901	event	input	poke_6
+4719.466	event	input	poke_6_out
+4719.879	event	input	poke_5
+4719.880	state		forced_choice_right
+4719.959	event	input	poke_5_out
+4720.209	event	input	poke_6
+4720.210	state		chose_right
+4720.211	variable	print	{"n_trials": 206, "n_rewards": 108, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.3972463, "threshold_crossed": false}
+4720.711	state		reward_right
+4720.784	state		reward_consumption
+4723.655	event	sync	rsync
+4724.967	event	input	poke_6_out
+4725.968	event	timer	consumption_timer
+4725.968	state		inter_trial_interval
+4727.169	state		initiation_state
+4728.710	event	sync	rsync
+4733.691	event	input	poke_4
+4733.868	event	input	poke_4_out
+4734.827	event	input	poke_4
+4734.992	event	input	poke_4_out
+4735.358	event	input	poke_5
+4735.359	state		choice_state
+4735.414	event	input	poke_5_out
+4735.654	event	input	poke_4
+4735.655	state		chose_left
+4735.656	variable	print	{"n_trials": 207, "n_rewards": 108, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.3505686, "threshold_crossed": false}
+4736.157	state		no_reward
+4736.257	state		reward_consumption
+4736.270	event	sync	rsync
+4736.350	event	input	poke_4_out
+4737.350	event	timer	consumption_timer
+4737.350	state		inter_trial_interval
+4738.032	event	sync	rsync
+4738.595	state		initiation_state
+4741.043	event	sync	rsync
+4742.274	event	input	poke_5
+4742.276	state		choice_state
+4742.380	event	input	poke_5_out
+4742.788	event	input	poke_6
+4742.789	state		chose_right
+4742.790	variable	print	{"n_trials": 208, "n_rewards": 108, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.4268788, "threshold_crossed": false}
+4743.291	state		no_reward
+4743.391	state		reward_consumption
+4743.502	event	input	poke_6_out
+4744.503	event	timer	consumption_timer
+4744.503	state		inter_trial_interval
+4745.947	state		initiation_state
+4746.838	event	sync	rsync
+4749.482	event	sync	rsync
+4757.313	event	sync	rsync
+4765.147	event	sync	rsync
+4770.243	event	input	poke_6
+4770.905	event	sync	rsync
+4771.023	event	input	poke_6_out
+4774.001	event	sync	rsync
+4774.901	event	input	poke_5
+4774.902	state		choice_state
+4774.956	event	input	poke_5_out
+4775.179	event	input	poke_6
+4775.181	state		chose_right
+4775.182	variable	print	{"n_trials": 209, "n_rewards": 109, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.4942224, "threshold_crossed": false}
+4775.682	state		reward_right
+4775.755	state		reward_consumption
+4777.950	event	sync	rsync
+4778.807	event	input	poke_6_out
+4779.807	event	timer	consumption_timer
+4779.807	state		inter_trial_interval
+4781.685	state		initiation_state
+4782.537	event	input	poke_6
+4782.585	event	input	poke_6_out
+4782.813	event	input	poke_5
+4782.815	state		choice_state
+4782.835	event	input	poke_5_out
+4783.146	event	input	poke_6
+4783.148	state		chose_right
+4783.149	variable	print	{"n_trials": 210, "n_rewards": 110, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.5536528, "threshold_crossed": false}
+4783.649	state		reward_right
+4783.722	state		reward_consumption
+4786.883	event	sync	rsync
+4787.134	event	input	poke_6_out
+4788.135	event	timer	consumption_timer
+4788.135	state		inter_trial_interval
+4789.353	state		initiation_state
+4791.344	event	sync	rsync
+4792.669	event	sync	rsync
+4797.680	event	sync	rsync
+4804.142	event	sync	rsync
+4804.249	event	input	poke_6
+4804.383	event	input	poke_6_out
+4804.895	event	input	poke_5
+4804.896	state		choice_state
+4805.036	event	input	poke_5_out
+4805.385	event	input	poke_6
+4805.386	state		chose_right
+4805.387	variable	print	{"n_trials": 211, "n_rewards": 111, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.6061, "threshold_crossed": false}
+4805.888	state		reward_right
+4805.961	state		reward_consumption
+4808.790	event	sync	rsync
+4808.951	event	input	poke_6_out
+4809.952	event	timer	consumption_timer
+4809.952	state		inter_trial_interval
+4811.165	state		initiation_state
+4814.251	event	sync	rsync
+4816.362	event	input	poke_5
+4816.363	state		forced_choice_right
+4816.414	event	input	poke_5_out
+4816.872	event	input	poke_5
+4816.919	event	input	poke_5_out
+4817.206	event	input	poke_6
+4817.207	state		chose_right
+4817.208	variable	print	{"n_trials": 212, "n_rewards": 111, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.6061, "threshold_crossed": false}
+4817.709	state		no_reward
+4817.809	state		reward_consumption
+4817.921	event	input	poke_6_out
+4818.921	event	timer	consumption_timer
+4818.921	state		inter_trial_interval
+4821.331	state		initiation_state
+4822.152	event	sync	rsync
+4822.911	event	input	poke_4
+4823.711	event	input	poke_4_out
+4824.052	event	input	poke_5
+4824.053	state		choice_state
+4824.101	event	input	poke_5_out
+4824.476	event	input	poke_4
+4824.478	state		chose_left
+4824.479	variable	print	{"n_trials": 213, "n_rewards": 111, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.5348814, "threshold_crossed": false}
+4824.979	state		no_reward
+4825.079	state		reward_consumption
+4825.153	event	input	poke_4_out
+4826.154	event	timer	consumption_timer
+4826.154	state		inter_trial_interval
+4827.777	state		initiation_state
+4829.626	event	sync	rsync
+4833.644	event	sync	rsync
+4838.730	event	sync	rsync
+4841.160	event	input	poke_6
+4841.218	event	input	poke_6_out
+4841.848	event	sync	rsync
+4846.726	event	sync	rsync
+4847.324	event	sync	rsync
+4849.064	event	sync	rsync
+4855.989	event	sync	rsync
+4864.010	event	input	poke_5
+4864.011	state		choice_state
+4864.073	event	input	poke_5_out
+4864.389	event	input	poke_6
+4864.390	state		chose_right
+4864.391	variable	print	{"n_trials": 214, "n_rewards": 112, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.5895343, "threshold_crossed": false}
+4864.877	event	sync	rsync
+4864.892	state		reward_right
+4864.965	state		reward_consumption
+4867.586	event	input	poke_6_out
+4868.587	event	timer	consumption_timer
+4868.587	state		inter_trial_interval
+4870.755	state		initiation_state
+4872.670	event	sync	rsync
+4874.414	event	input	poke_6
+4874.887	event	input	poke_6_out
+4876.911	event	sync	rsync
+4879.340	event	sync	rsync
+4882.485	event	sync	rsync
+4883.393	event	sync	rsync
+4890.434	event	sync	rsync
+4891.198	event	sync	rsync
+4896.733	event	sync	rsync
+4898.547	event	sync	rsync
+4903.701	event	input	poke_4
+4903.798	event	input	poke_4_out
+4905.071	event	input	poke_5
+4905.072	state		choice_state
+4905.109	event	input	poke_5_out
+4905.113	event	sync	rsync
+4905.398	event	input	poke_4
+4905.400	state		chose_left
+4905.401	variable	print	{"n_trials": 215, "n_rewards": 112, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.5202622, "threshold_crossed": false}
+4905.901	state		no_reward
+4906.001	state		reward_consumption
+4906.125	event	input	poke_4_out
+4907.126	event	timer	consumption_timer
+4907.126	state		inter_trial_interval
+4908.131	event	sync	rsync
+4909.096	state		initiation_state
+4911.659	event	input	poke_5
+4911.660	state		forced_choice_right
+4911.759	event	input	poke_5_out
+4912.066	event	input	poke_6
+4912.067	state		chose_right
+4912.068	variable	print	{"n_trials": 216, "n_rewards": 112, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.5202622, "threshold_crossed": false}
+4912.569	state		no_reward
+4912.669	state		reward_consumption
+4912.850	event	input	poke_6_out
+4913.850	event	timer	consumption_timer
+4913.850	state		inter_trial_interval
+4915.376	state		initiation_state
+4916.337	event	sync	rsync
+4922.893	event	input	poke_6
+4922.951	event	input	poke_6_out
+4923.741	event	input	poke_6
+4923.801	event	input	poke_6_out
+4923.986	event	sync	rsync
+4928.927	event	sync	rsync
+4933.664	event	sync	rsync
+4937.281	event	sync	rsync
+4944.168	event	sync	rsync
+4947.037	event	sync	rsync
+4948.294	event	input	poke_6
+4948.340	event	input	poke_6_out
+4948.723	event	input	poke_6
+4948.893	event	input	poke_6_out
+4949.417	event	input	poke_5
+4949.418	state		choice_state
+4949.440	event	input	poke_5_out
+4949.759	event	input	poke_4
+4949.760	state		chose_left
+4949.761	variable	print	{"n_trials": 217, "n_rewards": 112, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.4591298, "threshold_crossed": false}
+4950.262	state		no_reward
+4950.362	state		reward_consumption
+4950.489	event	input	poke_4_out
+4951.026	event	sync	rsync
+4951.490	event	timer	consumption_timer
+4951.490	state		inter_trial_interval
+4953.587	state		initiation_state
+4959.618	event	sync	rsync
+4963.921	event	sync	rsync
+4966.935	event	sync	rsync
+4976.071	event	sync	rsync
+4980.661	event	sync	rsync
+4984.875	event	sync	rsync
+4987.052	event	input	poke_6
+4987.647	event	input	poke_6_out
+4990.391	event	input	poke_6
+4990.568	event	input	poke_6_out
+4990.866	event	input	poke_5
+4990.867	state		choice_state
+4990.972	event	input	poke_5_out
+4991.257	event	input	poke_6
+4991.259	state		chose_right
+4991.260	variable	print	{"n_trials": 218, "n_rewards": 113, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.5226837, "threshold_crossed": false}
+4991.760	state		reward_right
+4991.833	state		reward_consumption
+4994.181	event	sync	rsync
+4994.934	event	sync	rsync
+4999.864	event	input	poke_6_out
+5000.865	event	timer	consumption_timer
+5000.865	state		inter_trial_interval
+5002.031	state		initiation_state
+5002.501	event	sync	rsync
+5007.502	event	sync	rsync
+5008.549	event	input	poke_5
+5008.551	state		forced_choice_right
+5008.573	event	input	poke_5_out
+5008.830	event	input	poke_6
+5008.831	state		chose_right
+5008.831	variable	print	{"n_trials": 219, "n_rewards": 114, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.5226837, "threshold_crossed": false}
+5009.332	state		reward_right
+5009.405	state		reward_consumption
+5011.112	event	sync	rsync
+5013.030	event	input	poke_6_out
+5014.031	event	timer	consumption_timer
+5014.031	state		inter_trial_interval
+5016.860	state		initiation_state
+5017.506	event	input	poke_5
+5017.507	state		choice_state
+5017.546	event	input	poke_5_out
+5017.812	event	input	poke_6
+5017.814	state		chose_right
+5017.815	variable	print	{"n_trials": 220, "n_rewards": 115, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.5787698, "threshold_crossed": false}
+5018.315	state		reward_right
+5018.388	state		reward_consumption
+5020.432	event	input	poke_6_out
+5020.519	event	sync	rsync
+5021.433	event	timer	consumption_timer
+5021.433	state		inter_trial_interval
+5022.533	event	input	poke_5
+5022.560	event	input	poke_5_out
+5024.314	state		initiation_state
+5025.922	event	input	poke_5
+5025.923	state		choice_state
+5025.981	event	input	poke_5_out
+5026.310	event	input	poke_4
+5026.311	state		chose_left
+5026.312	variable	print	{"n_trials": 221, "n_rewards": 116, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.5107626, "threshold_crossed": false}
+5026.813	state		reward_left
+5026.884	state		reward_consumption
+5029.370	event	sync	rsync
+5033.085	event	sync	rsync
+5033.785	event	input	poke_4_out
+5034.172	event	sync	rsync
+5034.786	event	timer	consumption_timer
+5034.786	state		inter_trial_interval
+5037.535	state		initiation_state
+5038.262	event	input	poke_5
+5038.263	state		choice_state
+5038.304	event	input	poke_5_out
+5038.552	event	input	poke_4
+5038.553	state		chose_left
+5038.554	variable	print	{"n_trials": 222, "n_rewards": 116, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.4507464, "threshold_crossed": false}
+5039.055	state		no_reward
+5039.155	state		reward_consumption
+5039.279	event	input	poke_4_out
+5040.280	event	timer	consumption_timer
+5040.280	state		inter_trial_interval
+5040.395	event	sync	rsync
+5042.037	state		initiation_state
+5048.194	event	sync	rsync
+5049.581	event	input	poke_6
+5049.652	event	input	poke_6_out
+5051.263	event	input	poke_5
+5051.265	state		forced_choice_right
+5051.323	event	input	poke_5_out
+5051.572	event	input	poke_6
+5051.573	state		chose_right
+5051.574	variable	print	{"n_trials": 223, "n_rewards": 117, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.4507464, "threshold_crossed": false}
+5052.075	state		reward_right
+5052.148	state		reward_consumption
+5053.785	event	input	poke_6_out
+5054.786	event	timer	consumption_timer
+5054.786	state		inter_trial_interval
+5054.859	event	input	poke_6
+5055.485	event	input	poke_6_out
+5057.181	state		initiation_state
+5057.390	event	sync	rsync
+5058.110	event	input	poke_6
+5058.894	event	input	poke_6_out
+5060.087	event	input	poke_4
+5060.202	event	input	poke_4_out
+5060.470	event	input	poke_5
+5060.471	state		choice_state
+5060.535	event	input	poke_5_out
+5060.575	event	sync	rsync
+5060.876	event	input	poke_6
+5060.877	state		chose_right
+5060.878	variable	print	{"n_trials": 224, "n_rewards": 117, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.5152854, "threshold_crossed": false}
+5061.378	state		no_reward
+5061.478	state		reward_consumption
+5061.721	event	input	poke_6_out
+5062.722	event	timer	consumption_timer
+5062.722	state		inter_trial_interval
+5063.000	event	sync	rsync
+5064.550	state		initiation_state
+5064.863	event	sync	rsync
+5069.358	event	input	poke_5
+5069.359	state		forced_choice_right
+5069.430	event	input	poke_5_out
+5070.005	event	input	poke_5
+5070.069	event	input	poke_5_out
+5070.388	event	input	poke_6
+5070.389	state		chose_right
+5070.390	variable	print	{"n_trials": 225, "n_rewards": 117, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.5152854, "threshold_crossed": false}
+5070.891	state		no_reward
+5070.991	state		reward_consumption
+5071.058	event	sync	rsync
+5071.202	event	input	poke_6_out
+5072.202	event	timer	consumption_timer
+5072.202	state		inter_trial_interval
+5073.532	state		initiation_state
+5077.560	event	sync	rsync
+5080.054	event	input	poke_6
+5080.079	event	input	poke_6_out
+5082.466	event	input	poke_5
+5082.467	state		choice_state
+5082.536	event	input	poke_5_out
+5082.827	event	input	poke_6
+5082.829	state		chose_right
+5082.829	variable	print	{"n_trials": 226, "n_rewards": 118, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.5722408, "threshold_crossed": false}
+5083.330	state		reward_right
+5083.403	state		reward_consumption
+5086.779	event	input	poke_6_out
+5086.945	event	sync	rsync
+5087.779	event	timer	consumption_timer
+5087.779	state		inter_trial_interval
+5090.118	state		initiation_state
+5093.195	event	input	poke_5
+5093.197	state		choice_state
+5093.293	event	input	poke_5_out
+5093.583	event	input	poke_4
+5093.585	state		chose_left
+5093.586	variable	print	{"n_trials": 227, "n_rewards": 119, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": true, "mov_ave": 0.5050008, "threshold_crossed": false}
+5094.086	state		reward_left
+5094.157	state		reward_consumption
+5095.839	event	input	poke_4_out
+5096.147	event	sync	rsync
+5096.839	event	timer	consumption_timer
+5096.839	state		inter_trial_interval
+5098.079	state		initiation_state
+5099.250	event	input	poke_5
+5099.252	state		choice_state
+5099.283	event	input	poke_5_out
+5099.320	event	input	poke_5
+5099.398	event	input	poke_5_out
+5099.752	event	input	poke_6
+5099.753	state		chose_right
+5099.754	variable	print	{"n_trials": 228, "n_rewards": 119, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.5631647, "threshold_crossed": false}
+5100.255	state		no_reward
+5100.355	state		reward_consumption
+5100.515	event	input	poke_6_out
+5101.319	event	sync	rsync
+5101.515	event	timer	consumption_timer
+5101.515	state		inter_trial_interval
+5103.462	state		initiation_state
+5106.388	event	sync	rsync
+5107.298	event	sync	rsync
+5108.011	event	input	poke_6
+5108.563	event	input	poke_6_out
+5111.516	event	input	poke_4
+5111.685	event	input	poke_4_out
+5113.090	event	input	poke_5
+5113.091	state		choice_state
+5113.170	event	input	poke_5_out
+5113.540	event	input	poke_6
+5113.541	state		chose_right
+5113.542	variable	print	{"n_trials": 229, "n_rewards": 120, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.6144942, "threshold_crossed": false}
+5113.735	event	sync	rsync
+5114.043	state		reward_right
+5114.116	state		reward_consumption
+5117.174	event	input	poke_6_out
+5118.121	event	sync	rsync
+5118.175	event	timer	consumption_timer
+5118.175	state		inter_trial_interval
+5121.057	state		initiation_state
+5127.089	event	sync	rsync
+5132.749	event	sync	rsync
+5141.252	event	sync	rsync
+5142.503	event	sync	rsync
+5147.267	event	sync	rsync
+5153.344	event	sync	rsync
+5157.736	event	sync	rsync
+5165.239	event	sync	rsync
+5173.229	event	sync	rsync
+5174.257	event	input	poke_6
+5174.286	event	input	poke_6_out
+5181.388	event	sync	rsync
+5183.020	event	sync	rsync
+5183.868	event	sync	rsync
+5187.697	event	sync	rsync
+5193.905	event	sync	rsync
+5194.780	event	sync	rsync
+5195.982	event	sync	rsync
+5202.910	event	sync	rsync
+5208.755	event	sync	rsync
+5217.551	event	sync	rsync
+5220.374	event	sync	rsync
+5227.201	event	sync	rsync
+5232.430	event	sync	rsync
+5235.552	event	sync	rsync
+5237.471	event	sync	rsync
+5238.899	event	sync	rsync
+5242.258	event	sync	rsync
+5246.326	event	sync	rsync
+5252.548	event	sync	rsync
+5261.957	event	sync	rsync
+5263.953	event	sync	rsync
+5270.493	event	sync	rsync
+5274.847	event	sync	rsync
+5283.997	event	sync	rsync
+5292.329	event	sync	rsync
+5293.414	event	input	poke_4
+5293.539	event	input	poke_4_out
+5300.645	event	sync	rsync
+5306.479	event	sync	rsync
+5313.253	event	sync	rsync
+5321.191	event	sync	rsync
+5326.655	event	sync	rsync
+5332.591	event	sync	rsync
+5338.424	event	sync	rsync
+5339.185	event	input	poke_6
+5339.208	event	input	poke_6_out
+5339.430	event	sync	rsync
+5340.919	event	input	poke_4
+5340.991	event	input	poke_4_out
+5341.250	event	input	poke_5
+5341.251	state		choice_state
+5341.302	event	input	poke_5_out
+5342.050	event	input	poke_6
+5342.051	state		chose_right
+5342.052	variable	print	{"n_trials": 230, "n_rewards": 120, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.6597923, "threshold_crossed": false}
+5342.553	state		no_reward
+5342.653	state		reward_consumption
+5342.795	event	input	poke_6_out
+5343.796	event	timer	consumption_timer
+5343.796	state		inter_trial_interval
+5345.451	state		initiation_state
+5348.538	event	sync	rsync
+5351.601	event	sync	rsync
+5355.461	event	input	poke_6
+5355.526	event	input	poke_6_out
+5355.831	event	input	poke_5
+5355.833	state		forced_choice_right
+5355.879	event	input	poke_5_out
+5356.171	event	input	poke_6
+5356.172	state		chose_right
+5356.173	variable	print	{"n_trials": 231, "n_rewards": 121, "n_blocks": 3, "forced_choice": true, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": true, "mov_ave": 0.6597923, "threshold_crossed": false}
+5356.674	state		reward_right
+5356.747	state		reward_consumption
+5358.112	event	sync	rsync
+5359.033	event	input	poke_6_out
+5359.183	event	sync	rsync
+5360.033	event	timer	consumption_timer
+5360.033	state		inter_trial_interval
+5361.252	state		initiation_state
+5363.294	event	input	poke_6
+5363.454	event	sync	rsync
+5363.869	event	input	poke_6_out
+5364.657	event	input	poke_4
+5364.692	event	input	poke_4_out
+5366.378	event	sync	rsync
+5368.727	event	sync	rsync
+5368.963	event	input	poke_6
+5369.126	event	input	poke_6_out
+5369.413	event	input	poke_5
+5369.414	state		choice_state
+5369.475	event	input	poke_5_out
+5369.574	event	input	poke_5
+5369.637	event	input	poke_5_out
+5369.914	event	input	poke_6
+5369.915	state		chose_right
+5369.916	variable	print	{"n_trials": 232, "n_rewards": 121, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_6", "correct": true, "outcome": false, "mov_ave": 0.6997678, "threshold_crossed": false}
+5370.417	state		no_reward
+5370.517	state		reward_consumption
+5370.640	event	input	poke_6_out
+5371.640	event	timer	consumption_timer
+5371.640	state		inter_trial_interval
+5374.190	state		initiation_state
+5375.047	event	input	poke_5
+5375.048	state		choice_state
+5375.080	event	input	poke_5_out
+5375.330	event	input	poke_4
+5375.331	state		chose_left
+5375.332	variable	print	{"n_trials": 233, "n_rewards": 121, "n_blocks": 3, "forced_choice": false, "good_poke": "poke_6", "choice": "poke_4", "correct": false, "outcome": false, "mov_ave": 0.6175428, "threshold_crossed": false}
+5375.833	state		no_reward
+5375.933	state		reward_consumption
+5376.080	event	input	poke_4_out
+5376.359	event	sync	rsync
+5377.081	event	timer	consumption_timer
+5377.081	state		inter_trial_interval
+5378.338	event	sync	rsync
+5379.032	state		initiation_state
+5386.171	event	sync	rsync
+5392.544	event	sync	rsync
+5399.147	event	sync	rsync
+5400.000	event	timer	session_timer
+5400.001	variable	run_end	{"consumption_duration": 1000, "post_choice_delay": 500, "bad_prob": 0.25, "reward_vol_ul": 6, "tau": 8, "threshold": 0.75, "good_poke": "poke_6", "mov_ave": 0.6175428, "forced_choice": false, "trials_post_threshold": [5, 15], "trials_till_reversal": 0, "click_volume": 10, "n_rewards": 121, "threshold_crossed": false, "outcome": false, "ITI_duration": [1000, 3000], "hw_poke_6_calibration": {"slope": 8, "intercept": 25.9}, "n_blocks": 3, "session_duration": 5400000, "hw_poke_4_calibration": {"slope": 7.3, "intercept": 27.4}, "choice": "poke_4", "correct": false, "good_prob": 0.75, "n_trials": 233}
+5400.002	info	end_time	2023-11-15T12:59:30.794
