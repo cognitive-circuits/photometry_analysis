@@ -27,7 +27,7 @@ class Session_info:
     end_time: datetime
     day: int
     number: int
-    genotype: str
+    genotype: str = None
 
     def __post_init__(self):
         self.start_time = datetime.fromisoformat(self.start_time)
