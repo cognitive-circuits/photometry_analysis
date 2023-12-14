@@ -85,7 +85,6 @@ def preprocess_data(
             session_dir = Path(subject_dir, row.datetime.strftime("%Y-%m-%d-%H%M%S"))
             if skip_processed and session_dir.exists():
                 continue  # Skip session as already processed.
-            print(f"Processing session: {session_id}")
             session_dir.mkdir(exist_ok=True, parents=True)
             # Process pyControl data.
             info_dict, variables_dict, events_df, trials_df, sync_pulse_times = _pycontrol_to_components(
