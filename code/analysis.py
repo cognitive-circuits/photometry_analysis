@@ -58,10 +58,7 @@ def save_aligned_signals(
     """
     for session in sessions:
         print(f"Processing session: {session.info.session_id}")
-        session_analysis_data_dir = Path(
-            analysis_data_dir, session.info.subject, session.info.start_time.strftime("%Y-%m-%d-%H%M%S")
-        )
-        if skip_processed and session_analysis_data_dir.exists():
+        if skip_processed and session.info.analysis_data_dir.exists():
             continue  # Skip session as already processed.
         if session.photometry == None:
             continue  # Skip as session does not have photometry data.
@@ -72,9 +69,9 @@ def save_aligned_signals(
         # Extract time-warped trial aligned signals.
         if target_event_times:
             aligned_signal_dfs.append(get_trial_aligned_signal(session, target_event_times, window_dur))
-        session_analysis_data_dir.mkdir(exist_ok=True, parents=True)
+        session.info.analysis_data_dir.mkdir(exist_ok=True, parents=True)
         aligned_signals_df = pd.concat(aligned_signal_dfs, axis=1)
-        aligned_signals_df.to_parquet(Path(session_analysis_data_dir, "trials.aligned_signal.parquet"))
+        aligned_signals_df.to_parquet(Path(session.info.analysis_data_dir, "trials.aligned_signal.parquet"))
 
 
 def get_event_aligned_signal(session, trial_event, window_dur=[-1, 2]):
@@ -145,20 +142,12 @@ def get_trial_aligned_signal(session, target_event_times, window_dur=[-1, 2], fs
 # --------------------------------------------------------------------------------------------------
 
 
-def make_analysis_dataframe(sessions):
+def make_analysis_dataframe(sessions, analysis_vars_func):
     """Combine data from multiple sessions into a single dataframe."""
     session_dfs = []
     for session in sessions:
         session_df = session.get_trial_aligned_signal()
-        # Add Contra-ipsi choice.
-        contra_choice = "poke_4" if session.photometry.hemisphere == "R" else "poke_6"
-        session_df.insert(0, "contra_choice", session_df.choice == contra_choice)
-        # Add exponential moving average of outcomes.
-        reward_rate = pd.concat([pd.Series(np.full(10, 0.5)), session_df.outcome]).ewm(alpha=0.2).mean()[10:]
-        session_df.insert(0, "reward_rate", reward_rate.to_numpy() - 0.5)
-        for info_name in ["genotype", "day", "session_id", "subject"]:
-            session_df.insert(0, info_name, getattr(session.info, info_name))
-        session_dfs.append(session_df)
+        analysis_vars_df
     return pd.concat(session_dfs, axis=0)
 
 
