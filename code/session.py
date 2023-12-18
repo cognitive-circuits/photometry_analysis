@@ -44,7 +44,6 @@ class Photometry:
     hemisphere: str
     signal: np.ndarray
     times: np.ndarray
-    aligned_signal_df: pd.DataFrame = None
 
 
 class Session:
@@ -64,16 +63,22 @@ class Session:
                 times=np.load(Path(data_dir, "dlight.times.npy")),
                 **load_json(Path(data_dir, "photometry_info.json")),
             )
-            if Path(analysis_dir, "trials.aligned_signal.parquet").exists():
-                self.photometry.aligned_signal_df = pd.read_parquet(Path(analysis_dir, "trials.aligned_signal.parquet"))
         else:
             self.photometry = None
 
-    def get_trial_aligned_signal(self):
-        """Return a dataframe with trial_df concatentated to aligned_signal_df."""
+    def get_analysis_df(self):
+        """Load analysis data and return a dataframe with one row
+        per trial contaning the trial variables and aligned signals."""
+        assert (
+            Path(self.info.analysis_data_dir, "trials.aligned_signal.parquet").exists()
+            & Path(self.info.analysis_data_dir, "trials.analysis_variables.parquet").exists()
+        ), f"Anlaysis data not found for session: {self.info.session_id}"
         trials_df = self.trials_df.copy()
-        signals_df = self.photometry.aligned_signal_df.copy()
-        # Convert both DataFrames to 3 level MultiIndex.
+        vars_df = pd.read_parquet(Path(self.info.analysis_data_dir, "trials.analysis_variables.parquet"))
+        signals_df = pd.read_parquet(Path(self.info.analysis_data_dir, "trials.aligned_signal.parquet"))
+        # Convert DataFrames to 3 level MultiIndex.
         trials_df.columns = pd.MultiIndex.from_tuples([(*col, "") for col in trials_df.columns])
+        vars_df.columns = pd.MultiIndex.from_tuples([(col, "", "") for col in vars_df.columns])
         signals_df.columns = pd.MultiIndex.from_tuples([("aligned_signal", *col) for col in signals_df.columns])
-        return pd.concat([trials_df, signals_df], axis=1)
+        # Return concatenated dataframe.
+        return pd.concat([trials_df, vars_df, signals_df], axis=1)

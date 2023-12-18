@@ -142,12 +142,15 @@ def get_trial_aligned_signal(session, target_event_times, window_dur=[-1, 2], fs
 # --------------------------------------------------------------------------------------------------
 
 
-def make_analysis_dataframe(sessions, analysis_vars_func):
+def make_multisession_dataframe(sessions):
     """Combine data from multiple sessions into a single dataframe."""
     session_dfs = []
     for session in sessions:
-        session_df = session.get_trial_aligned_signal()
-        analysis_vars_df
+        session_df = session.get_analysis_df()
+        # Add session-level variables as new columns.
+        for info_name in ["genotype", "day", "session_id", "subject"]:
+            session_df.insert(0, info_name, getattr(session.info, info_name))
+        session_dfs.append(session_df)
     return pd.concat(session_dfs, axis=0)
 
 
