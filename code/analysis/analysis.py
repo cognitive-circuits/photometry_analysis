@@ -11,7 +11,7 @@ from tqdm import tqdm
 
 from . import session as ss
 from . import align_activity as aa
-from .utility import save_json
+from utility import save_json
 
 # Set default plotting parameters.
 plt.rcParams["pdf.fonttype"] = 42

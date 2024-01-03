@@ -6,7 +6,7 @@ from pathlib import Path
 from dataclasses import dataclass
 from datetime import datetime
 
-from .utility import load_json, load_multiindex_df
+from utility import load_json, load_multiindex_df
 
 
 @dataclass

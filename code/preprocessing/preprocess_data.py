@@ -9,7 +9,7 @@ from datetime import datetime
 from . import photometry_data_import as pdi
 from . import pycontrol_data_import as cdi
 from .rsync import Rsync_aligner, RsyncError
-from .utility import save_json, save_multiindex_df
+from utility import save_json, save_multiindex_df
 
 
 def preprocess_data(
