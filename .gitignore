@@ -3,5 +3,6 @@ __pycache__
 pyproject.toml
 data/analysis
 data/processed
-plots
+plots/*
+!plots/plot_trace.png
 session_filepaths.tsv
