@@ -9,9 +9,9 @@ from scipy.stats import ttest_1samp, false_discovery_control
 from statsmodels.regression.mixed_linear_model import MixedLMParams
 from tqdm import tqdm
 
-from . import session as ss
-from . import align_activity as aa
-from utility import save_json
+from .session import Session
+from .align_activity import align_signals
+from .utility import save_json
 
 # Set default plotting parameters.
 plt.rcParams["pdf.fonttype"] = 42
@@ -30,7 +30,7 @@ def load_sessions(processed_data_dir):
     sessions = []
     for subject_dir in Path(processed_data_dir).iterdir():
         for session_dir in subject_dir.iterdir():
-            sessions.append(ss.Session(session_dir))
+            sessions.append(Session(session_dir))
     return sessions
 
 
@@ -106,7 +106,7 @@ def get_event_aligned_signal(session, trial_event, window_dur=[-1, 2]):
     return aligned_signal_df
 
 
-def get_trial_aligned_signal(session, target_event_times, window_dur=[-1, 2], fs_out=50, plot_warp=False):
+def get_trial_aligned_signal(session, target_event_times, window_dur=[-1, 2], fs_out=50):
     """Compute time warped photometry signal for each trial by warping the intervals between trial
     events to match those specified in target_event_times.  Typically target_event_times will be
     based on the median inter-event intervals across the dataset. The aligned activity is returned
@@ -123,7 +123,7 @@ def get_trial_aligned_signal(session, target_event_times, window_dur=[-1, 2], fs
     Returns:
         aligned_signal_df: Dataframe with one row per trial containing the aligned signal.
     """
-    aligned_signals, t_out, _ = aa.align_signals(
+    aligned_signals, t_out, _ = align_signals(
         signals=session.photometry.signal,
         sample_times=session.photometry.times,
         trial_times=session.trials_df.times.loc[:, target_event_times.keys()].to_numpy(),
@@ -131,7 +131,6 @@ def get_trial_aligned_signal(session, target_event_times, window_dur=[-1, 2], fs
         pre_win=-window_dur[0],
         post_win=window_dur[1],
         fs_out=fs_out,
-        plot_warp=plot_warp,
     )
     aligned_signal_df = pd.DataFrame(aligned_signals, columns=pd.MultiIndex.from_product([["trial"], t_out]))
     return aligned_signal_df

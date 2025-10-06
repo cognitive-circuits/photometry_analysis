@@ -6,7 +6,9 @@ from pathlib import Path
 from dataclasses import dataclass
 from datetime import datetime
 
-from utility import load_json, load_multiindex_df
+from .utility import load_json, load_multiindex_df
+
+# Classes for representing data from one session.
 
 
 @dataclass
@@ -30,6 +32,7 @@ class Session_info:
     genotype: str = None
 
     def __post_init__(self):
+        """Convert date-time strings to datetime objects."""
         self.start_time = datetime.fromisoformat(self.start_time)
         self.end_time = datetime.fromisoformat(self.end_time)
 
@@ -50,6 +53,7 @@ class Session:
     """Class for loading and representing processed data from one session."""
 
     def __init__(self, data_dir):
+        """Load processed data files from data_dir and instantiate Session object."""
         print(f"Loading session: {data_dir}")
         analysis_dir = Path(*[part if part != "processed" else "analysis" for part in data_dir.parts])
         self.info = Session_info(data_dir, analysis_dir, **load_json(Path(data_dir, "session_info.json")))
@@ -67,12 +71,12 @@ class Session:
             self.photometry = None
 
     def get_analysis_df(self):
-        """Load analysis data and return a dataframe with one row
-        per trial contaning the trial variables and aligned signals."""
+        """Load analysis data files and return a dataframe with one row per trial
+        containing the trial variables and aligned signals."""
         assert (
             Path(self.info.analysis_data_dir, "trials.aligned_signal.parquet").exists()
             & Path(self.info.analysis_data_dir, "trials.analysis_variables.parquet").exists()
-        ), f"Anlaysis data not found for session: {self.info.session_id}"
+        ), f"Analysis data not found for session: {self.info.session_id}"
         trials_df = self.trials_df.copy()
         vars_df = pd.read_parquet(Path(self.info.analysis_data_dir, "trials.analysis_variables.parquet"))
         signals_df = pd.read_parquet(Path(self.info.analysis_data_dir, "trials.aligned_signal.parquet"))

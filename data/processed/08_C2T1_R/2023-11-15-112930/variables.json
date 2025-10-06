@@ -1,0 +1,38 @@
+{
+    "consumption_duration": 1000,
+    "post_choice_delay": 500,
+    "bad_prob": 0.25,
+    "reward_vol_ul": 6,
+    "tau": 8,
+    "threshold": 0.75,
+    "good_poke": "poke_6",
+    "mov_ave": 0.05952098,
+    "forced_choice": false,
+    "trials_post_threshold": [
+        5,
+        15
+    ],
+    "trials_till_reversal": 0,
+    "click_volume": 10,
+    "n_rewards": 194,
+    "threshold_crossed": false,
+    "outcome": true,
+    "ITI_duration": [
+        1000,
+        3000
+    ],
+    "hw_poke_6_calibration": {
+        "slope": 7.9,
+        "intercept": 31.1
+    },
+    "n_blocks": 8,
+    "session_duration": 5400000,
+    "hw_poke_4_calibration": {
+        "slope": 9.5,
+        "intercept": 34.4
+    },
+    "choice": "poke_4",
+    "correct": false,
+    "good_prob": 0.75,
+    "n_trials": 355
+}

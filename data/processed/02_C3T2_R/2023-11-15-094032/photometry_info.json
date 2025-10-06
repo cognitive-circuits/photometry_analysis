@@ -1,0 +1,9 @@
+{
+    "mode": "2EX_2EM_pulsed",
+    "sampling_rate": 130,
+    "LED_current": [
+        100,
+        51
+    ],
+    "hemisphere": "R"
+}

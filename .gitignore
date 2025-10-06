@@ -1,8 +1,8 @@
 .ipynb_checkpoints
+.virtual_documents
 __pycache__
 pyproject.toml
 data/analysis
-data/processed
 plots/*
 !plots/plot_trace.png
 session_filepaths.tsv

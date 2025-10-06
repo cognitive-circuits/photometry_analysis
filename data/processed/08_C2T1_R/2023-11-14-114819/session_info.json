@@ -1,0 +1,15 @@
+{
+    "experiment_name": "Thomas\\LRRK2_photometry",
+    "task_name": "Thomas\\reversal_learning",
+    "task_file_hash": "2655257290",
+    "setup_id": "Box 3",
+    "framework_version": "2.0rc1",
+    "micropython_version": "1.12",
+    "start_time": "2023-11-14T11:48:19.742",
+    "end_time": "2023-11-14T13:18:19.892",
+    "subject": "08_C2T1_R",
+    "session_id": "08_C2T1_R-2023-11-14-114819",
+    "day": 2,
+    "number": 2,
+    "genotype": "B"
+}
