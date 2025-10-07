@@ -1,6 +1,6 @@
 # Photometry analysis
 
-![plot_trace](/figure.png)
+![figure](figure.png)
 
 This repository contains code for analysing photometry data from behavioural tasks with a discrete trial structure.  
 
