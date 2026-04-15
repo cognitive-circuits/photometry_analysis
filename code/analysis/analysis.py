@@ -40,13 +40,14 @@ def get_median_trial_times(sessions, trial_events, save_dir=None):
     first event as a json in the analysis_data_dir.  These median trial timings are used for time
     warping trials to align activity across trials.
     """
-    trials_df = pd.concat([session.trials_df.loc[:, "times"][trial_events] for session in sessions])
-    median_trial_times = trials_df.diff(axis=1).median().to_dict()
-    median_trial_times[trial_events[0]] = 0
+    times_df = pd.concat([session.trials_df.loc[:, "times"][trial_events] for session in sessions])
+    median_time_diffs = times_df.diff(axis=1).median()
+    median_time_diffs[trial_events[0]] = 0
+    median_trial_times = median_time_diffs.cumsum().to_dict()
     if save_dir:
         save_dir = Path(save_dir)
         save_dir.mkdir(exist_ok=True, parents=True)
-    save_json(median_trial_times, Path(save_dir, "median_trial_times.json"))
+        save_json(median_trial_times, Path(save_dir, "median_trial_times.json"))
     return median_trial_times
 
 
@@ -276,7 +277,9 @@ def mixed_effects_regression(
     """Run a linear mixed effects regression analysis.  This is currently experimental and not recomended to use."""
     timepoints = sessions_df.aligned_signal[alignment].columns[::downsample]
 
-    reg_df = sessions_df.loc[:, [col for col in sessions_df.columns if col[0] in "".join([formula, re_formula, group])]]
+    reg_df = sessions_df.loc[
+        :, [col for col in sessions_df.columns if col[0] in "".join([formula, re_formula, group])]
+    ]
     reg_df.columns = reg_df.columns.droplevel([1, 2])
     if sum_code:
         reg_df.replace({True: 1, False: -1}, inplace=True)
